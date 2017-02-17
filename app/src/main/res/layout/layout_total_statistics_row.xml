@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG" >
+
+    <TextView
+        android:id="@+id/tvSTT"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="60dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:padding="5dip"
+        android:text="@string/TEXT_STT" />
+
+    <TextView
+        android:id="@+id/tvProductCode"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="120dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:padding="5dip"
+        android:text="Mã MH"
+        android:textColor="@color/COLOR_USER_NAME" />
+
+    <TextView
+        android:id="@+id/tvProductName"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="382dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:padding="5dip"
+        android:text="Tên mặt hàng" />
+
+    <TextView
+        android:id="@+id/tvPromotion"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="120dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:padding="5dip"
+        android:text="Khuyến mãi"
+        android:textColor="@color/COLOR_USER_NAME" />
+
+    <TextView
+        android:id="@+id/tvQuantity"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="120dp"
+        android:layout_height="fill_parent"
+        android:gravity="right"
+        android:paddingBottom="5dip"
+        android:paddingLeft="5dip"
+        android:paddingRight="25dip"
+        android:paddingTop="5dip"
+        android:text="Số lượng" />
+
+    <TextView
+        android:id="@+id/tvSoldOut"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="120dp"
+        android:layout_height="fill_parent"
+        android:gravity="right"
+        android:paddingBottom="5dip"
+        android:paddingLeft="5dip"
+        android:paddingRight="25dip"
+        android:paddingTop="5dip"
+        android:text="Đã bán" />
+
+    <TextView
+        android:id="@+id/tvRemain"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="120dp"
+        android:layout_height="fill_parent"
+        android:gravity="right"
+        android:paddingBottom="5dip"
+        android:paddingLeft="5dip"
+        android:paddingRight="25dip"
+        android:paddingTop="5dip"
+        android:text="Còn lại" />
+
+</TableRow>

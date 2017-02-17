@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG" >
+
+    <TextView
+        android:id="@+id/tvCustomerCode"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="80dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:padding="@dimen/padding"
+        android:textColor="@color/COLOR_USER_NAME" />
+
+    <TextView
+        android:id="@+id/tvCustomerName"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="160dip"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|left"
+        android:padding="@dimen/padding"/>
+
+    <TextView
+        android:id="@+id/tvCustomerAddress"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="210dip"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical|left"
+        android:padding="@dimen/padding" />
+    
+    <TextView
+        android:id="@+id/tvMuc"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="75dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:padding="@dimen/padding" />
+    
+     <TextView
+        android:id="@+id/tvDinhMuc"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="150dip"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical|right"
+        android:padding="@dimen/padding" />
+
+    <TextView
+        android:id="@+id/tvRemainSale"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="150dip"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical|right"
+        android:padding="@dimen/padding" />
+    <TextView
+        android:id="@+id/tvResult"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="115dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:padding="@dimen/padding" />
+    <TextView
+        android:id="@+id/tvNotifyNull"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="952dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:padding="@dimen/padding" />
+
+</TableRow>

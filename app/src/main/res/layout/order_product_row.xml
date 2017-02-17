@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1.0" >
+
+    <TextView
+        android:id="@+id/tvSTT"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <LinearLayout
+        android:id="@+id/llMHTT"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvProductCode"
+            style="@style/TextViewVinamilkTable"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/TRANSPARENT"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/COLOR_LOCATION_NAME" />
+
+        <TextView
+            android:id="@+id/tvMHTT"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:gravity="top|right"
+            android:textColor="@color/RED"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvProductName"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="195dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right" />
+
+    <TextView
+        android:id="@+id/tvUOM"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="70dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:maxLines="1"
+        android:padding="@dimen/padding"
+        android:textColor="@color/BLACK" />
+    
+    <TextView
+        android:id="@+id/tvRemainProduct"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|right"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right" />
+
+    <LinearLayout
+        android:id="@+id/llPrice"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+
+        <EditText
+            android:id="@+id/etPrice"
+            style="@style/VNMEditText"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin"
+            android:freezesText="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:inputType="number"
+            android:width="120dp"
+            android:maxLength="9" 
+            >
+        </EditText>
+        </LinearLayout>
+<!--     <TextView -->
+<!--         android:id="@+id/tvPrice" -->
+<!--         style="@style/TextViewVinamilkTable" -->
+<!--         android:layout_width="100dp" -->
+<!--         android:layout_height="match_parent" -->
+<!--         android:gravity="center_vertical|right" -->
+<!--         android:paddingLeft="@dimen/padding_left" -->
+<!--         android:paddingRight="@dimen/padding_right" /> -->
+
+    <LinearLayout
+        android:id="@+id/llRealOrder"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+
+        <EditText
+            android:id="@+id/etRealOrder1"
+            style="@style/VNMEditText"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/margin"
+            android:freezesText="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:inputType="number"
+            android:maxLength="5"
+            android:width="100dp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/tvRealOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/BLACK" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvAmount"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|right"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right" />
+
+    <LinearLayout
+        android:id="@+id/llPromo"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="70dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:contentDescription="@string/TEXT_IMAGE_INFO"
+            android:id="@+id/ivPromo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_check" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llActionDelete"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="60dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:contentDescription="@string/TEXT_IMAGE_INFO"
+            android:id="@+id/ivAction"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/icon_delete" />
+    </LinearLayout>
+
+</TableRow>

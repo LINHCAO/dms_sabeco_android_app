@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BG_FRAGMENT" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_content_fragment"
+        android:paddingLeft="@dimen/padding_content_fragment"
+        android:paddingRight="@dimen/padding_content_fragment" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:background="@drawable/bg_header_info"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="10dip"
+                android:text="@string/TEXT_LABLE_NPP_CODE"
+                android:textColor="@color/BLACK" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spNPPCode"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dip"
+                android:layout_weight="2"
+                android:background="@drawable/spinner_selector"
+                android:drawSelectorOnTop="true"
+                android:paddingBottom="@dimen/padding_bottom"
+                android:paddingLeft="@dimen/padding_left"
+                android:paddingRight="@dimen/padding_right"
+                android:paddingTop="@dimen/padding_top"
+                android:prompt="@string/TEXT_HINT_PRODUCT_INDUSTRY" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:text="@string/TEXT_LABLE_GSNPP_CODE"
+                android:textColor="@color/BLACK" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spGSNPPCode"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dip"
+                android:layout_weight="3"
+                android:background="@drawable/spinner_selector"
+                android:drawSelectorOnTop="true"
+                android:paddingBottom="@dimen/padding_bottom"
+                android:paddingLeft="@dimen/padding_left"
+                android:paddingRight="@dimen/padding_right"
+                android:paddingTop="@dimen/padding_top"
+                android:prompt="@string/TEXT_HINT_PRODUCT_INDUSTRY" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:text="@string/TEXT_LABLE_PROGRESS"
+                android:textColor="@color/BLACK" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvNumProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="20dip"
+                android:text=""
+                android:textColor="@color/BLACK"
+                android:textStyle="bold" >
+            </TextView>
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/BG_FRAGMENT"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/llMHTT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/TABLE_BG"
+                    android:paddingLeft="2dip"
+                    android:paddingRight="2dip"
+                    android:paddingTop="2dip"
+                    android:visibility="invisible" >
+
+                    <TextView
+                        android:layout_width="120dip"
+                        android:layout_height="fill_parent"
+                        android:background="@color/TABLE_HEADER_BG"
+                        android:gravity="center"
+                        android:padding="5dip"
+                        android:text="@string/TEXT_HEADER_TABLE_GSNPP"
+                        android:textColor="@color/BLACK"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="130dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="2dip"
+                        android:background="@color/TABLE_HEADER_BG"
+                        android:gravity="center"
+                        android:padding="5dip"
+                        android:text="@string/TEXT_HEADER_TABLE_NVBH"
+                        android:textColor="@color/BLACK"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <com.viettel.dms.view.control.VinamilkTableView
+                    android:id="@+id/tbProgReportsSalesFocusDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible" >
+                </com.viettel.dms.view.control.VinamilkTableView>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/table"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_left"
+    android:layout_marginRight="@dimen/margin_right"
+    android:background="@drawable/bg_header_info" >
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip" >
+
+        <TextView
+            android:id="@+id/tvCustomerName"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/TEXT_CUSTOMER_NAME_"
+            android:textColor="@color/BLACK" >
+        </TextView>
+
+        <com.viettel.dms.view.control.VNMEditTextClearable
+            android:id="@+id/edCustomerName"
+            style="@style/VNMEditText"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight=".2"
+            android:inputType="text"
+            android:maxLength="250"
+            android:singleLine="true"
+            android:textSize="14sp" >
+        </com.viettel.dms.view.control.VNMEditTextClearable>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:text="@string/TEXT_GET_GOODS_IN_C2"
+            android:textColor="@color/BLACK" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/spinnerC2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight=".2"
+            android:background="@drawable/spinner_selector"
+            android:drawSelectorOnTop="true"
+            android:prompt="@string/STATE" />
+
+        <TextView
+            android:id="@+id/tvType"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:text="@string/TEXT_CUSTOMER_TYPE_SHORT"
+            android:textColor="@color/BLACK" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/spinnerType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight=".2"
+            android:background="@drawable/spinner_selector"
+            android:drawSelectorOnTop="true"
+            android:prompt="@string/STATE" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip" >
+
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/TEXT_HOME_PHONE"
+            android:textColor="@color/BLACK" >
+        </TextView>
+
+        <com.viettel.dms.view.control.VNMEditTextClearable
+            android:id="@+id/edPhone"
+            style="@style/VNMEditText"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight=".2"
+            android:inputType="number"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:textSize="14sp" >
+        </com.viettel.dms.view.control.VNMEditTextClearable>
+
+        <TextView
+            android:id="@+id/tvMobilePhone"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:text="@string/TEXT_MOBIPHONE"
+            android:textColor="@color/BLACK" >
+        </TextView>
+
+        <com.viettel.dms.view.control.VNMEditTextClearable
+            android:id="@+id/edMobilePhone"
+            style="@style/VNMEditText"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight=".2"
+            android:inputType="number"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:textSize="14sp" >
+        </com.viettel.dms.view.control.VNMEditTextClearable>
+
+        <TextView
+            android:id="@+id/tvContactName"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:text="@string/TEXT_PERSON_CONTACT"
+            android:textColor="@color/BLACK" >
+        </TextView>
+
+        <com.viettel.dms.view.control.VNMEditTextClearable
+            android:id="@+id/edContactName"
+            style="@style/VNMEditText"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight=".2"
+            android:inputType="text"
+            android:maxLength="250"
+            android:singleLine="true"
+            android:textSize="14sp" >
+        </com.viettel.dms.view.control.VNMEditTextClearable>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip" >
+
+        <TextView
+            android:id="@+id/tvProvine"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/TEXT_PROVINE"
+            android:textColor="@color/BLACK" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/spinnerProvine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight=".2"
+            android:background="@drawable/spinner_selector"
+            android:drawSelectorOnTop="true"
+            android:prompt="@string/STATE" />
+
+        <TextView
+            android:id="@+id/tvDistrict"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:text="@string/TEXT_DISTRICT"
+            android:textColor="@color/BLACK" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/spinnerDistrict"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight=".2"
+            android:background="@drawable/spinner_selector"
+            android:drawSelectorOnTop="true"
+            android:prompt="@string/STATE" />
+
+        <TextView
+            android:id="@+id/tvPrecinct"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:text="@string/TEXT_PRECINCT"
+            android:textColor="@color/BLACK" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/spinnerPrecinct"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight=".2"
+            android:background="@drawable/spinner_selector"
+            android:drawSelectorOnTop="true"
+            android:prompt="@string/STATE" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip" >
+
+        <TextView
+            android:id="@+id/tvHouseNumber"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/TEXT_HOUSE_NUMBER_COLON"
+            android:textColor="@color/BLACK" >
+        </TextView>
+
+        <com.viettel.dms.view.control.VNMEditTextClearable
+            android:id="@+id/edHouseNumber"
+            style="@style/VNMEditText"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight=".2"
+            android:inputType="text"
+            android:maxLength="100"
+            android:singleLine="true"
+            android:textSize="14sp" >
+        </com.viettel.dms.view.control.VNMEditTextClearable>
+
+        <TextView
+            android:id="@+id/tvStreet"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:text="@string/TEXT_STREET_COLON"
+            android:textColor="@color/BLACK" >
+        </TextView>
+
+        <com.viettel.dms.view.control.VNMEditTextClearable
+            android:id="@+id/edStreet"
+            style="@style/VNMEditText"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight=".2"
+            android:inputType="text"
+            android:maxLength="200"
+            android:singleLine="true"
+            android:textSize="14sp" >
+        </com.viettel.dms.view.control.VNMEditTextClearable>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" >
+        </TextView>
+
+        <Button
+            android:id="@+id/btSave"
+            style="@style/VNMButton"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight=".2"
+            android:text="@string/TEXT_BUTTON_SAVE" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:textColor="@color/RED" />
+
+</TableLayout>

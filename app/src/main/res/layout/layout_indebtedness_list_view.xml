@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/TRANSPARENT" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/TRANSPARENT"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_header_info"
+            android:baselineAligned="true"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:baselineAligned="false"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@color/TRANSPARENT"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_right"
+                        android:layout_weight="3"
+                        android:paddingBottom="@dimen/padding_bottom"
+                        android:paddingTop="@dimen/padding_top"
+                        android:text="@string/TEXT_CUSTOMER_CODE"
+                        android:textColor="@color/BLACK" />
+
+                    <EditText
+                        android:id="@+id/etInputCustomerCode"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:hint="@string/TEXT_HINT_INPUT_CUSTOMER_CODE"
+                        android:inputType="textCapWords"
+                        android:paddingBottom="@dimen/padding_bottom"
+                        android:paddingTop="@dimen/padding_top"
+                        style="@style/VNMEditText"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@color/TRANSPARENT"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_right"
+                        android:layout_weight="3"
+                        android:paddingBottom="@dimen/padding_bottom"
+                        android:paddingTop="@dimen/padding_top"
+                        android:text="@string/STATE"
+                        android:textColor="@color/BLACK" />
+
+                    <Spinner
+                        android:id="@+id/spSelectStatus"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawSelectorOnTop="true"
+                        android:background="@drawable/spinner_selector"
+                        android:paddingBottom="@dimen/padding_bottom"
+                        android:paddingLeft="@dimen/padding_left"
+                        android:paddingRight="@dimen/padding_right"
+                        android:paddingTop="@dimen/padding_top"
+                        android:prompt="@string/TEXT_SELECT_STATUS" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@color/TRANSPARENT"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_right"
+                        android:layout_weight="3"
+                        android:paddingBottom="@dimen/padding_bottom"
+                        android:paddingTop="@dimen/padding_top"
+                        android:text="@string/TEXT_ORDER_CUSTOMER"
+                        android:textColor="@color/BLACK" />
+
+                    <EditText
+                        android:id="@+id/etInputCustomerName"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:hint="@string/TEXT_HINT_INPUT_CUSTOMER_NAME"
+                        android:inputType="textCapWords"
+                        android:paddingBottom="@dimen/padding_bottom"
+                        android:paddingTop="@dimen/padding_top"
+                        style="@style/VNMEditText" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btSearch"
+                    style="@style/VNMButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginRight="200dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="@string/TEXT_BUTTON_FIND"
+                    android:textColor="@color/BLACK" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/margin_top"
+            android:background="@color/TRANSPARENT"
+            android:orientation="vertical" >
+
+            <com.viettel.dms.view.control.VinamilkTableView
+                android:id="@+id/tbIndebtednessList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right" >
+            </com.viettel.dms.view.control.VinamilkTableView>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

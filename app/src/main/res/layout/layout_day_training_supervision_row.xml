@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG" >
+
+    <TextView
+        android:id="@+id/tvSTT"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="40dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvMaKH"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="60dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/COLOR_USER_NAME" />
+
+    <TextView
+        android:id="@+id/tvTenKH"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="140dip"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="10dip"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvDcKH"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="200dip"
+        android:layout_height="fill_parent"
+        android:gravity="left|center_vertical"
+        android:padding="10dip"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvPlanAmount"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="85dip"
+        android:layout_height="fill_parent"
+        android:gravity="right|center_vertical"
+        android:paddingRight="10dip"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvAmount"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="85dip"
+        android:layout_height="fill_parent"
+        android:gravity="right|center_vertical"
+        android:paddingRight="10dip"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvPoint"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="70dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvMoi"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="62dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvON"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="62dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvNT"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="62dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="" />
+
+    <LinearLayout
+        android:id="@+id/llvisitCus"
+        android:layout_width="60dp"
+        android:layout_height="fill_parent"
+        android:layout_margin="1dp"
+        android:background="@drawable/style_row_default"
+        android:duplicateParentState="true"
+        android:minHeight="@dimen/min_height_of_row" >
+
+        <ImageView
+            android:contentDescription="@string/TEXT_IMAGE_INFO"
+            android:id="@+id/visitCus"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/style_row_default"
+            android:duplicateParentState="true"
+            android:gravity="center_horizontal|center_vertical"
+            android:minHeight="@dimen/min_height_of_row"
+            android:padding="5dp"
+            android:scaleType="center"
+            android:src="@drawable/icon_checkpoint" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvNoResultInfo"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="946dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:padding="@dimen/padding"
+        android:visibility="gone" />
+
+</TableRow>

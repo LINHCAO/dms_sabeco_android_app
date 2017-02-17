@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG" >
+
+    <TextView
+        android:id="@+id/tvStt"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="45dip"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="@dimen/padding"
+        android:text="@string/TEXT_STT" />
+
+    <TextView
+        android:id="@+id/tvThoiGian"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="292dip"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center"
+        android:text="@string/TEXT_TIME" />
+
+    <TextView
+        android:id="@+id/tvTrangThai"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="548dip"
+        android:layout_height="match_parent"
+        android:gravity="left|center_vertical"
+        android:padding="@dimen/padding"
+        android:text="@string/STATE" />
+
+</TableRow>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.viettel.sabeco"
+    android:versionCode="41"
+    android:versionName="1.4.5">
+    <permission
+        android:name="com.viettel.sabeco.permission.BROADCAST"
+        android:description="@string/app_permision_info"
+        android:label="@string/app_permision_name"
+        android:permissionGroup="android.permission-group.MESSAGES"
+        android:protectionLevel="dangerous" />
+    <permission
+        android:name="com.viettel.sabeco.permission.ACTIVITY"
+        android:description="@string/app_permision_info"
+        android:label="@string/app_permision_name"
+        android:protectionLevel="signature" />
+    <permission
+        android:name="com.viettel.sabeco.permission.SERVICE"
+        android:description="@string/app_permision_info"
+        android:label="@string/app_permision_name"
+        android:protectionLevel="signature" />
+    <uses-sdk
+        android:minSdkVersion="12"
+        android:targetSdkVersion="12" />
+    <uses-permission android:name="com.viettel.sabeco.permission.BROADCAST" />
+    <uses-permission android:name="com.viettel.sabeco.permission.ACTIVITY" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SET_ALWAYS_FINISH" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <application
+        android:allowBackup="true"
+        android:theme="@style/DMSTheme"
+        android:largeHeap="true"
+        android:icon="@drawable/icon_app"
+        android:label="@string/app_name" android:name="com.viettel.dms.global.GlobalInfo">
+        <activity
+            android:name="com.viettel.dms.view.main.LoginView"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.viettel.dms.view.main.SalesPersonActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:permission="com.viettel.sabeco.permission.ACTIVITY"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.viettel.dms.view.main.SupervisorActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:permission="com.viettel.sabeco.permission.ACTIVITY"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.viettel.dms.view.main.TBHVActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:permission="com.viettel.sabeco.permission.ACTIVITY"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.viettel.dms.view.main.TNPGActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:permission="com.viettel.sabeco.permission.ACTIVITY"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.viettel.dms.view.main.PGActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:permission="com.viettel.sabeco.permission.ACTIVITY"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan"/>
+        <service
+            android:name="com.viettel.dms.util.LocationService"
+            android:permission="com.viettel.sabeco.permission.ACTIVITY"/>
+        <service
+            android:name="com.viettel.dms.util.guard.AccessInternetService"
+            android:enabled="true" />
+    	<receiver
+            android:name="com.viettel.dms.util.guard.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+   		 </receiver>
+    	<receiver android:name="com.viettel.dms.util.guard.ApplicationReceiver" >
+            <intent-filter android:priority="100">
+                <action android:name="android.intent.action.PACKAGE_INSTALL" />
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package"/>
+            </intent-filter>
+    	</receiver>
+    </application>
+</manifest>

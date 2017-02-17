@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/tvPromotionSTT"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:tag="@string/TEXT_STT"
+        android:text="@string/TEXT_STT" />
+
+    <TextView
+        android:id="@+id/tvPromotionCode"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:tag="@string/TEXT_LABLE_PROGRAM_CODE"
+        android:text="@string/TEXT_LABLE_PROGRAM_CODE"
+        android:textColor="@color/COLOR_USER_NAME" />
+
+    <TextView
+        android:id="@+id/tvPromotionName"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:tag="@string/TEXT_PROMOTION_NAME_1"
+        android:text="@string/TEXT_PROMOTION_NAME_1" />
+
+    <TextView
+        android:id="@+id/tvPromotionDate"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:tag="@string/TEXT_PROMOTION_DATE"
+        android:text="@string/TEXT_PROMOTION_DATE" />
+
+</LinearLayout>

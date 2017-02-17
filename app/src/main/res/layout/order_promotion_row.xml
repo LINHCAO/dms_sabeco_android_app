@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1.0" >
+
+    <TextView
+        android:id="@+id/tvSTT"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <LinearLayout
+        android:id="@+id/llMHTT"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvProductCode"
+            style="@style/TextViewVinamilkTable"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/COLOR_LOCATION_NAME" />
+
+        <TextView
+            android:id="@+id/tvMHTT"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:gravity="top|right"
+            android:textColor="@color/RED"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvProductName"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="245dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right" />
+
+    <TextView
+        android:id="@+id/tvRemaindStockFormat"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|right"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right" />
+
+    <LinearLayout
+        android:id="@+id/llTotal"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="230dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|left"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/etTotal"
+            style="@style/VNMEditText"
+            android:layout_width="0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/margin"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:inputType="number"
+            android:minWidth="70dp"
+            android:singleLine="true"
+            android:text="" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/tvMaxQuantityFree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="20dip"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/BLACK" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvDiscount"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|right"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right" />
+
+    <TextView
+        android:id="@+id/tvPromo"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="@color/COLOR_LOCATION_NAME" />
+
+    <LinearLayout
+        android:id="@+id/llActionRow"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="70dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:contentDescription="@string/TEXT_IMAGE_INFO"
+            android:id="@+id/ivActionRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_change_promotion" />
+    </LinearLayout>
+
+</TableRow>

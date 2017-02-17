@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BG_FRAGMENT"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/bg_header_info"
+        android:padding="10dip" >
+
+        <com.viettel.dms.view.control.NoDefaultSpinner
+            android:id="@+id/spinnerStaff"
+            android:layout_width="0dip"
+            android:layout_height="32dip"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_selector"
+            android:drawSelectorOnTop="true"
+            android:prompt="@string/LINE" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="@dimen/margin_left"
+            android:text="@string/TEXT_TB_CUSTOMER"
+            android:textColor="@color/BLACK" />
+
+        <com.viettel.dms.view.control.VNMEditTextClearable
+            android:id="@+id/etCusCode"
+            style="@style/VNMEditText"
+            android:layout_width="140dp"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:hint="@string/TEXT_SELECT_CUSTOMER"
+            android:inputType="textCapWords"
+            android:paddingBottom="@dimen/padding_bottom"
+            android:paddingTop="@dimen/padding_top"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:text="@string/TEXT_TYPE_PROBLEM_COLON"
+            android:textColor="@color/BLACK" />
+
+        <com.viettel.dms.view.control.NoDefaultSpinner
+            android:id="@+id/spinnerType"
+            android:layout_width="0dip"
+            android:layout_height="32dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_selector"
+            android:drawSelectorOnTop="true" />
+
+        <TextView
+            android:id="@+id/tvTH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:text="@string/TEXT_TEXTBOX_REMIND_DATE"
+            android:textColor="@color/BLACK" />
+
+        <com.viettel.dms.view.control.VNMEditTextClearable
+            android:id="@+id/etDate"
+            style="@style/VNMEditText"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:hint="@string/TEXT_HINT_CHOOSE_DAY"
+            android:inputType="text"
+            android:paddingLeft="5dip"
+            android:singleLine="true"
+            android:textSize="14sp" >
+        </com.viettel.dms.view.control.VNMEditTextClearable>
+
+        <Button
+            android:id="@+id/btFeedBack"
+            style="@style/VNMButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dip"
+            android:gravity="center"
+            android:minWidth="80dp"
+            android:text="@string/TEXT_BUTTON_SAVE" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@drawable/bg_white_rounded"
+        android:orientation="vertical"
+        android:padding="20dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="left"
+            android:paddingLeft="10dip"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:paddingRight="@dimen/padding_right"
+            android:text="@string/TEXT_CONTENT_REQUEST"
+            android:textColor="@color/BLACK"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etContent"
+            style="@style/VNMEditText"
+            android:gravity="top"
+            android:hint="@string/TEXT_LABLE_TBHV_HINT_ADD_REQUIREMENT"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLength="2000"
+            android:minHeight="350dp"
+            android:paddingLeft="10dip"
+            android:layout_marginTop="@dimen/margin_top" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+</LinearLayout>

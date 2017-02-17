@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="fill_parent"
+    android:layout_height="40dip">
+
+    <TextView
+        android:id="@+id/tvSTT"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="70dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:padding="@dimen/padding"
+        android:text="@string/TEXT_STT"
+        android:textColor="@color/BLACK" />
+
+    <TextView
+        android:id="@+id/tvCustomerName"
+       	android:layout_toRightOf="@+id/tvSTT"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="110dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:paddingBottom="5dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:paddingTop="5dip"
+        android:textColor="@color/BLACK" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_toRightOf="@+id/tvCustomerName"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="462dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding"
+        android:textColor="@color/BLACK" />
+
+
+    <LinearLayout
+        android:id="@+id/llRealOrder"
+        android:layout_toRightOf="@+id/tvAddress"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="110dp"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/etRealOrder"
+            style="@style/VNMEditText"
+            android:layout_margin="@dimen/margin"
+            android:freezesText="true"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="5"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            >
+        </EditText>
+    </LinearLayout>
+
+</RelativeLayout>

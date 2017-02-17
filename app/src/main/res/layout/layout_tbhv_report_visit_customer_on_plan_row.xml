@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG" >
+
+    <TextView
+        android:id="@+id/tvStaffCode"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="100dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvStaffName"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="175dip"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:text="" />
+
+    <LinearLayout
+         android:id="@+id/llLayout"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:minHeight="@dimen/min_height_of_row"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right" >
+
+        <ImageView
+            android:id="@+id/ivChecked"
+            style="@style/ImageViewVinamilkTable"
+            android:layout_width="24dip"
+            android:layout_height="24dip"
+            android:contentDescription="@string/TEXT_IMAGE_INFO"
+            android:src="@drawable/icon_check" />
+
+        <ImageView
+            android:id="@+id/ivDeleted"
+            style="@style/ImageViewVinamilkTable"
+            android:layout_width="24dip"
+            android:layout_height="24dip"
+            android:contentDescription="@string/TEXT_IMAGE_INFO"
+            android:src="@drawable/icon_delete_red" />
+
+        <TextView
+            android:id="@+id/tvCustomerInfo"
+            style="@style/TextViewVinamilkTable"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center|left"
+            android:minHeight="@dimen/min_height_of_row"
+            android:paddingLeft="@dimen/padding_left"
+            android:text=""
+            android:textColor="@color/COLOR_LINK" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvMiddleInfo"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="115dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:text=""
+        android:textColor="@color/COLOR_LINK" />
+
+    <TextView
+        android:id="@+id/tvEndInfo"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="115dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:text=""
+        android:textColor="@color/COLOR_LINK" />
+
+    <TextView
+        android:id="@+id/tvCurrentInfo"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="115dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:text=""
+        android:textColor="@color/COLOR_LINK" />
+    <ImageView
+            android:contentDescription="@string/TEXT_CUSTOMER_MAP"
+            android:id="@+id/ivMapTBHV"
+            android:background="@drawable/style_row_default"
+            android:duplicateParentState="true"
+            android:layout_gravity="center_vertical"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_width="60dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:minHeight="@dimen/min_height_of_row"
+            android:src="@drawable/icon_map" />
+
+    <TextView
+        android:id="@+id/tvNoResultInfo"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="947dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:padding="@dimen/padding"
+        android:visibility="gone" />
+
+</TableRow>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_header_info"
+        android:baselineAligned="true"
+        android:gravity="center_vertical" 
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_marginLeft="10dip"
+            android:text="@string/TEXT_CUSTOMER_ID"
+            android:textColor="@color/BLACK" />
+
+        <TextView
+            android:id="@+id/tvCustomerCode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:paddingLeft="@dimen/padding_left"
+            android:textStyle="bold"
+            android:text="@string/TEXT_CUSTOMER_CODE"
+            android:textColor="@color/BLACK" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:text="@string/TEXT_CUSTOMER_NAME"
+            android:textColor="@color/BLACK" />
+		<TextView
+   			android:id="@+id/tvCustomerName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight="3"
+            android:textStyle="bold"
+            android:text="@string/TEXT_ORDER_CUSTOMER"
+            android:textColor="@color/BLACK" />
+        <Button
+            android:id="@+id/btTakePhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"    
+            android:layout_marginRight="10dip"
+            android:text="@string/TEXT_TAKE_PHOTO"
+            style="@style/VNMButton" >
+        </Button>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/padding_top" >
+        <GridView
+            android:id="@+id/gvImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_rounded"
+            android:columnWidth="@dimen/num_column_size"
+            android:horizontalSpacing="5dip"
+            android:numColumns="auto_fit"
+            android:stretchMode="spacingWidth" >
+        </GridView>
+    </RelativeLayout>
+</LinearLayout>

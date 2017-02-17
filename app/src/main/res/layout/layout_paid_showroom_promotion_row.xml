@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG" >
+
+    <TextView
+        android:id="@+id/tvSTT"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="5dip"
+        android:text="@string/TEXT_STT" />
+
+    <TextView
+        android:id="@+id/tvProductCode"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="5dip"
+        android:text="@string/TEXT_COLUM_ORDER_CODE"
+        android:textColor="@color/COLOR_USER_NAME" />
+
+    <TextView
+        android:id="@+id/tvProductName"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="5dip"
+        android:text="@string/TEXT_COLUM_ORDER_NAME" />
+
+    <TextView
+        android:id="@+id/tvProducPrice"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="5dip"
+        android:text="@string/TEXT_COLUM_PRICE" />
+
+    <LinearLayout
+        android:id="@+id/llRealNumber"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:background="@color/WHITE"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp" >
+
+        <EditText
+            android:id="@+id/etRealNumber"
+            android:layout_width="80dip"
+            style="@style/VNMEditText"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:inputType="text"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvPromotion"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="5dip"
+        android:text="@string/TEXT_PROMOTION" />
+
+    <ImageView
+        android:contentDescription="@string/TEXT_IMAGE_INFO"
+        android:layout_width="100dp"
+        android:scaleType="centerInside"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
+        android:background="@color/WHITE"
+        android:src="@drawable/icon_delete" />
+
+</TableRow>

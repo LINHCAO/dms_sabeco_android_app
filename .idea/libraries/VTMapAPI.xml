@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="VTMapAPI">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/VTMapAPI.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

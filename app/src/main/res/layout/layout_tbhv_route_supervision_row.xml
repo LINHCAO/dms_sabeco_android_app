@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG" >
+
+    <TextView
+        android:id="@+id/tvNameNpp"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="120dip"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:text="Van Phuong" />
+
+    <TextView
+        android:id="@+id/tvNameGsnpp"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="150dip"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:text="Nguyen Tuan Viet" />
+
+    <TextView
+        android:id="@+id/tvNameNVBH"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="150dip"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:text="Nguyen Tuan Viet" />
+
+    <TextView
+        android:id="@+id/tvNumSaleStore"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="95dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:text="10/30"
+        android:textColor="@color/COLOR_USER_NAME" />
+
+    <TextView
+        android:id="@+id/tvNumRightPlan"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="85dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:text="8" />
+
+    <TextView
+        android:id="@+id/tvNumWrongPlan"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="85dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:text="8"
+        android:textColor="@color/COLOR_USER_NAME" />
+
+    <TextView
+        android:id="@+id/tvTraining"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="175dip"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:text="C01 - Co dung"
+        android:textColor="@color/COLOR_USER_NAME" />
+
+    <LinearLayout
+        android:id="@+id/llvisitCus"
+        android:layout_width="78dp"
+        android:layout_margin="1dp"
+        android:background="@drawable/style_row_default"
+        android:duplicateParentState="true"
+        android:minHeight="@dimen/min_height_of_row" >
+
+        <ImageView
+            android:contentDescription="@string/TEXT_IMAGE_INFO"
+            android:id="@+id/ivMap"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/style_row_default"
+            android:duplicateParentState="true"
+            android:gravity="center_horizontal|center_vertical"
+            android:minHeight="@dimen/min_height_of_row"
+            android:padding="5dp"
+            android:scaleType="center"
+            android:src="@drawable/icon_map" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvNoResultInfo"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="952dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:padding="@dimen/padding"
+        android:visibility="gone" />
+
+</TableRow>

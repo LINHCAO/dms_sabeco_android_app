@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     * Copyright (C) 2007 Google Inc. * * Licensed under the Apache License, 
+	Version 2.0 (the "License"); * you may not use this file except in compliance 
+	with the License. * You may obtain a copy of the License at * * http://www.apache.org/licenses/LICENSE-2.0 
+	* * Unless required by applicable law or agreed to in writing, software * 
+	distributed under the License is distributed on an "AS IS" BASIS, * WITHOUT 
+	WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. * See the 
+	License for the specific language governing permissions and * limitations 
+	under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme is the default theme. -->
+    <style name="Theme" parent="android:Theme"></style>
+
+    <style name="DMSTheme" parent="android:Theme.Holo.NoActionBar">
+        <item name="android:textColor">@color/WHITE</item>
+        <item name="android:editTextColor">@color/BLACK</item>
+    </style>
+
+    <drawable name="translucent_background">#88000000</drawable>
+    <drawable name="transparent_background">#00000000</drawable>
+
+    <!-- Variation on our application theme that forces a plain text style. -->
+
+
+    <!--
+         A theme that has a translucent background. Here we explicitly specify 
+		that this theme is to inherit from the system's translucent theme, which 
+		sets up various attributes correctly..
+    -->
+    <style name="Theme.Translucent" parent="android:style/Theme.Translucent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorForeground">#fff</item>
+        <item name="android:windowBackground">@drawable/translucent_background</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <!--
+         Variation on our application theme that has a transparent background; 
+		this example completely removes the background, allowing the activity to 
+		decide how to composite. Also here we force the translucency ourself rather 
+		than making use of the built-in translucent theme.
+    -->
+    <style name="Theme.Transparent">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <item name="android:windowBackground">@drawable/transparent_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorForeground">#fff</item>
+    </style>
+
+    <style name="TextAppearance.Theme.PlainText" parent="android:TextAppearance.Theme">
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="KunKun" parent="@android:style/Theme.Light">
+        <item name="android:textViewStyle">@style/KunKunTextAppearance</item>
+        <item name="android:windowTitleStyle">@style/KunKunTitleAppearance</item>
+        <item name="android:buttonStyle">@style/KunKunButtonAppearance</item>
+        <item name="android:windowTitleBackgroundStyle">@style/WindowTitleBackground</item>
+    </style>
+
+    <style name="KunKunTextAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#FF464646</item>
+    </style>
+
+    <style name="KunKunTitleAppearance" parent="@android:style/TextAppearance">
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">#BB000000</item>
+        <item name="android:shadowRadius">2.75</item>
+        <item name="android:textColor">#FFF6F6F6</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="KunKunButtonAppearance" parent="@android:style/Widget.Button">
+        <item name="android:textColor">#FF464646</item>
+    </style>
+
+    <style name="WindowTitleBackground">
+        <item name="android:background">@drawable/icon</item>
+        <!-- <item name="android:paddingLeft">4dip</item> -->
+    </style>
+
+    <style name="UserNameStyle" parent="@android:style/TextAppearance.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#0099cc</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">#00000000</item>
+    </style>
+
+    <style name="LocationNameStyle" parent="@android:style/TextAppearance.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#29a453</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">#00000000</item>
+    </style>
+
+    <style name="NormalContentStyle" parent="@android:style/TextAppearance.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/TITLE_LIGHT_BLACK_COLOR</item>
+        <item name="android:background">#00000000</item>
+    </style>
+
+    <style name="TimeStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#888a85</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="VNMButton" parent="@android:style/Widget.Button">
+        <item name="android:textColor">@color/BLACK</item>
+        <!-- <item name="android:textStyle">bold</item> -->
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/vnm_button_selector</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:filterTouchesWhenObscured">true</item>
+    </style>
+
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="DialogText" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+     <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textColor">@color/WHITE</item>
+    </style>
+
+    <style name="HeaderTitleTextView">
+        <item name="android:background">@drawable/background_tittle</item>
+        <item name="android:textColor">@color/WHITE</item>
+        <item name="android:paddingLeft">5dip</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:shadowColor">#434343</item>
+        <item name="android:shadowRadius">1.5</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+    </style>
+
+    <style name="TextViewVinamilkTable" parent="@android:style/TextAppearance.Small">
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/TITLE_LIGHT_BLACK_COLOR</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:minHeight">@dimen/min_height_of_row</item>
+        <item name="android:background">@drawable/style_row_default</item>
+        <item name="android:duplicateParentState">true</item>
+    </style>
+
+    <style name="ImageViewVinamilkTable">
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@drawable/style_row_default</item>
+        <item name="android:duplicateParentState">true</item>
+    </style>
+
+    <style name="CustomDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="VNMEditText" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/edittext_hight_light</item>
+        <item name="android:textColor">@color/BLACK</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:textCursorDrawable">@drawable/black_cursor</item>
+        <item name="android:paddingLeft">@dimen/padding_left</item>
+        <item name="android:paddingRight">@dimen/padding_right</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    
+    <style name="VNMEditTextNumber" parent="VNMEditText">
+        <item name="android:background">@drawable/edittext_hight_light_new</item>
+        <item name="android:paddingTop">@dimen/padding_top</item>
+        <item name="android:paddingBottom">@dimen/padding_bottom</item>
+        <item name="android:duplicateParentState">true</item>
+    </style>
+
+    <style name="VNMEditTextLogin" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/edittext_login</item>
+        <item name="android:textCursorDrawable">@drawable/black_cursor</item>
+        <item name="android:textColor">@color/RED</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:paddingLeft">@dimen/padding_left</item>
+        <item name="android:paddingRight">@dimen/padding_right</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="VNMCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_selector</item>
+        <item name="android:textColor">@color/BLACK</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="VNMCheckBox2" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox2_selector</item>
+        <item name="android:textColor">@color/BLACK</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/padding_checkbox</item>
+        <item name="android:paddingTop">5dp</item>
+    </style>
+
+    <declare-styleable name="Gallery1">
+        <attr name="android:galleryItemBackground" />
+    </declare-styleable>
+
+    <style name="DefaultText">
+        <item name="android:text">Default</item>
+        <item name="android:textColor">@color/WHITE</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <style name="DefaultRootLayout">
+        <item name="android:background">@drawable/background_standard_gray</item>
+    </style>
+
+
+</resources>

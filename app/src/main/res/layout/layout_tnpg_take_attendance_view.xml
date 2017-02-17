@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/llButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btSave"
+            style="@style/VNMButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/TEXT_SAVE" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/margin_grid_album"
+        android:layout_marginRight="@dimen/margin_grid_album"
+        android:layout_marginTop="10dp"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        <GridView
+            android:id="@+id/gvImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_rounded"
+            android:columnWidth="400dip"
+            android:horizontalSpacing="20dip"
+            android:numColumns="2"
+            android:padding="15dip"
+            android:stretchMode="spacingWidth"
+            android:verticalSpacing="20dip" >
+        </GridView>
+        <!-- android:layout_above="@+id/btTakePhoto" -->
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/llCalendar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#bbbbbb"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/WHITE" >
+
+            <TextView
+                android:id="@+id/tvMonth"
+                style="@style/TextViewVinamilkTable"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_alignParentLeft="true"
+                android:minHeight="35dip"
+                android:paddingLeft="10dip"
+                android:text="Thang 8/2012"
+                android:textColor="@color/BLACK"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSpinnerTitle"
+                style="@style/TextViewVinamilkTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/spinnerPath"
+                android:text="GSNPP"
+                android:textColor="@color/BLACK"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinnerPath"
+                android:layout_width="310dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/spinner_selector"
+                android:drawSelectorOnTop="true"
+                android:prompt="@string/LINE"
+                android:spinnerMode="dropdown" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:padding="2dip"
+            android:weightSum="1.0" >
+
+            <LinearLayout
+                android:id="@+id/llT2"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.155"
+                android:background="@color/TABLE_HEADER_BG"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvT2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/TABLE_HEADER_BG"
+                    android:gravity="center"
+                    android:minHeight="35dip"
+                    android:text="@string/TEXT_MONDAY"
+                    android:textColor="@color/BLACK"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llT3"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2dip"
+                android:layout_weight="0.155"
+                android:background="@color/TABLE_HEADER_BG"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvT3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/TABLE_HEADER_BG"
+                    android:gravity="center"
+                    android:minHeight="35dip"
+                    android:text="@string/TEXT_TUESDAY"
+                    android:textColor="@color/BLACK"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llT4"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2dip"
+                android:layout_weight="0.155"
+                android:background="@color/TABLE_HEADER_BG"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvT4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/TABLE_HEADER_BG"
+                    android:gravity="center"
+                    android:minHeight="35dip"
+                    android:text="@string/TEXT_WEDNESDAY"
+                    android:textColor="@color/BLACK"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llT5"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2dip"
+                android:layout_weight="0.155"
+                android:background="@color/TABLE_HEADER_BG"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvT5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/TABLE_HEADER_BG"
+                    android:gravity="center"
+                    android:minHeight="35dip"
+                    android:text="@string/TEXT_THURSDAY"
+                    android:textColor="@color/BLACK"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llT6"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2dip"
+                android:layout_weight="0.155"
+                android:background="@color/TABLE_HEADER_BG"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvT6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/TABLE_HEADER_BG"
+                    android:gravity="center"
+                    android:minHeight="35dip"
+                    android:text="@string/TEXT_FRIDAY"
+                    android:textColor="@color/BLACK"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llT7"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2dip"
+                android:layout_weight="0.155"
+                android:background="@color/TABLE_HEADER_BG"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvT7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/TABLE_HEADER_BG"
+                    android:gravity="center"
+                    android:minHeight="35dip"
+                    android:text="@string/TEXT_SATURDAY"
+                    android:textColor="@color/RED"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llCN"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2dip"
+                android:layout_weight="0.07"
+                android:background="@color/TABLE_HEADER_BG"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvCN"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/TABLE_HEADER_BG"
+                    android:gravity="center"
+                    android:minHeight="35dip"
+                    android:text="@string/TEXT_SUNDAY_"
+                    android:textColor="@color/RED"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llCalendarRow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

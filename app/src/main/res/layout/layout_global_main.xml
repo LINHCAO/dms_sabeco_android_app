@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_global_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/LIGHT_GRAY_BG"
+    android:orientation="vertical" >
+
+    <!--
+	<com.viettel.global.utils.ui.FooterNoticationBar
+		android:id="@+id/llNotificationView" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:visibility="gone"></com.viettel.global.utils.ui.FooterNoticationBar>
+    -->
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

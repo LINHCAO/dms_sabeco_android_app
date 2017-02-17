@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:background="@drawable/bg_header_info"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip">
+
+        <TextView
+            android:id="@+id/tvTitelCustomerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="left"
+            android:paddingLeft="@dimen/padding_left"
+            android:paddingRight="@dimen/padding_right"
+            android:text="@string/TEXT_TB_CUSTOMER"
+            android:textColor="@color/BLACK"
+            android:textSize="18sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvCustomerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dip"
+            android:gravity="left"
+            android:paddingLeft="@dimen/padding_left"
+            android:paddingRight="@dimen/padding_right"
+            android:singleLine="true"
+            android:text="@string/TEXT_ORDER_CUSTOMER"
+            android:textColor="@color/BLACK"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvTitelAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="left"
+            android:paddingLeft="@dimen/padding_left"
+            android:paddingRight="@dimen/padding_right"
+            android:text="@string/TEXT_CUSTOMER_ADDRESS"
+            android:textColor="@color/BLACK"
+            android:textSize="18sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvCustomerAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.3"
+            android:gravity="left"
+            android:paddingLeft="@dimen/padding_left"
+            android:paddingRight="@dimen/padding_right"
+            android:text=""
+            android:textColor="@color/BLACK"
+            android:textSize="18sp"
+            android:textStyle="bold">
+        </TextView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivDiaBan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:contentDescription="@string/ALL"
+        android:scaleType="fitXY"
+        android:src="@drawable/seperator"/>
+
+    <LinearLayout
+        android:id="@+id/llDiaBan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip">
+
+        <TextView
+            android:id="@+id/tvProvine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.25"
+            android:paddingLeft="@dimen/padding_left"
+            android:paddingRight="@dimen/padding_right"
+            android:text="@string/TEXT_PROVINE"
+            android:textColor="@color/BLACK">
+        </TextView>
+
+        <Spinner
+            android:id="@+id/spinnerProvine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight="2"
+            android:background="@drawable/spinner_selector"
+            android:drawSelectorOnTop="true"
+            android:prompt="@string/STATE"/>
+
+        <TextView
+            android:id="@+id/tvDistrict"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1.25"
+            android:text="@string/TEXT_DISTRICT"
+            android:textColor="@color/BLACK">
+        </TextView>
+
+        <Spinner
+            android:id="@+id/spinnerDistrict"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight="2"
+            android:background="@drawable/spinner_selector"
+            android:drawSelectorOnTop="true"
+            android:prompt="@string/STATE"/>
+
+        <TextView
+            android:id="@+id/tvPrecinct"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1.25"
+            android:text="@string/TEXT_PRECINCT"
+            android:textColor="@color/BLACK">
+        </TextView>
+
+        <Spinner
+            android:id="@+id/spinnerPrecinct"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight="2"
+            android:background="@drawable/spinner_selector"
+            android:drawSelectorOnTop="true"
+            android:prompt="@string/STATE"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivUpdate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:contentDescription="@string/ALL"
+        android:scaleType="fitXY"
+        android:src="@drawable/seperator"/>
+
+    <LinearLayout
+        android:id="@+id/llUpdate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@color/TABLE_HEADER_BG"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvTitelCustomerNotMap"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="@dimen/padding_left"
+                android:paddingRight="@dimen/padding_right"
+                android:text="@string/TEXT_CUSTOMER_MAP"
+                android:textColor="@color/BLACK"
+                android:textSize="18sp">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/btUpdate"
+                style="@style/VNMButton"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="@string/UPDATE"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

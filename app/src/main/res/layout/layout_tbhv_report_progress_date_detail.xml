@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/BG_FRAGMENT"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/BG_FRAGMENT"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:background="@color/BG_FRAGMENT"
+                android:gravity="left"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/tvMaNPP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:gravity="left"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="@dimen/padding_right"
+                    android:text="@string/TEXT_HEADER_TABLE_NPP_CODE"
+                    android:textColor="@color/BLACK" >
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/spMaNPP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:background="@drawable/spinner_selector"
+                    android:drawSelectorOnTop="true"
+                    android:prompt="@string/LINE" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:gravity="left"
+                    android:paddingLeft="40dip"
+                    android:paddingRight="@dimen/padding_right"
+                    android:text="@string/TEXT_LABLE_GSNPP_CODE_"
+                    android:textColor="@color/BLACK" >
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/spGiamSatNPP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:background="@drawable/spinner_selector"
+                    android:drawSelectorOnTop="true"
+                    android:prompt="@string/LINE" />
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/BG_FRAGMENT" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/BG_FRAGMENT"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/llHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/TABLE_BG"
+                        android:paddingLeft="2dip"
+                        android:paddingRight="2dip"
+                        android:paddingTop="2dip" >
+
+                        <TextView
+                            android:id="@+id/TenGSNPP"
+                            android:layout_width="200dip"
+                            android:layout_height="fill_parent"
+                            android:background="@color/TABLE_HEADER_BG"
+                            android:gravity="center"
+                            android:padding="5dip"
+                            android:text="@string/TEXT_HEADER_TABLE_NAME_GSNPP"
+                            android:textColor="@color/BLACK"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/TenNVBH"
+                            android:layout_width="200dip"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="2dip"
+                            android:background="@color/TABLE_HEADER_BG"
+                            android:gravity="center"
+                            android:padding="5dip"
+                            android:text="@string/TEXT_HEADER_TABLE_NAME_NVBH"
+                            android:textColor="@color/BLACK"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="327dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dip"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/DoanhSo"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/TABLE_HEADER_BG"
+                                android:gravity="center"
+                                android:padding="5dip"
+                                android:text="@string/TEXT_SALES"
+                                android:textColor="@color/BLACK"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/KeHoach"
+                                    android:layout_width="109dip"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dip"
+                                    android:background="@color/TABLE_HEADER_BG"
+                                    android:gravity="center"
+                                    android:padding="5dip"
+                                    android:text="@string/TEXT_HEADER_TABLE_PLAN"
+                                    android:textColor="@color/BLACK"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/ThucHien"
+                                    android:layout_width="109dip"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="2dip"
+                                    android:layout_marginTop="2dip"
+                                    android:background="@color/TABLE_HEADER_BG"
+                                    android:gravity="center"
+                                    android:padding="5dip"
+                                    android:text="@string/TEXT_HEADER_TABLE_DONE"
+                                    android:textColor="@color/BLACK"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/ConLai"
+                                    android:layout_width="109dip"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="2dip"
+                                    android:layout_marginTop="2dip"
+                                    android:background="@color/TABLE_HEADER_BG"
+                                    android:gravity="center"
+                                    android:padding="5dip"
+                                    android:text="@string/REMAIN"
+                                    android:textColor="@color/BLACK"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="218dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dip"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/SKU"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/TABLE_HEADER_BG"
+                                android:gravity="center"
+                                android:padding="5dip"
+                                android:text="@string/TEXT_BQ_SKU_DL"
+                                android:textColor="@color/BLACK"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/SKUKeHoach"
+                                    android:layout_width="109dip"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dip"
+                                    android:background="@color/TABLE_HEADER_BG"
+                                    android:gravity="center"
+                                    android:padding="5dip"
+                                    android:text="@string/TEXT_HEADER_TABLE_PLAN"
+                                    android:textColor="@color/BLACK"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/SKUThucHien"
+                                    android:layout_width="109dip"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="2dip"
+                                    android:layout_marginTop="2dip"
+                                    android:background="@color/TABLE_HEADER_BG"
+                                    android:gravity="center"
+                                    android:padding="5dip"
+                                    android:text="@string/TEXT_HEADER_TABLE_DONE"
+                                    android:textColor="@color/BLACK"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <com.viettel.dms.view.control.VinamilkTableView
+                        android:id="@+id/tbCusList"
+                        android:layout_marginTop="-2dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+                    </com.viettel.dms.view.control.VinamilkTableView>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

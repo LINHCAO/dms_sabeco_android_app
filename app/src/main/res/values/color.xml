@@ -1,0 +1,29 @@
+<resources>
+    <color name="COLOR_LINK">#0587bb</color>
+    <color name="COLOR_LINK_2">#05b5e7</color>
+    <color name="BG_FRAGMENT">#f2f2f2</color>
+    <color name="TITLE_LIGHT_BLACK_COLOR">#434343</color>
+    <color name="GREY">#dddddd</color>
+    <color name="BLACK">#000000</color>
+    <color name="WHITE">#FFFFFF</color>
+    <color name="TRANSPARENT">#00000000</color>
+    <color name="COLOR_LOCATION_NAME">#29a453</color>
+    <color name="COLOR_USER_NAME">#0099cc</color>
+    <color name="OGRANGE">#ff8a3c</color>
+    <color name="BLUE">#0000FF</color>
+    <color name="RED">#ff0000</color>
+    <color name="LIGHT_GRAY_BG">#f1f1f1</color>
+    <color name="LINE_GRAY">#4C4C4C</color>
+    <color name="BG_ITEM_SELECT">#e5e5e5</color>
+    <color name="TABLE_HEADER_BG">#edf3f8</color>
+    <color name="TABLE_BG">#c3c3c3</color>
+    <color name="COLOR_VISIT_STORE_CLOSED">#E2ADAD</color>
+	<color name="COLOR_VISIT_STORE_ORDER_SUCC">#97E6F2</color>
+	<color name="CALENDAR_CURRENT_DATE">#f4cece</color>
+	<color name="COLOR_COLUM_REPORT_REMAIN">#d9d9ff</color>
+	<color name="COLOR_BLUE_DONE_TODAY">#97E6F2</color>
+	<color name="COLOR_GRAY_DONE">#f1f1f1</color>
+	<color name="COLOR_REMAIN">#d9d9ff</color>
+    <color name="GREEN">#00CC00</color>
+    <color name="RED_ONE">#A41A1A</color>
+</resources>

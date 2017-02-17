@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlMain"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/WHITE" >
+
+    <LinearLayout
+        android:id="@+id/llEditLogin"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dip"
+        android:background="@color/WHITE"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:id="@+id/rlViettel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding" >
+
+            <ImageView
+                android:id="@+id/ivLogoViettel"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/TEXT_IMAGE_INFO"
+                android:src="@drawable/icon_app" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/edUserName"
+            style="@style/VNMEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:drawablePadding="3dp"
+            android:hint="@string/TEXT_ACCOUNT"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textSize="18sp" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/edPassword"
+            style="@style/VNMEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:drawablePadding="3dp"
+            android:hint="@string/TEXT_HINT_CODE"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textSize="18sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/tvWrongTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/TEXT_WRONG_NAME_OR_PASS"
+            android:textColor="@color/RED"
+            android:visibility="invisible" />
+
+        <Button
+            style="@style/VNMButton"
+            android:id="@+id/btLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:layout_marginTop="5dp"
+            android:minWidth="100dp"
+            android:text="@string/TEXT_CONFIMRED"
+            android:filterTouchesWhenObscured="true"
+            android:maxHeight="42dp" >
+        </Button>
+
+        <ImageView
+            android:id="@+id/ivLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/TEXT_IMAGE_INFO"
+            android:src="@drawable/line_dialog_long" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="@string/TEXT_PREVENT_NETWORK_INFO" />
+    </LinearLayout>
+
+</RelativeLayout>

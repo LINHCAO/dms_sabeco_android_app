@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minHeight="35dip"
+    android:background="@color/TABLE_BG" >
+
+    <TextView
+        android:id="@+id/tvTongCong"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="402dip"
+        android:layout_height="fill_parent"
+        android:gravity="right|center_vertical"
+        android:paddingRight="10dip" 
+        android:textStyle="bold"/>    
+
+    <TextView
+        android:id="@+id/tvKeHoach"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="109dip"
+        android:layout_height="fill_parent"
+        android:gravity="right|center_vertical"
+        android:paddingRight="10dip"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvThucHien"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="109dip"
+        android:layout_height="fill_parent"
+        android:gravity="right|center_vertical"
+        android:paddingRight="10dip"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvConLai"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="105dip"
+        android:layout_height="fill_parent"
+        android:gravity="right|center_vertical"
+        android:paddingRight="10dip"
+        android:background="#d9d9ff"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/tvSKUKeHoach"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="109dip"
+        android:layout_height="fill_parent"
+        android:paddingRight="10dip"
+        android:gravity="right|center_vertical" />
+
+    <TextView
+        android:id="@+id/tvSKUThucHien"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="107dip"
+        android:paddingRight="10dip"
+        android:layout_height="fill_parent"
+        android:gravity="right|center_vertical" />
+
+</TableRow>

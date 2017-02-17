@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        android:visibility="visible" >
+
+        <!-- Thong tin co ban -->
+
+        <LinearLayout
+            android:id="@+id/llBaseInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:background="@drawable/bg_header_info"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/ivAvatar"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="@dimen/margin"
+                    android:background="@null"
+                    android:contentDescription="@string/TEXT_IMAGE_INFO"
+                    android:padding="@dimen/padding"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tvCustomerName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dip"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/spacing_between_rows"
+                        android:layout_weight="0.2"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/padding_left"
+                        android:paddingRight="@dimen/padding_right"
+                        android:text=""
+                        android:textColor="@color/RED"
+                        android:textSize="18sp"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <!-- dia chi -->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_between_rows"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="left"
+                            android:paddingLeft="@dimen/padding_left"
+                            android:paddingRight="@dimen/padding_right"
+                            android:text="@string/TEXT_CUSTOMER_ADDRESS"
+                            android:textColor="@color/BLACK" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/tvCustomerAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="left"
+                            android:paddingRight="@dimen/padding_right"
+                            android:text=""
+                            android:textColor="@color/BLACK"
+                            android:textStyle="bold" >
+                        </TextView>
+                    </LinearLayout>
+
+                    <!-- dien thoai -->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_between_rows"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="left"
+                            android:paddingLeft="@dimen/padding_left"
+                            android:paddingRight="@dimen/padding_right"
+                            android:text="@string/TEXT_CUSTOMER_PHONE"
+                            android:textColor="@color/BLACK" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/tvCustomerPhone"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="left"
+                            android:paddingRight="@dimen/padding_right"
+                            android:text=""
+                            android:textColor="@color/BLACK"
+                            android:textStyle="bold" >
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="left"
+                            android:paddingLeft="@dimen/padding_left"
+                            android:paddingRight="@dimen/padding_right"
+                            android:text="@string/TEXT_CUSTOMER_TYPE"
+                            android:textColor="@color/BLACK" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/tvCustomerType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="left"
+                            android:paddingRight="@dimen/padding_right"
+                            android:text=""
+                            android:textColor="@color/BLACK"
+                            android:textStyle="bold" >
+                        </TextView>
+                    </LinearLayout>
+
+                    <!-- di dong -->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_between_rows" >
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="left"
+                            android:paddingLeft="@dimen/padding_left"
+                            android:paddingRight="@dimen/padding_right"
+                            android:text="@string/TEXT_PHONE_MOBILE"
+                            android:textColor="@color/BLACK" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/tvCustomerMobile"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="left"
+                            android:paddingRight="@dimen/padding_right"
+                            android:text=""
+                            android:textColor="@color/BLACK"
+                            android:textStyle="bold" >
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="left"
+                            android:paddingLeft="@dimen/padding_left"
+                            android:paddingRight="@dimen/padding_right"
+                            android:text="@string/TEXT_PERSON_REF"
+                            android:textColor="@color/BLACK" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/tvCustomerContact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="left"
+                            android:paddingRight="@dimen/padding_right"
+                            android:text=""
+                            android:textColor="@color/BLACK"
+                            android:textStyle="bold" >
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivLineMenuIcon"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/TEXT_IMAGE_INFO"
+                android:scaleType="fitXY"
+                android:src="@drawable/seperator"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- Chuong trinh dang tham gia -->
+
+        <TextView
+            android:id="@+id/tvPrograme"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="@string/TEXT_PROGRAME_JOINING"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/BLACK"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin" >
+
+            <LinearLayout
+                android:id="@+id/llProgrameDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <com.viettel.dms.view.control.DMSTableView
+                    android:id="@+id/tbCusDisplayProgram"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+                </com.viettel.dms.view.control.DMSTableView>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- Thong tin doanh so -->
+
+        <LinearLayout
+            android:id="@+id/llSaleInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvAmountInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginTop="10dp"
+                android:text="@string/TEXT_SALES_INFO"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/BLACK"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:background="@drawable/bg_white_rounded"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="5dp" >
+
+                    <LinearLayout android:layout_marginTop="@dimen/spacing_between_rows" >
+
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="left"
+                            android:text="@string/TEXT_AVG_SALES_2_MONTH_AGO"
+                            android:textColor="@color/BLACK" />
+
+                        <TextView
+                            android:id="@+id/tvAverageSales"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="left"
+                            android:text="@string/TEXT_ZERO"
+                            android:textColor="@color/BLACK"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- So lan dat trong thang -->
+
+                    <LinearLayout android:layout_marginTop="@dimen/spacing_between_rows" >
+
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="left"
+                            android:text="@string/TEXT_SALES_IN_MONTH"
+                            android:textColor="@color/BLACK" />
+
+                        <TextView
+                            android:id="@+id/tvSalesInMonth"
+                            android:layout_width="200dip"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="left"
+                            android:text="@string/TEXT_ZERO"
+                            android:textColor="@color/BLACK"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- Binh quan doanh so 2 thang truoc -->
+
+                    <LinearLayout android:layout_marginTop="@dimen/spacing_between_rows" >
+
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="left"
+                            android:text="@string/TEXT_NUM_ORDER_IN_MONTH"
+                            android:textColor="@color/BLACK" />
+
+                        <TextView
+                            android:id="@+id/tvOrderInMonth"
+                            android:layout_width="200dip"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="left"
+                            android:text="@string/TEXT_ZERO"
+                            android:textColor="@color/BLACK"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- Doanh so thuc hien trong thang -->
+
+                    <LinearLayout android:layout_marginTop="@dimen/spacing_between_rows" >
+
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="left"
+                            android:textColor="@color/BLACK" />
+
+                        <TextView
+                            android:layout_width="200dip"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="left"
+                            android:textColor="@color/BLACK"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </TableLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/TEXT_IMAGE_INFO"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/vertical_header_split" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/spacing_between_rows"
+                        android:gravity="left"
+                        android:text="@string/TEXT_AVG_SALES_3_MONTH_AGO"
+                        android:textColor="@color/BLACK" />
+
+                    <!-- thang thu 1 -->
+
+                    <TextView
+                        android:id="@+id/tvSalesLast3Month1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/spacing_between_rows"
+                        android:gravity="left"
+                        android:text=""
+                        android:textColor="@color/BLACK"
+                        android:textStyle="bold" />
+
+                    <!-- thang thu 2 -->
+
+                    <TextView
+                        android:id="@+id/tvSalesLast3Month2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/spacing_between_rows"
+                        android:gravity="left"
+                        android:text=""
+                        android:textColor="@color/BLACK"
+                        android:textStyle="bold" />
+
+                    <!-- thang thu 3 -->
+
+                    <TextView
+                        android:id="@+id/tvSalesLast3Month3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/spacing_between_rows"
+                        android:gravity="left"
+                        android:text=""
+                        android:textColor="@color/BLACK"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Nhom doanh so gan nhat -->
+
+            <TextView
+                android:id="@+id/tvLastSalesGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:layout_marginTop="10dp"
+                android:text="@string/TEXT_LIST_ORDERS_RECENTLY"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/BLACK"
+                android:textStyle="bold" />
+
+            <com.viettel.dms.view.control.DMSTableView
+                android:id="@+id/tbLastSalesInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right" >
+            </com.viettel.dms.view.control.DMSTableView>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

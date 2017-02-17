@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/TRANSPARENT" >
+
+    <!-- android:background="@drawable/vnm_tablerow_selector" -->
+
+    <TextView
+        android:id="@+id/tvSTT"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="45dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        android:paddingTop="10dp"
+        android:text="@string/TEXT_STT"
+        android:textColor="@color/BLACK" />
+
+    <TextView
+        android:id="@+id/tvProgrameCode"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="200dp"
+        android:layout_height="fill_parent"
+        android:gravity="left|center_vertical"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        android:paddingTop="10dp"
+        android:text="@string/TEXT_COLUM_ORDER_CODE"
+        android:textColor="@color/BLACK" />
+
+    <TextView
+        android:id="@+id/tvProgrameName"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="300dp"
+        android:layout_height="fill_parent"
+        android:gravity="left"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        android:paddingTop="10dp"
+        android:text="@string/TEXT_COLUM_ORDER_NAME"
+        android:textColor="@color/BLACK" />
+
+    <TextView
+        android:id="@+id/tvProgrameType"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="122dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        android:paddingTop="10dp"
+        android:text="@string/TEXT_COLUM_ORDER_NAME"
+        android:textColor="@color/BLACK" />
+
+    <TextView
+        android:id="@+id/tvNotifyNull"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="673dp"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        android:paddingTop="10dp"
+        android:textColor="@color/BLACK"
+        android:visibility="gone" />
+
+</TableRow>

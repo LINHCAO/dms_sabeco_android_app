@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llRoot"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal" >
+
+    <ImageView
+        android:contentDescription="@string/TEXT_IMAGE_INFO"
+        android:id="@+id/ivMarker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/icon_flag_blue" />
+
+    <TextView
+        android:id="@+id/tvDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ivMarker"
+        android:layout_marginTop="5dp"
+        android:shadowColor="#434343"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:text="(020):11.73km"
+        android:textColor="@color/RED"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

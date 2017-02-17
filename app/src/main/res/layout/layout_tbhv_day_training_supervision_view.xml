@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/BG_FRAGMENT"
+        android:orientation="vertical"
+        android:paddingBottom="10dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:background="@drawable/bg_header_info"
+            android:orientation="horizontal"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.1"
+                android:text="@string/TEXT_LABLE_NPP"
+                android:textColor="@color/BLACK" />
+
+            <TextView
+                android:id="@+id/tvMaNPP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:text="VP435476"
+                android:textColor="@color/BLACK"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dip"
+                android:layout_weight="0.1"
+                android:text="@string/TEXT_HEADER_TABLE_GSNPP"
+                android:textColor="@color/BLACK" />
+
+            <TextView
+                android:id="@+id/tvGsnpp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:text="Nguyen Tuan Viet"
+                android:textColor="@color/BLACK"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dip"
+                android:layout_weight="0.1"
+                android:text="@string/TEXT_HEADER_TABLE_NVBH"
+                android:textColor="@color/BLACK" />
+
+            <TextView
+                android:id="@+id/tvNVBH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:text="Tran Quang Hung"
+                android:textColor="@color/BLACK"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dip"
+                android:layout_weight="0.1"
+                android:text="@string/TEXT_TRAINING_POINT"
+                android:textColor="@color/BLACK" />
+
+            <TextView
+                android:id="@+id/tvDiemTL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:text="4.1"
+                android:textColor="@color/BLACK"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btEvaluate"
+                style="@style/VNMButton"
+                android:layout_width="100dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:text="@string/TEXT_CONSIDERATION" />
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/BG_FRAGMENT"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/TABLE_BG"
+                    android:padding="2dip" >
+
+                    <TextView
+                        android:id="@+id/tvSTT"
+                        android:layout_width="40dip"
+                        android:layout_height="fill_parent"
+                        android:background="@color/TABLE_HEADER_BG"
+                        android:gravity="center"
+                        android:minHeight="35dip"
+                        android:text="@string/TEXT_STT"
+                        android:textColor="@color/BLACK"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvMaKH"
+                        android:layout_width="60dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="2dip"
+                        android:background="@color/TABLE_HEADER_BG"
+                        android:gravity="center"
+                        android:minHeight="35dip"
+                        android:padding="5dip"
+                        android:text="@string/TEXT_TB_CUSTOMER_CODE"
+                        android:textColor="@color/BLACK"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvTenKH"
+                        android:layout_width="140dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="2dip"
+                        android:background="@color/TABLE_HEADER_BG"
+                        android:gravity="center"
+                        android:minHeight="35dip"
+                        android:padding="5dip"
+                        android:text="@string/TEXT_TB_CUSTOMER_NAME"
+                        android:textColor="@color/BLACK"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvDcKH"
+                        android:layout_width="200dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="2dip"
+                        android:background="@color/TABLE_HEADER_BG"
+                        android:gravity="center"
+                        android:minHeight="35dip"
+                        android:padding="5dip"
+                        android:text="@string/TEXT_ADDRESS"
+                        android:textColor="@color/BLACK"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tvAmountDay"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@color/TABLE_HEADER_BG"
+                            android:gravity="center"
+                            android:minHeight="35dip"
+                            android:padding="5dip"
+                            android:text="@string/TEXT_DATE_SALES"
+                            android:textColor="@color/BLACK"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/tvAmountPlan"
+                                android:layout_width="85dip"
+                                android:layout_height="fill_parent"
+                                android:layout_marginTop="2dip"
+                                android:background="@color/TABLE_HEADER_BG"
+                                android:gravity="center"
+                                android:minHeight="35dip"
+                                android:text="@string/TEXT_TARGET"
+                                android:textColor="@color/BLACK"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvAmount"
+                                android:layout_width="85dip"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="2dip"
+                                android:layout_marginTop="2dip"
+                                android:background="@color/TABLE_HEADER_BG"
+                                android:gravity="center"
+                                android:minHeight="35dip"
+                                android:padding="5dip"
+                                android:text="@string/TEXT_DONE"
+                                android:textColor="@color/BLACK"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="70dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="2dip"
+                        android:background="@color/TABLE_HEADER_BG"
+                        android:gravity="center"
+                        android:minHeight="35dip"
+                        android:padding="5dip"
+                        android:text="@string/TEXT_POINT"
+                        android:textColor="@color/BLACK"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tvCateCus"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/TABLE_HEADER_BG"
+                            android:gravity="center"
+                            android:minHeight="35dip"
+                            android:padding="5dip"
+                            android:text="@string/TEXT_CLASSIFIED_CUS"
+                            android:textColor="@color/BLACK"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/tvMoi"
+                                android:layout_width="62dip"
+                                android:layout_height="fill_parent"
+                                android:layout_marginTop="2dip"
+                                android:background="@color/TABLE_HEADER_BG"
+                                android:gravity="center"
+                                android:minHeight="35dip"
+                                android:text="@string/TEXT_NEW"
+                                android:textColor="@color/BLACK"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvON"
+                                android:layout_width="62dip"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="2dip"
+                                android:layout_marginTop="2dip"
+                                android:background="@color/TABLE_HEADER_BG"
+                                android:gravity="center"
+                                android:minHeight="35dip"
+                                android:padding="5dip"
+                                android:text="ON"
+                                android:textColor="@color/BLACK"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvNT"
+                                android:layout_width="62dip"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="2dip"
+                                android:layout_marginTop="2dip"
+                                android:background="@color/TABLE_HEADER_BG"
+                                android:gravity="center"
+                                android:minHeight="35dip"
+                                android:padding="5dip"
+                                android:text="NT"
+                                android:textColor="@color/BLACK"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="60dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="2dip"
+                        android:background="@color/TABLE_HEADER_BG" >
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.viettel.dms.view.control.VinamilkTableView
+                    android:id="@+id/tbCusList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-3dip" >
+                </com.viettel.dms.view.control.VinamilkTableView>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+</ScrollView>

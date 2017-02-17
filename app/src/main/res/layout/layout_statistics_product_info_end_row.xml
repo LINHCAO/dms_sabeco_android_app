@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/TRANSPARENT"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/tbContent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/TRANSPARENT"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:id="@+id/row"
+            android:background="@color/TRANSPARENT" >
+
+            <TextView
+                android:id="@+id/tvNone"
+                style="@style/TextViewVinamilkTable"
+                android:layout_width="197dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:padding="@dimen/padding"
+                android:text=""
+                android:textColor="@color/BLACK" />
+
+            <TextView
+                android:id="@+id/tvTotal"
+                style="@style/TextViewVinamilkTable"
+                android:layout_width="255dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:padding="@dimen/padding"
+                android:text="@string/TOTAL"
+                android:textColor="@color/BLACK"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvPromotion"
+                style="@style/TextViewVinamilkTable"
+                android:layout_width="150dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:padding="@dimen/padding"
+                android:text=""
+                android:textColor="@color/COLOR_LINK"
+                 />
+
+            <TextView
+                android:id="@+id/tvNumberProduct"
+                style="@style/TextViewVinamilkTable"
+                android:layout_width="150dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:padding="@dimen/padding"
+                android:text="@string/TEXT_NUMBER_PRODUCT"
+                android:textColor="@color/BLACK" />
+
+            <TextView
+                android:id="@+id/tvSold"
+                style="@style/TextViewVinamilkTable"
+                android:layout_width="150dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:padding="@dimen/padding"
+                android:text="@string/TEXT_NUMBER_PRODUCT_SOLD"
+                android:textColor="@color/BLACK" />
+
+            <TextView
+                android:id="@+id/tvStock"
+                style="@style/TextViewVinamilkTable"
+                android:layout_width="150dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:padding="@dimen/padding"
+                android:text="@string/TEXT_PRODUCT_STOCK"
+                android:textColor="@color/BLACK" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

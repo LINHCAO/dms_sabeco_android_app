@@ -1,0 +1,137 @@
+/*
+ * Copyright 2014 Viettel Telecom. All rights reserved.
+ * VIETTEL PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
+ */
+
+package com.viettel.dms.dto.db;
+
+import java.io.Serializable;
+
+/**
+ * Abstract Table class
+ * AbstractTableDTO.java
+ * @version: 1.0 
+ * @since:  10:11:35 8 Jan 2014
+ */
+@SuppressWarnings("serial")
+public abstract class AbstractTableDTO implements Serializable{
+	public enum TableAction{
+		INSERT,
+		UPDATE,
+		DELETE,
+		INSERTORUPDATE,
+	}
+	public enum TableType {
+		ACTION_LOG,
+		CUSTOMER,
+		CUSTOMER_POSITION_LOG,
+		SALE_ORDER,
+		SALE_ORDER_DETAIL,
+		PRODUCT,
+		LOG,
+		SYNLOG,
+		DISPLAY_PROGRAME_DETAIL_TABLE,
+		DISPLAY_PROGRAME_LEVEL_TABLE,
+		DISPLAY_PROGRAME_PRODUCT_TABLE,
+		DISPLAY_PROGRAME_SUB_CAT_TABLE,
+		DISPLAY_PROGRAME_TABLE,
+		DISPLAY_TOOLS_TABLE,
+		FOCUS_PROGRAME_DETAIL_TABLE,
+		FOCUS_PROGRAME_TABLE,
+		FOCUS_SHOP_MAP_TABLE,
+		PRICE_TABLE,
+		SUGGESTED_PRICE_TABLE,
+		PROMOTION_PROGRAME_DETAIL_TABLE,
+		PROMOTION_PROGRAME_TABLE,
+		STOCK_TOTAL_TABLE,
+		SYN_TABLEDATA_LOG_TABLE,
+		VISIT_PLAN_TABLE,
+		STAFF_TABLE,
+		AP_PARAM_TABLE,
+		AREA_TABLE,
+		CUSTOMER_TYPE_TABLE,
+		CUSTOMER_CATEGORY_LEVEL_TABLE,
+		CUSTOMER_DISPLAY_PROGRAME,
+		CUSTOMER_DISPLAY_PROGRAME_SCORE,
+		CUSTOMER_STOCK_HISTORY_TABLE,
+		SALE_SCORE_SETTING,
+		FEEDBACK_TABLE,
+		FEEDBACK_DETAIL_TABLE,
+		ROLE_TABLE,
+		SALES_PLAN_TABLE,
+		STAFF_ROLE_TABLE,
+		SHOP_TABLE,
+		TODO_TASK_TABLE,
+		MEDIA_ITEM_TABLE,
+		TABLE_ID_TABLE,
+		TRAINING_RESULT_TABLE,
+		TRAINING_SHOP_MANAGER_RESULT_TABLE,
+		TRAINING_PLAN_TABLE,
+		TRAINING_PLAN_DETAIL_TABLE,
+        RPT_SALE_HISTORY,
+        TABLET_ACTION_LOG, 
+        STAFF_POSITION_LOG,
+        PROMOTION_CUSTOMER_MAP_TABLE,
+        PROMOTION_SHOP_MAP_TABLE,
+        DEBIT_TABLE,
+        DEBIT_DETAIL_TABLE,
+        PAY_DECEIVED_TABLE,
+        DISPLAY_GROUP_TABLE,
+        PAYMENT_DETAIL_TABLE,
+        STAFF_CUSTOMER_TABLE,
+        CHANNEL_TYPE_TABLE,
+        SHOP_PARAM_TABLE, 
+        DISPLAY_SHOP_MAP_TABLE, 
+        TIME_KEEPER_TABLE,
+        CUSTOMER_AVATAR_TABLE,
+        PRO_INFO_TABLE,
+		PRO_DISPLAY_PROGRAM_TABLE,
+		PRO_DISPLAY_PROGRAM_TABLE_DETAIL,
+		KPI_LOG_TABLE,
+		PRO_STRUCTURE_TABLE,
+		ROUTING_CUSTOMER,
+		STAFF_CUSTOMER_DETAIL_TABLE,
+		WORK_LOG_TABLE,
+		PG_SALE_ORDER,
+		PG_SALE_ORDER_DETAIL;
+	}
+	
+	public enum DATA_TYPE{
+		SEQUENCE,
+		DATE,
+		SYSDATE,
+		TRUNC,
+		COMMON,
+		OPERATION,
+		NULL
+	}
+	public enum DATA_VALUE{
+		sysdate,
+	}
+	
+	private TableType type;
+	private TableAction action;
+	
+	public TableAction getAction(){
+		return action;
+	}
+	
+	public void setAction(TableAction action){
+		this.action = action;
+	}
+	
+	public TableType getType() {
+		return type;
+	}
+
+	public void setType(TableType type){
+		this.type = type;
+	}
+	
+	protected AbstractTableDTO(TableType type) {
+		this.type = type;
+	}
+	
+	protected AbstractTableDTO() {
+	}
+}

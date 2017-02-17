@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/tvStaffCode"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:gravity="center_vertical|left"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        android:tag="@string/TEXT_LABLE_NPP"
+        android:text="@string/TEXT_LABLE_NPP"
+        android:textColor="@color/COLOR_USER_NAME" />
+
+    <TextView
+        android:id="@+id/tvStaffName"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3.4"
+        android:gravity="center_vertical|left"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        android:tag="@string/TEXT_HEADER_GSBH_REPORT"
+        android:text="@string/TEXT_HEADER_GSBH_REPORT"
+        android:textColor="@color/COLOR_USER_NAME" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text"
+                style="@style/TextViewVinamilkTable"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:padding="@dimen/padding"
+                android:tag="@string/TEXT_TITLE_REPORT_QUANTITY_SALE"
+                android:text="@string/TEXT_TITLE_REPORT_QUANTITY_SALE"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvKeHoach"
+                style="@style/TextViewVinamilkTable"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical|right"
+                android:padding="@dimen/padding"
+                android:text="@string/TEXT_HEADER_TABLE_PLAN" />
+
+            <TextView
+                android:id="@+id/tvThucHien"
+                style="@style/TextViewVinamilkTable"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical|right"
+                android:padding="@dimen/padding"
+                android:text="@string/TEXT_HEADER_TABLE_DONE" />
+
+            <TextView
+                android:id="@+id/tvConLai"
+                style="@style/TextViewVinamilkTable"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical|right"
+                android:padding="@dimen/padding"
+                android:text="@string/TEXT_HEADER_TABLE_REMAIN" />
+
+            <TextView
+                android:id="@+id/tvTienDo"
+                style="@style/TextViewVinamilkTable"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical|right"
+                android:padding="@dimen/padding"
+                android:text="@string/TEXT_HEADER_TABLE_PROGRESS" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

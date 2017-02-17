@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/BG_FRAGMENT"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/bg_header_info"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:text="Nhân viên:"
+                android:textColor="@color/BLACK" />
+
+            <TextView
+                android:id="@+id/tvNVBHCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:textColor="@color/COLOR_USER_NAME"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:text="Mã CTTB:"
+                android:textColor="@color/BLACK" />
+
+            <TextView
+                android:id="@+id/tvCTTBCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:textColor="@color/BLACK"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:text="Tên CTTB:"
+                android:textColor="@color/BLACK" />
+
+            <TextView
+                android:id="@+id/tvCTTBName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="10dip"
+                android:textColor="@color/COLOR_USER_NAME"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/BG_FRAGMENT"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <com.viettel.dms.view.control.VinamilkTableView
+                android:id="@+id/tbList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </com.viettel.dms.view.control.VinamilkTableView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="right"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvViewAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="2dip"
+                    android:background="@color/TABLE_HEADER_BG"
+                    android:gravity="right"
+                    android:padding="5dip"
+                    android:text="@string/TEXT_VIEW_ALL"
+                    android:textColor="@color/COLOR_LINK" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

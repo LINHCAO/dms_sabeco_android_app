@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG" >
+
+    <TextView
+        android:id="@+id/tvSTT"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="60dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="@string/TEXT_STT" />
+
+    <TextView
+        android:id="@+id/tvCusCode"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="80dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="@string/TEXT_TB_CUSTOMER_CODE" />
+
+    <TextView
+        android:id="@+id/tvCusName"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="240dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:text="@string/TEXT_TB_CUSTOMER_NAME" />
+
+    <TextView
+        android:id="@+id/tvCusStreet"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="300dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/TEXT_ADDRESS" />
+
+</TableRow>

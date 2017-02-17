@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/min_height_of_row"
+    android:background="@color/TABLE_BG" >
+
+    <TextView
+        android:id="@+id/tvMaNVBH"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="120dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:padding="@dimen/padding"
+        android:text="@string/TEXT_HEADER_TABLE_NAME_NPP"
+        android:minHeight="@dimen/min_height_of_row"
+        android:textColor="@color/COLOR_LINK" />
+
+    <TextView
+        android:id="@+id/tvNVBH"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="130dip"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical|left"
+        android:padding="@dimen/padding"
+       android:minHeight="@dimen/min_height_of_row"
+       android:textColor="@color/COLOR_LINK"
+        android:text="@string/TEXT_HEADER_TABLE_NAME_GSNPP" />
+    
+    <TextView
+        android:id="@+id/tvTotal"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="252dip"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|right"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:textStyle="bold"
+        android:textColor="@color/BLACK"
+        android:visibility="gone"
+        android:minHeight="@dimen/min_height_of_row"
+        android:text="@string/TOTAL" />
+    
+    
+    <LinearLayout android:duplicateParentState="true"
+        android:id="@+id/layMHTT"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        >
+    </LinearLayout>
+
+
+</TableRow>

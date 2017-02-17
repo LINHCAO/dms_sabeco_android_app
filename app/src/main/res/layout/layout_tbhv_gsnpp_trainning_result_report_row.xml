@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="80dip"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:paddingBottom="2dip"
+    android:paddingLeft="2dip"
+    android:paddingRight="2dip"
+    android:weightSum="1.0" >
+
+    <com.viettel.dms.view.tbhv.TBHVTrainingDateColumn
+        android:id="@+id/rlColumnMonday"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.155" >
+    </com.viettel.dms.view.tbhv.TBHVTrainingDateColumn>
+
+    <com.viettel.dms.view.tbhv.TBHVTrainingDateColumn
+        android:id="@+id/rlColumnTuesday"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="2dip"
+        android:layout_weight="0.155" >
+    </com.viettel.dms.view.tbhv.TBHVTrainingDateColumn>
+
+    <com.viettel.dms.view.tbhv.TBHVTrainingDateColumn
+        android:id="@+id/rlColumnWed"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="2dip"
+        android:layout_weight="0.155" >
+    </com.viettel.dms.view.tbhv.TBHVTrainingDateColumn>
+
+    <com.viettel.dms.view.tbhv.TBHVTrainingDateColumn
+        android:id="@+id/rlColumnThur"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="2dip"
+        android:layout_weight="0.155" >
+    </com.viettel.dms.view.tbhv.TBHVTrainingDateColumn>
+
+    <com.viettel.dms.view.tbhv.TBHVTrainingDateColumn
+        android:id="@+id/rlColumnFriday"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="2dip"
+        android:layout_weight="0.155" >
+    </com.viettel.dms.view.tbhv.TBHVTrainingDateColumn>
+
+    <com.viettel.dms.view.tbhv.TBHVTrainingDateColumn
+        android:id="@+id/rlColumnSat"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="2dip"
+        android:layout_weight="0.155" >
+    </com.viettel.dms.view.tbhv.TBHVTrainingDateColumn>
+
+    <LinearLayout
+        android:id="@+id/rlCN"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="2dip"
+        android:layout_weight="0.07"
+        android:background="@drawable/style_row_default"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvDayCN"
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:gravity="right"
+            android:minHeight="35dip"
+            android:paddingRight="10dip"
+            android:text="CN"
+            android:textColor="@color/RED"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvNameCN"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:minHeight="35dip"
+            android:padding="5dip"
+            android:text="Nguyen Quang Hieu"
+            android:textColor="@color/BLACK"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

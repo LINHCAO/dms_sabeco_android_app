@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Pressed State -->
+    <item android:drawable="@drawable/bg_editext_white_rounded_pressed" android:state_pressed="true"/>
+    <!-- Focused State -->
+    <item android:drawable="@drawable/bg_editext_white_rounded_focus" android:state_focused="true"/>
+    <!-- Default State -->
+    <item android:drawable="@drawable/bg_editext_white_rounded"/>
+
+</selector>

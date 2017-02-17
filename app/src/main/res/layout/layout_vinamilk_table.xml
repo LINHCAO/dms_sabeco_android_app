@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vinamilkTable"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.viettel.dms.view.control.VinamilkHeaderTable
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+            </com.viettel.dms.view.control.VinamilkHeaderTable>
+
+            <TableLayout
+                android:id="@+id/tbContent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/TABLE_BG"
+                android:paddingBottom="1dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp" >
+            </TableLayout>
+
+            <LinearLayout
+                android:id="@+id/rowNoContentSimpleHeader"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/TABLE_BG"
+                android:paddingBottom="1dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tvNoContentSimpleHeader"
+                    style="@style/TextViewVinamilkTable"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:padding="@dimen/padding"
+                    android:text="@string/MESSAGE_NO_INFOMATION" />
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/rowNoContentComplexHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/TABLE_BG"
+        android:paddingBottom="1dp"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tvNoContentComplexHeader"
+            style="@style/TextViewVinamilkTable"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:padding="@dimen/padding"
+            android:text="@string/MESSAGE_NO_INFOMATION" />
+    </LinearLayout>
+
+    <com.viettel.dms.view.control.PagingControl
+        android:id="@+id/paging"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="@dimen/margin_top"
+        android:visibility="gone" />
+
+</LinearLayout>

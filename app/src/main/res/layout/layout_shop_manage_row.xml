@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG" >
+
+    <TextView
+        android:id="@+id/tvNPP"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="320dp"
+        android:layout_height="fill_parent"
+        android:gravity="center|left"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="5dp"
+        android:text="Na NPP - Ten NPP" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="410dp"
+        android:layout_height="fill_parent"
+        android:gravity="center|left"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="5dp"
+        android:text="Dia chi NPP" />
+
+</TableRow>

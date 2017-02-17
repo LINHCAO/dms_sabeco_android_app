@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/BG_FRAGMENT"
+        android:orientation="vertical" >
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/BG_FRAGMENT"
+                android:orientation="vertical"
+                android:padding="10dip" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/TABLE_BG"
+                    android:paddingLeft="2dip"
+                    android:paddingRight="2dip"
+                    android:paddingTop="2dip" >
+
+                    <TextView
+                        android:id="@+id/MaCTTB"
+                        android:layout_width="130dip"
+                        android:layout_height="fill_parent"
+                        android:background="@color/TABLE_HEADER_BG"
+                        android:gravity="center"
+                        android:minHeight="65dip"
+                        android:padding="5dip"
+                        android:text="@string/TEXT_LABLE_PROGRAM_CODE"
+                        android:textColor="@color/BLACK"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/TenCT"
+                        android:layout_width="250dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="2dip"
+                        android:background="@color/TABLE_HEADER_BG"
+                        android:gravity="center"
+                        android:minHeight="65dip"
+                        android:padding="5dip"
+                        android:text="@string/TEXT_NAME_PROGRAM"
+                        android:textColor="@color/BLACK"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/FromDateToDate"
+                        android:layout_width="190dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="2dip"
+                        android:background="@color/TABLE_HEADER_BG"
+                        android:gravity="center"
+                        android:minHeight="65dip"
+                        android:padding="5dip"
+                        android:text="@string/TEXT_DATE_FROM_TO"
+                        android:textColor="@color/BLACK"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:minHeight="65dip"
+                        android:minWidth="200dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/Diemban"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="2dip"
+                            android:layout_weight="1"
+                            android:background="@color/TABLE_HEADER_BG"
+                            android:gravity="center"
+                            android:text="@string/TEXT_HEADER_TABLE_RESULT_OK_NOTOK"
+                            android:textColor="@color/BLACK"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:id="@+id/lay"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="2dip"
+                            android:orientation="horizontal" >
+
+                            <LinearLayout
+                                android:id="@+id/layoutLevel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tvTotal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:background="@color/TABLE_HEADER_BG"
+                                android:gravity="center"
+                                android:text="@string/TOTAL"
+                                android:textColor="@color/BLACK"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.viettel.dms.view.control.VinamilkTableView
+                    android:id="@+id/tbCusList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dip" >
+                </com.viettel.dms.view.control.VinamilkTableView>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+</ScrollView>

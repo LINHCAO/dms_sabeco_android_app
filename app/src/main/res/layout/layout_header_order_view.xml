@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_header_info"
+    android:orientation="horizontal"
+    android:paddingTop="10dip"
+    android:layout_marginBottom="10dip" >
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="left|center_vertical"
+           android:padding="@dimen/padding"
+           android:text="@string/TEXT_CUSTOMER_CODE_ABB"
+           android:textColor="@color/BLACK" >
+       </TextView>
+
+       <TextView
+           android:id="@+id/tvMKH"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="left|center_vertical"
+           android:padding="@dimen/padding"
+           android:textColor="@color/BLACK"
+           android:textStyle="bold" >
+       </TextView>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="left|center_vertical"
+           android:layout_marginLeft="50dip"
+           android:padding="@dimen/padding"
+           android:text="@string/TEXT_CUSTOMER_NAME_ABB"
+           android:textColor="@color/BLACK" >
+       </TextView>
+
+       <TextView
+           android:id="@+id/tvTKH"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="left|center_vertical"
+           android:padding="@dimen/padding"
+           android:textColor="@color/BLACK"
+           android:textStyle="bold" >
+       </TextView>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="left|center_vertical"
+           android:layout_marginLeft="50dip"
+           android:padding="@dimen/padding"
+           android:text="@string/TEXT_CUSTOMER_ADDRESS"
+           android:textColor="@color/BLACK" >
+       </TextView>
+
+       <TextView
+           android:id="@+id/tvAddress"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="left|center_vertical"
+           android:maxLines="2"
+           android:padding="@dimen/padding"
+           android:textColor="@color/BLACK"
+           android:textStyle="bold" >
+       </TextView>
+
+</LinearLayout>

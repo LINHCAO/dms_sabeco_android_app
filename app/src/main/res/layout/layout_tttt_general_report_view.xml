@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/TRANSPARENT" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/TRANSPARENT"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_content_fragment"
+        android:paddingLeft="@dimen/padding_content_fragment"
+        android:paddingRight="@dimen/padding_content_fragment" >
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_header_info"
+            android:baselineAligned="false"
+            android:gravity="center_vertical" >
+
+            <TableRow
+                android:id="@+id/llHeaderInfoTNPG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/TEXT_CUSTOMER_NAME_ABB"
+                    android:textColor="@color/BLACK" />
+
+                <TextView
+                    android:id="@+id/tvCustomerName"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:gravity="left"
+                    android:text=""
+                    android:textColor="@color/BLACK"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:text="@string/TEXT_CUSTOMER_ADDRESS"
+                    android:textColor="@color/BLACK" />
+
+                <TextView
+                    android:id="@+id/tvDiaChi"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:gravity="left"
+                    android:paddingLeft="5dip"
+                    android:text=""
+                    android:textColor="@color/BLACK"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/TEXT_LABLE_PROGRESS"
+                        android:textColor="@color/BLACK" />
+
+                    <TextView
+                        android:id="@+id/tvSoldPercent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/TEXT_ZERO"
+                        android:layout_marginLeft="20dip"
+                        android:textColor="@color/BLACK"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tvTitleDate"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/FB_CHOOSEDAY"
+                    android:textColor="@color/BLACK" />
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <com.viettel.dms.view.control.VNMEditTextClearable
+                        android:id="@+id/edDate"
+                        style="@style/VNMEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left"
+                        android:hint="@string/TEXT_TEXTBOX_FROM_DATE"
+                        android:maxLength="10"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvDate"
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dip"
+                        android:paddingRight="20dip"
+                        android:textColor="@color/BLACK"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/TEXT_COLUM_NVTT_COLON"
+                    android:textColor="@color/BLACK" />
+
+                <Spinner
+                    android:id="@+id/spinnerNVTT"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:background="@drawable/spinner_selector"
+                    android:drawSelectorOnTop="true"
+                    android:prompt="@string/FB_CHOOSEDAY"
+                    android:spinnerMode="dropdown" />
+
+                <LinearLayout
+                    android:id="@+id/llGSTDetailMonth"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/TEXT_LABLE_PROGRESS"
+                        android:textColor="@color/BLACK" />
+
+                    <TextView
+                        android:id="@+id/tvSoldPercentDetailMonth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:text="@string/TEXT_ZERO"
+                        android:textColor="@color/BLACK"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+
+        <com.viettel.dms.view.control.DMSTableView
+            android:id="@+id/tbStatistics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top" >
+        </com.viettel.dms.view.control.DMSTableView>
+    </LinearLayout>
+
+</ScrollView>

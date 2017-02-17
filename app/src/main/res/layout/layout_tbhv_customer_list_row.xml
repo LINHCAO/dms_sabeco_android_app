@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/TRANSPARENT" >
+
+    <TextView
+        android:id="@+id/tvSTT"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="@dimen/padding"
+        android:text="@string/TEXT_STT"
+        android:textColor="@color/BLACK" />
+    <TextView
+        android:id="@+id/tvCustomerName"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="270dp"
+        android:layout_height="match_parent"
+        android:paddingBottom="5dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:paddingTop="5dip"
+        android:gravity="center_vertical"
+        android:text="Tên khách hàng"
+        android:textColor="@color/BLACK" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="410dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding"
+        android:text="Địa chỉ"
+        android:textColor="@color/BLACK" />
+</TableRow>

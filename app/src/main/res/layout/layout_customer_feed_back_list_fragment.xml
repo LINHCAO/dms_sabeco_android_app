@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/BG_FRAGMENT"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/bg_header_info"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.1"
+                android:text="@string/TEXT_CUSTOMER_ID"
+                android:textColor="@color/BLACK" />
+
+            <TextView
+                android:id="@+id/tvCusCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="@color/BLACK"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dip"
+                android:layout_weight="0.1"
+                android:text="@string/TEXT_CUSTOMER_NAME"
+                android:textColor="@color/BLACK" />
+
+            <TextView
+                android:id="@+id/tvCusName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:text=""
+                android:textColor="@color/BLACK"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btFeedBack"
+                style="@style/VNMButton"
+                android:layout_width="120dp"
+                android:layout_height="40dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dip"
+                android:layout_weight="0.1"
+                android:gravity="center"
+                android:text="@string/TEXT_ADD_FEEDBACK" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvFBList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/TEXT_FEEDBACK_LIST"
+            android:textColor="@color/BLACK"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textNull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text="@string/NULL_LIST"
+            android:textColor="@color/RED"
+            android:visibility="gone" />
+
+        <com.viettel.dms.view.control.DMSTableView
+            android:id="@+id/tbCusFeedBack"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip" >
+        </com.viettel.dms.view.control.DMSTableView>
+    </LinearLayout>
+
+</ScrollView>

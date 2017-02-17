@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:background="@color/TRANSPARENT"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_rounded"
+            android:orientation="vertical"
+            android:padding="@dimen/padding" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:layout_marginTop="@dimen/margin_top"
+                android:gravity="center_vertical"
+                android:text="@string/TEXT_INFO_DETAIL_PROBLEM"
+                android:textColor="@color/BLACK"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:contentDescription="@string/TEXT_IMAGE_INFO"
+                android:scaleType="fitXY"
+                android:src="@drawable/seperator" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:layout_marginTop="@dimen/margin_top"
+                android:background="@color/TRANSPARENT"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_left"
+                android:paddingRight="@dimen/padding_right" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4.2"
+                    android:text="@string/TEXT_FOLLOW_PROBLEM_STAFF"
+                    android:textColor="@color/BLACK" />
+
+                <TextView
+                    android:id="@+id/tvFollowProblemStaff"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/BLACK"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:layout_marginTop="@dimen/margin_top"
+                android:background="@color/TRANSPARENT"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_left"
+                android:paddingRight="@dimen/padding_right" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4.2"
+                    android:text="@string/TEXT_TYPE_PROBLEM_COLON"
+                    android:textColor="@color/BLACK" />
+
+                <TextView
+                    android:id="@+id/tvTypeProblem"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/BLACK"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:layout_marginTop="@dimen/margin_top"
+                android:background="@color/TRANSPARENT"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_left"
+                android:paddingRight="@dimen/padding_right" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.5"
+                    android:text="@string/TEXT_CREATE_DATE"
+                    android:textColor="@color/BLACK" />
+
+                <TextView
+                    android:id="@+id/tvFollowProblemCreateDate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:textColor="@color/BLACK"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lbFollowProblemRemindDate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/TEXT_REMIND_DATE"
+                    android:textColor="@color/BLACK" />
+
+                <TextView
+                    android:id="@+id/tvFollowProblemRemindDate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.5"
+                    android:textColor="@color/BLACK"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:layout_marginTop="@dimen/margin_top"
+                android:background="@color/TRANSPARENT"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_left"
+                android:paddingRight="@dimen/padding_right" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.5"
+                    android:text="@string/TEXT_FOLLOW_PROBLEM_STATUS"
+                    android:textColor="@color/BLACK" />
+
+                <TextView
+                    android:id="@+id/tvFollowProblemStatus"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:textColor="@color/BLACK"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lbFollowProblemDoneDate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/TEXT_FOLLOW_PROBLEM_DONE_DATE"
+                    android:textColor="@color/BLACK" />
+
+                <TextView
+                    android:id="@+id/tvFollowProblemDoneDate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.5"
+                    android:textColor="@color/BLACK"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llFollowProblemCustomer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:layout_marginTop="@dimen/margin_top"
+                android:background="@color/TRANSPARENT"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_left"
+                android:paddingRight="@dimen/padding_right" >
+
+                <TextView
+                    android:id="@+id/lbFollowProblemCustomer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4.2"
+                    android:text="@string/TEXT_FOLLOW_PROBLEM_CUSTOMER"
+                    android:textColor="@color/BLACK" />
+
+                <TextView
+                    android:id="@+id/tvFollowProblemCustomer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/BLACK"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llFollowProblemContent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:layout_marginTop="@dimen/margin_top"
+                android:background="@color/TRANSPARENT"
+                android:gravity="top"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_left"
+                android:paddingRight="@dimen/padding_right" >
+
+                <TextView
+                    android:id="@+id/lbFollowProblemContent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4.2"
+                    android:text="@string/TEXT_FOLLOW_PROBLEM_CONTENT"
+                    android:textColor="@color/BLACK" />
+
+                <TextView
+                    android:id="@+id/tvFollowProblemContent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/BLACK"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <com.viettel.dms.view.control.VinamilkTableView
+                android:id="@+id/tbHistory"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:visibility="visible" >
+            </com.viettel.dms.view.control.VinamilkTableView>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:contentDescription="@string/TEXT_IMAGE_INFO"
+                android:scaleType="fitXY"
+                android:src="@drawable/seperator" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/TRANSPARENT"
+                android:gravity="center_vertical" >
+
+                <Button
+                    android:id="@+id/btCloseFollowProblemDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:layout_margin="@dimen/margin"
+                    android:background="@drawable/vnm_button_selector"
+                    android:filterTouchesWhenObscured="true"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:text="@string/TEXT_BUTTON_CLOSE"
+                    android:textColor="@color/BLACK"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btNewFollowProblemDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:layout_margin="@dimen/margin"
+                    android:background="@drawable/vnm_button_selector"
+                    android:filterTouchesWhenObscured="true"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:text="@string/TEXT_REQUEST_REIMPLEMENT"
+                    android:textColor="@color/BLACK"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btUpdateFollowProblemDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:layout_margin="@dimen/margin"
+                    android:background="@drawable/vnm_button_selector"
+                    android:filterTouchesWhenObscured="true"
+                    android:text="@string/TEXT_APPROVE"
+                    android:textColor="@color/BLACK"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

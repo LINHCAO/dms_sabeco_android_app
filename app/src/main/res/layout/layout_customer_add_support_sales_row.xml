@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/TRANSPARENT" >
+
+    <TextView
+        android:id="@+id/tvSTT"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="61dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:minHeight="35dip"
+        android:padding="@dimen/padding"
+        android:tag="@string/TEXT_STT"
+        android:text="@string/TEXT_STT"
+        android:textColor="@color/BLACK" />
+
+    <TextView
+        android:id="@+id/tvCustomer"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="271dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:minHeight="35dip"
+        android:padding="@dimen/padding"
+        android:tag="@string/TEXT_TB_CUSTOMER_NAME"
+        android:text="@string/TEXT_TB_CUSTOMER_NAME"
+        android:textColor="@color/BLACK" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="401dp"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:gravity="center_vertical"
+        android:minHeight="35dip"
+        android:padding="@dimen/padding"
+        android:tag="@string/TEXT_ADDRESS"
+        android:text="@string/TEXT_ADDRESS"
+        android:textColor="@color/BLACK" />
+
+    <LinearLayout
+        android:id="@+id/llChoose"
+        android:layout_width="61dp"
+        style="@style/TextViewVinamilkTable"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="2dip"
+        android:gravity="center"
+        android:minHeight="35dip" >
+
+        <CheckBox
+            android:id="@+id/cbChoose"
+            style="@style/VNMCheckBox"
+            android:layout_width="24dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:text="" />
+    </LinearLayout>
+
+</TableRow>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="60dp"
+    android:background="@drawable/bg_white_rounded"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingTop="5dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/icon_circle_green"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text="@string/TEXT_VISIT_NONE"
+        android:textColor="@color/BLACK" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/icon_circle_orange"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text="@string/TEXT_VISIT_VISITING"
+        android:textColor="@color/BLACK" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/icon_circle_red"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text="@string/TEXT_VISIT_NO_ORDER"
+        android:textColor="@color/BLACK" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/icon_circle_blue"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text="@string/TEXT_VISIT_HAVE_ORDER"
+        android:textColor="@color/BLACK" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/icon_circle_yellow"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text="@string/TEXT_VISIT_OUT_ROUTING"
+        android:textColor="@color/BLACK" />
+
+    <ImageView
+        android:id="@+id/btClose"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="10dp"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_close"
+        android:textColor="@color/BLACK"
+        android:visibility="visible" />
+
+</LinearLayout>

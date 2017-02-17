@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="800dip"
+    android:layout_height="fill_parent"
+    android:layout_margin="@dimen/margin"
+    android:background="@color/WHITE"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:gravity="left|center_vertical"
+        android:padding="@dimen/padding" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:gravity="left"
+            android:text="@string/TEXT_TB_CUSTOMER"
+            android:textColor="@color/BLACK" >
+        </TextView>
+
+        <com.viettel.dms.view.control.VNMEditTextClearable
+            android:id="@+id/edCustomer"
+            style="@style/VNMEditText"
+            android:layout_width="30dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_weight="3"
+           android:hint="@string/TEXT_HINT_INPUT_CUSTOMER_SDT"
+            android:inputType="textCapWords"
+            android:maxLength="50"
+            android:paddingBottom="@dimen/padding_bottom"
+            android:paddingTop="@dimen/padding_top" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:text="@string/LINE"
+            android:textColor="@color/BLACK" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/spLine"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_selector"
+            android:drawSelectorOnTop="true"
+            android:prompt="@string/LINE"
+            android:spinnerMode="dropdown" />
+
+        <Button
+            android:id="@+id/btSearch"
+            style="@style/VNMButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dip"
+            android:contentDescription="@string/TEXT_IMAGE_INFO"
+            android:src="@drawable/icon_search"
+            android:text="@string/TEXT_BUTTON_FIND" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/TABLE_BG"
+            android:paddingLeft="2dip"
+            android:paddingTop="2dip" >
+		<TextView 
+		    android:layout_width="60dp"
+		    android:layout_height="fill_parent"
+		    android:text="@string/TEXT_STT"
+		    android:background="@color/TABLE_HEADER_BG"
+		    android:gravity="center"
+		    android:layout_marginBottom="1dp"
+		    android:textColor="@color/BLACK"
+		    android:textStyle="bold"/>
+		<TextView 
+		    android:layout_width="270dp"
+		    android:layout_height="fill_parent"
+		    android:layout_marginLeft="2dp"
+		    android:layout_marginBottom="1dp"
+		    android:text="@string/TEXT_CUSTOMER"
+		    android:background="@color/TABLE_HEADER_BG"
+		    android:gravity="center"
+		    android:textColor="@color/BLACK"
+		    android:textStyle="bold"/>
+		<TextView 
+		    android:layout_width="400dp"
+		    android:layout_height="fill_parent"
+		    android:text="@string/TEXT_ADDRESS"
+		    android:layout_marginLeft="2dp"
+		    android:layout_marginBottom="1dp"
+		    android:background="@color/TABLE_HEADER_BG"
+		    android:gravity="center"
+		    android:textColor="@color/BLACK"
+		    android:textStyle="bold"/>
+            <LinearLayout
+                android:id="@+id/llChoose"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@color/TABLE_HEADER_BG"
+                android:gravity="center"
+                android:minHeight="35dip" >
+
+                <CheckBox
+                    android:id="@+id/cbChooseAll"
+                    style="@style/VNMCheckBox"
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingBottom="2dp"
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="300dp">
+
+            <com.viettel.dms.view.control.VinamilkTableView
+                android:id="@+id/tbCusList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </com.viettel.dms.view.control.VinamilkTableView>
+        </ScrollView>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:contentDescription="@string/TEXT_IMAGE_INFO"
+        android:scaleType="fitXY"
+        android:src="@drawable/seperator" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:padding="@dimen/padding" >
+
+        <LinearLayout
+            android:id="@+id/llLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:gravity="left" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:text="@string/TEXT_TB_CUSTOMER_LEVEL_1"
+                android:textColor="@color/BLACK" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spLevelJoin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/spinner_selector"
+                android:drawSelectorOnTop="true"
+                android:prompt="@string/TEXT_TB_CUSTOMER_LEVEL"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center|center_vertical"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btChoose"
+                style="@style/VNMButton"
+                android:layout_width="100dip"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dip"
+                android:contentDescription="@string/TEXT_BUTTON_CHOOSE"
+                android:src="@drawable/icon_search"
+                android:text="@string/TEXT_BUTTON_CHOOSE" />
+
+            <Button
+                android:id="@+id/btClose"
+                style="@style/VNMButton"
+                android:layout_width="100dip"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dip"
+                android:contentDescription="@string/TEXT_BUTTON_CLOSE"
+                android:src="@drawable/icon_search"
+                android:text="@string/TEXT_BUTTON_CLOSE" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

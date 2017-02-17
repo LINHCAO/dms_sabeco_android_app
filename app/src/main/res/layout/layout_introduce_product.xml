@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/TRANSPARENT" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/BG_FRAGMENT"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvProductName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/COLOR_USER_NAME" />
+
+        <FrameLayout 
+            android:id="@+id/flImageViewFull"
+            android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/bg_white_rounded"
+		    android:layout_margin="10dp"
+		    android:orientation="vertical">
+		    
+            <ImageView
+		        android:id="@+id/imgViewFull"
+		        android:layout_width="fill_parent"
+		        android:layout_margin="@dimen/margin"
+		        android:layout_height="300dp"
+		        android:contentDescription="@string/ALL" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/llGallery"
+            android:padding="@dimen/padding"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp" >
+
+            <com.viettel.dms.view.control.HorizontalListView
+                android:id="@+id/glCategoryView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/margin" >
+            </com.viettel.dms.view.control.HorizontalListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:layout_marginTop="@dimen/margin_top"
+            android:orientation="horizontal" >
+
+            <WebView
+                android:id="@+id/wvIntroduce"
+                android:layout_margin="@dimen/margin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

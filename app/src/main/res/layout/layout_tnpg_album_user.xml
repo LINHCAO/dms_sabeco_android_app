@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="@dimen/width_image_thumb"
+        android:layout_height="@dimen/height_image_thumb" >
+
+        <ImageView
+            android:id="@+id/imgAlbumBackground"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/ALL"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgAlbumImage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/ALL"
+            android:visibility="visible"
+            android:layout_marginLeft="13dip"
+            android:layout_marginTop="15dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginBottom="7dip"
+            
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvAlbumName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/COLOR_USER_NAME"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvNumImage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@color/BLACK"
+        android:textSize="15sp" />
+
+</LinearLayout>

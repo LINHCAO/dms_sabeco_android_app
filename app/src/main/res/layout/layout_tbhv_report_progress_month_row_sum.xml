@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG"
+    android:minHeight="@dimen/min_height_of_row" >
+
+    <TextView
+        android:id="@+id/tvSum"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="342dip"
+        android:layout_height="fill_parent"
+        android:gravity="right|center_vertical"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="@dimen/padding"
+        android:text="@string/TEXT_HEADER_TABLE_SUM"
+        android:textColor="@color/BLACK"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvAmountPLAN"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="100dip"
+        android:layout_height="fill_parent"
+        android:gravity="right|center_vertical"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="@dimen/padding"
+        android:text="@string/TEXT_HEADER_TABLE_PLAN"
+        android:textColor="@color/BLACK"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvAmountDONE"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="100dip"
+        android:layout_height="fill_parent"
+        android:gravity="right|center_vertical"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="@dimen/padding"
+        android:paddingBottom="@dimen/padding_bottom"
+        android:text="@string/TEXT_HEADER_TABLE_DONE"
+        android:textColor="@color/BLACK"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvAmountProgress"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="100dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="@dimen/padding"
+        android:paddingBottom="@dimen/padding_bottom"
+        android:textColor="@color/BLACK"
+        android:text="@string/TEXT_HEADER_TABLE_PROGRESS" />
+
+    <TextView
+        android:id="@+id/tvAmountRemain"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="94dip"
+        android:layout_height="fill_parent"
+        android:background="@color/COLOR_COLUM_REPORT_REMAIN"
+        android:gravity="right|center_vertical"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="@dimen/padding"
+        android:text="@string/TEXT_HEADER_TABLE_REMAIN"
+        android:textColor="@color/BLACK"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSKUPlan"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="100dip"
+        android:layout_height="fill_parent"
+        android:gravity="right|center_vertical"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="@dimen/padding" />
+
+    <TextView
+        android:id="@+id/tvSKUDone"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="98dip"
+        android:layout_height="fill_parent"
+        android:gravity="right|center_vertical"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="@dimen/padding" />
+
+</TableRow>

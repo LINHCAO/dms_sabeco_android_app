@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/tvSTT"
+         style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:tag="@string/TEXT_STT"
+        android:text="@string/TEXT_STT" />
+
+    <TextView
+        android:id="@+id/tvCusCode"
+         style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:tag="@string/TEXT_TB_CUSTOMER_CODE"
+        android:text="@string/TEXT_TB_CUSTOMER_CODE"
+        android:textColor="@color/COLOR_USER_NAME" />
+
+    <TextView
+        android:id="@+id/tvCusName"
+         style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2.5"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:tag="@string/TEXT_TB_CUSTOMER_NAME"
+        android:text="@string/TEXT_TB_CUSTOMER_NAME" />
+
+    <TextView
+        android:id="@+id/tvCusAdd"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:tag="@string/TEXT_ADDRESS"
+        android:text="@string/TEXT_ADDRESS"  />
+
+    <TextView
+        android:id="@+id/tvLastOrder"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2.1"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:tag="@string/TEXT_LAST_ORDER"
+        android:text="@string/TEXT_LAST_ORDER" />
+
+</LinearLayout>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:id="@+id/llButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_header_info"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tvMaKH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/margin"
+                android:text="@string/TEXT_PHOTO_CUSTOMER_CODE"
+                android:textColor="@color/BLACK" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvKH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/margin"
+                android:layout_toRightOf="@+id/tvMaKH"
+                android:text=""
+                android:textColor="@color/BLACK"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvTenKH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/margin"
+                android:layout_toRightOf="@+id/tvKH"
+                android:text="@string/TEXT_PHOTO_CUSTOMER_NAME"
+                android:textColor="@color/BLACK" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvHoTenKH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/margin"
+                android:layout_toRightOf="@+id/tvTenKH"
+                android:text=""
+                android:textColor="@color/BLACK"
+                android:textStyle="bold" >
+            </TextView>
+
+            <Button
+                android:id="@+id/btTakePhoto"
+                style="@style/VNMButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/TEXT_TAKE_PHOTO" >
+            </Button>
+        </RelativeLayout>
+
+        <com.viettel.dms.view.control.VNMStableGridView
+            android:id="@+id/gvImageUserAlbumView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_white_rounded"
+            android:columnWidth="@dimen/num_column_size"
+            android:horizontalSpacing="5dip"
+            android:isScrollContainer="false"
+            android:numColumns="auto_fit"
+            android:padding="15dip"
+            android:scrollbars="horizontal"
+            android:stretchMode="spacingWidth" >
+        </com.viettel.dms.view.control.VNMStableGridView>
+
+        <TextView
+            android:id="@+id/tvProgramePhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/TEXT_PHOTO_PROGRAME"
+            android:textColor="@color/BLACK"
+            android:textSize="16sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/rlSearch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_white_rounded"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tvPhotoPrograme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/margin"
+                android:text="@string/TEXT_PROGRAME_PHOTO"
+                android:textColor="@color/BLACK" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinnerPhotoPrograme"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="20dip"
+                android:layout_weight="1.25"
+                android:background="@drawable/spinner_selector"
+                android:drawSelectorOnTop="true"
+                android:prompt="@string/LINE"
+                android:spinnerMode="dropdown" >
+            </Spinner>
+
+            <TextView
+                android:id="@+id/tvTakePhotoFromDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/margin"
+                android:text="@string/TEXT_PHOTO_TAKEPHOTO_DATE"
+                android:textColor="@color/BLACK" >
+            </TextView>
+
+            <com.viettel.dms.view.control.VNMEditTextClearable
+                android:id="@+id/etFromDate"
+                style="@style/VNMEditText"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:hint="@string/TEXT_HINT_INPUT_TIME_START"
+                android:inputType="text"
+                android:paddingLeft="5dip"
+                android:singleLine="true"
+                android:textColor="@color/BLACK" >
+            </com.viettel.dms.view.control.VNMEditTextClearable>
+
+            <TextView
+                android:id="@+id/tvTakePhotoToDate"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/margin"
+                android:gravity="center_horizontal"
+                android:text="@string/TEXT_PHOTO_TAKEPHOTO_TODATE"
+                android:textColor="@color/BLACK" >
+            </TextView>
+
+            <com.viettel.dms.view.control.VNMEditTextClearable
+                android:id="@+id/etToDate"
+                style="@style/VNMEditText"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:hint="@string/TEXT_HINT_INPUT_TIME_STOP"
+                android:inputType="text"
+                android:paddingLeft="5dip"
+                android:singleLine="true"
+                android:textColor="@color/BLACK" >
+            </com.viettel.dms.view.control.VNMEditTextClearable>
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5" />
+
+            <Button
+                android:id="@+id/btSearch"
+                style="@style/VNMButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:minWidth="80dp"
+                android:text="@string/TEXT_PHOTO_SEARCH" >
+            </Button>
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/tvNoDataResult"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/margin"
+            android:gravity="center"
+            android:text="@string/TEXT_PHOTO_NO_IMAGE"
+            android:textColor="@color/BLACK"
+            android:visibility="gone" >
+        </TextView>
+
+		<com.viettel.dms.view.control.VNMStableGridView
+		    android:id="@+id/gvImageProgrameAlbumView"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_margin="10dp"
+		    android:layout_marginRight="@dimen/margin_grid_album"
+		    android:columnWidth="@dimen/num_column_size"
+		    android:horizontalSpacing="5dip"
+		    android:isScrollContainer="false"
+		    android:numColumns="auto_fit"
+		    android:padding="15dip"
+		    android:scrollbars="horizontal"
+		    android:stretchMode="spacingWidth"
+		    android:visibility="gone" >
+
+        </com.viettel.dms.view.control.VNMStableGridView>
+    </LinearLayout>
+
+</ScrollView>

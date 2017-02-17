@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG" >
+
+    <TextView
+        android:id="@+id/tvSTT"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="40dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/TEXT_STT" />
+
+    <TextView
+        android:id="@+id/tvContent"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="300dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:text="Nội dung" />
+
+    <TextView
+        android:id="@+id/tvType"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="110dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Ngày TH" />
+
+    <TextView
+        android:id="@+id/tvRemindDate"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="110dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Ngày nhắc nhở" />
+
+    <TextView
+        android:id="@+id/tvOpDate"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="110dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Ngày TH" />
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="fill_parent"
+        android:layout_margin="1dip"
+        android:background="@color/WHITE" >
+
+        <CheckBox
+            android:id="@+id/cbNote"
+            style="@style/VNMCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</TableRow>

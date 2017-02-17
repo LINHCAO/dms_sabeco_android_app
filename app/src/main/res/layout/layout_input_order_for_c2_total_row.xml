@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="fill_parent"
+    android:layout_height="40dip">
+
+    <TextView
+        android:id="@+id/tvSTT"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="646dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical|right"
+        android:padding="@dimen/padding"
+        android:text="@string/TOTAL"
+        android:textColor="@color/BLACK"
+        android:textStyle="bold" 
+        />
+
+    <TextView
+        android:id="@+id/tvTotalQuantity"
+        android:layout_toRightOf="@+id/tvSTT"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="110dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:padding="@dimen/padding"
+        android:textColor="@color/BLACK"
+        android:textStyle="bold" 
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG" >
+
+    <TextView
+        android:id="@+id/tvSTT"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="50dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="@dimen/padding"
+        android:text="@string/TEXT_STT"
+        android:textColor="@color/BLACK" />
+
+    <LinearLayout
+        android:id="@+id/llProductCode"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="110dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:minHeight="@dimen/min_height_of_row"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvMMH"
+            style="@style/TextViewVinamilkTable"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:minHeight="@dimen/min_height_of_row"
+            android:paddingBottom="@dimen/padding_bottom"
+            android:paddingLeft="@dimen/padding_left"
+            android:paddingRight="2dp"
+            android:paddingTop="@dimen/padding_top"
+            android:text="@string/TEXT_COLUM_ORDER_CODE"
+            android:textColor="@color/BLACK" />
+
+        <TextView
+            android:id="@+id/tvGSNPP"
+            style="@style/TextViewVinamilkTable"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="top"
+            android:minHeight="@dimen/min_height_of_row"
+            android:paddingTop="2dp"
+            android:text="*,GS"
+            android:textColor="@color/RED"
+            android:textSize="14sp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvMHName"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="280dp"
+        android:layout_height="fill_parent"
+        android:gravity="left|center_vertical"
+        android:maxLines="2"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="@dimen/padding"
+        android:text="@string/TEXT_COLUM_ORDER_NAME"
+        android:textColor="@color/BLACK" />
+
+    <TextView
+        android:id="@+id/tvConvfactName"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="95dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:maxLines="2"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="@dimen/padding"
+        android:text="@string/TEXT_PRODUCT_SPECIFICATION"
+        android:textColor="@color/BLACK" />
+
+    <TextView
+        android:id="@+id/tvStockTotal"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="130dp"
+        android:layout_height="fill_parent"
+        android:gravity="right|center_vertical"
+        android:maxLines="2"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="@dimen/padding"
+        android:text="@string/TEXT_COLUM_INVENTORY"
+        android:textColor="@color/BLACK" />
+
+    <LinearLayout
+        android:id="@+id/llCTKM"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="60dp"
+        android:layout_height="fill_parent"
+        android:layout_margin="1dp"
+        android:minHeight="@dimen/min_height_of_row"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/ivCTKM"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/TEXT_IMAGE_INFO"
+            android:padding="1dp"
+            android:scaleType="center"
+            android:src="@drawable/icon_check" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPrice"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+
+        <EditText
+            android:id="@+id/etPrice"
+            style="@style/VNMEditText"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:layout_marginLeft="2dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:singleLine="true" 
+            android:width="130dip"
+            android:maxLength="9"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llEditText"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="130dp"
+        android:layout_height="fill_parent"
+        android:minHeight="@dimen/min_height_of_row"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/etNumber"
+            style="@style/VNMEditText"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:layout_marginLeft="2dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="5"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llCTDetail"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageButton
+            android:id="@+id/imbtCTDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:contentDescription="@string/TEXT_IMAGE_INFO"
+            android:padding="@dimen/padding"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_list" />
+
+        <TextView
+            android:id="@+id/tvCTDetail"
+            style="@style/TextViewVinamilkTable"
+            android:layout_width="106dp"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:maxLines="2"
+            android:minHeight="@dimen/min_height_of_row"
+            android:paddingBottom="10dp"
+            android:paddingLeft="@dimen/padding_left"
+            android:paddingRight="@dimen/padding_right"
+            android:paddingTop="10dp"
+            android:text="@string/TEXT_PRODUCT_SPECIFICATION"
+            android:textColor="@color/BLACK"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</TableRow>

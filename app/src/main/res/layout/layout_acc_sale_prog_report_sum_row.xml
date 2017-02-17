@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG" >
+
+    <TextView
+        android:id="@+id/tvMaNVBH"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="110dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text=""
+        android:minHeight="35dip"
+        android:textColor="@color/COLOR_USER_NAME" />
+
+    <TextView
+        android:id="@+id/tvNVBH"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="180dip"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="10dip"
+        android:textStyle="bold"
+        android:minHeight="35dip"
+        android:text="@string/TEXT_HEADER_TABLE_SUM" />
+
+    <TextView
+        android:id="@+id/tvMoneyPlan"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="110dip"
+        android:layout_height="fill_parent"
+        android:gravity="right|center_vertical"
+        android:paddingRight="10dip"
+        android:textStyle="bold"
+        android:minHeight="35dip"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvDMoneySold"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="110dip"
+        android:layout_height="fill_parent"
+        android:gravity="right|center_vertical"
+        android:paddingRight="10dip"
+        android:textStyle="bold"
+        android:minHeight="35dip"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvPercent"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="70dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:minHeight="35dip"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvMoneyRemain"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="110dip"
+        android:layout_height="fill_parent"
+        android:gravity="right|center_vertical"
+        android:paddingRight="10dip"
+        android:textStyle="bold"
+        android:minHeight="35dip"
+        android:background="#d9d9ff"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvSKU_KH"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="80dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:minHeight="35dip"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvSKU_target"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="80dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:minHeight="35dip"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvScore"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="80dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="" />
+<TextView
+        android:id="@+id/tvNotifyNull"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="946dp"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="@dimen/padding"
+        android:textColor="@color/BLACK"
+        android:visibility="gone" />
+</TableRow>

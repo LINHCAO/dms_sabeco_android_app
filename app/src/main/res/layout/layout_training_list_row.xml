@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/tvNum"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:tag="@string/TEXT_STT"
+        android:text="@string/TEXT_STT"/>
+    <TextView
+        android:id="@+id/tvShopName"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:tag="@string/TEXT_SHOP_NAME"
+        android:text="@string/TEXT_SHOP_NAME" />
+    <TextView
+        android:id="@+id/tvCusCode"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.3"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:tag="@string/TEXT_TB_CUSTOMER_CODE"
+        android:text="@string/TEXT_TB_CUSTOMER_CODE"
+        android:textColor="@color/COLOR_USER_NAME" />
+
+    <TextView
+        android:id="@+id/tvCusName"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:tag="@string/TEXT_TB_CUSTOMER_NAME"
+        android:text="@string/TEXT_TB_CUSTOMER_NAME" />
+
+    <TextView
+        android:id="@+id/tvVisit"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.3"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:tag="@string/TEXT_VISIT_ORDER_VT"
+        android:text="@string/TEXT_VISIT_ORDER_VT" />
+
+    <TextView
+        android:id="@+id/tvAdd"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:tag="@string/TEXT_ADDRESS"
+        android:text="@string/TEXT_ADDRESS" />
+
+    <TextView
+        android:id="@+id/tvPath"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3.5"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:tag="@string/LINE1"
+        android:text="@string/LINE1" />
+
+    <TextView
+        android:id="@+id/tvDistance"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:tag="@string/TEXT_DISTANCE"
+        android:text="@string/TEXT_DISTANCE" />
+    <LinearLayout
+        android:id="@+id/llvisitCus"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
+        android:layout_weight="1.5"
+        android:background="@drawable/style_row_default"
+        android:duplicateParentState="true"
+        android:minHeight="@dimen/min_height_of_row"
+        android:tag="" >
+
+        <ImageView
+            android:id="@+id/visitCus"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/style_row_default"
+            android:contentDescription="@string/app_name"
+            android:duplicateParentState="true"
+            android:gravity="center_horizontal|center_vertical"
+            android:minHeight="@dimen/min_height_of_row"
+            android:padding="5dp"
+            android:scaleType="center"
+            android:src="@drawable/icon_door"
+            android:tag="" />
+    </LinearLayout>
+</LinearLayout>

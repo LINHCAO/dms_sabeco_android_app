@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- revision 30250 co filter ngay -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/BG_FRAGMENT"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/bg_header_info"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:text="@string/TEXT_LABLE_CUSTOMER_INFO"
+                    android:textColor="@color/BLACK" >
+                </TextView>
+
+                 <com.viettel.dms.view.control.VNMEditTextClearable
+                    android:id="@+id/edTKH"
+                    android:layout_width="0dp"
+                    android:layout_weight=".3"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:hint="@string/TEXT_HINT_INPUT_CUSTOMER"
+                    android:inputType="text"
+            		android:maxLength="250"
+                    android:singleLine="true"
+                    style="@style/VNMEditText"
+                    android:textSize="14sp" >
+                </com.viettel.dms.view.control.VNMEditTextClearable>
+                
+                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="right"
+                    android:text="@string/TEXT_STATUS"
+                    android:textColor="@color/BLACK" >
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/spinnerState"
+                    android:layout_width="0dp"
+                    android:layout_weight=".2"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/spinner_selector"
+                    android:drawSelectorOnTop="true"
+                    android:prompt="@string/STATE" />
+                
+                <Button
+                    android:id="@+id/btSearchCustomer"
+                    style="@style/VNMButton"
+                	android:layout_width="wrap_content"
+                	android:layout_height="@dimen/height_of_button"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/TEXT_BUTTON_FIND"/>
+                <Button
+                    android:id="@+id/btCreateCustomer"
+                    style="@style/VNMButton"
+                	android:layout_width="wrap_content"
+                	android:layout_height="@dimen/height_of_button"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/TEXT_BUTTON_CREATE_CUSTOMER"/>
+            
+        </LinearLayout>
+
+        <com.viettel.dms.view.control.DMSTableView
+            android:id="@+id/tbNewCustomer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip" 
+            android:layout_marginRight="10dip" 
+            android:layout_marginBottom="10dip"  >
+        </com.viettel.dms.view.control.DMSTableView>
+
+    </LinearLayout>
+
+</ScrollView>

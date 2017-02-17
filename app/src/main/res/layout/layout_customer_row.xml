@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG"
+    android:minHeight="35dp" >
+
+    <TextView
+        android:id="@+id/tvSTT"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="@dimen/padding"
+        android:text="@string/TEXT_STT" />
+
+    <TextView
+        android:id="@+id/tvCode"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="@dimen/padding"
+        android:text="@string/TEXT_TB_CUSTOMER_CODE" />
+
+    <TextView
+        android:id="@+id/tvName"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="445dp"
+        android:layout_height="match_parent"
+        android:gravity="left|center_vertical"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="@dimen/padding"
+        android:text="@string/TEXT_TB_CUSTOMER_NAME" />
+
+    <TextView
+        android:id="@+id/tvLevel"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="@dimen/padding"
+        android:text="@string/TEXT_TB_CUSTOMER_LEVEL" />
+
+    <TextView
+        android:id="@+id/tvSalesRemain"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:gravity="right|center_vertical"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="@dimen/padding"
+        android:text="@string/TEXT_TB_CUSTOMER_SALES_REMAIN" />
+
+</TableRow>

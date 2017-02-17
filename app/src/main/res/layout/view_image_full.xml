@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lnViewImage"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.viettel.image.zoom.ZoomViewPaper
+        android:id="@+id/myfivepanelpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFF" />
+
+    <LinearLayout
+        android:id="@+id/llInfoProgram"
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:background="#500d82df"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tvInfoProgram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="@dimen/padding_left"
+            android:paddingRight="@dimen/padding_right"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:text="Phùng Đăng Hoàn"
+            android:textColor="@color/RED" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llGallery"
+        android:layout_width="fill_parent"
+        android:layout_height="100dip"
+        android:layout_alignParentBottom="true"
+        android:background="#500d82df" >
+
+        <!-- <com.viettel.vinamilk.util.PagerContainer -->
+        <!-- android:id="@+id/pager_container" -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="90dip" -->
+        <!-- android:background="#500d82df" > -->
+
+
+        <!-- <android.support.v4.view.ViewPager -->
+        <!-- android:layout_width="120dp" -->
+        <!-- android:layout_height="80dp" -->
+        <!-- android:layout_gravity="center" /> -->
+        <!-- </com.viettel.vinamilk.util.PagerContainer> -->
+
+        <Gallery
+            android:id="@+id/gallery"
+            android:layout_width="fill_parent"
+            android:layout_height="100dip"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+</RelativeLayout>

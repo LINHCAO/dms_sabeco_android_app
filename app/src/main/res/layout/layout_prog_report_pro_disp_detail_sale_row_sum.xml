@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG" >        
+
+    <TextView
+        android:id="@+id/tvCustomerName"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="806dip"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="10dip"
+        android:padding="@dimen/padding"
+        android:textStyle="bold"
+        android:text="@string/TEXT_HEADER_TABLE_SUM"/>
+        
+    <TextView
+        android:id="@+id/tvRemainSale"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="144dip"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical|right"
+        android:textStyle="bold"
+        android:paddingRight="10dip" 
+        android:padding="@dimen/padding"/>
+</TableRow>

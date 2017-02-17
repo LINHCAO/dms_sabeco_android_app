@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG"
+    android:minWidth="796dip" >
+
+    <TextView
+        android:id="@+id/tvNPPCode"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="550dip"
+        android:layout_height="fill_parent"
+        android:gravity="left|center_vertical"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="@dimen/padding"
+        android:paddingLeft="10dip"
+        android:text="@string/TEXT_LABLE_NPP_CODE"
+        android:textColor="@color/COLOR_LINK" />
+   <LinearLayout
+	    android:id="@+id/lay"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" 
+        android:minWidth="200dip">
+		  <LinearLayout android:duplicateParentState="true"
+		      android:id="@+id/layoutLevel"
+		      android:layout_width="wrap_content"
+		      android:layout_height="fill_parent"
+		      android:minHeight="35dip"
+		      android:orientation="horizontal" >
+		  </LinearLayout>
+		
+		  <TextView
+		      android:id="@+id/tvTotal"
+		      style="@style/TextViewVinamilkTable"
+		      android:layout_width="fill_parent"
+		      android:layout_height="fill_parent"
+		      android:gravity="center"
+		      android:minHeight="35dip"
+		      android:minWidth="80dip"
+		      android:textStyle="bold"
+		      android:text="" />
+	</LinearLayout>
+</TableRow>

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/TRANSPARENT" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/BG_FRAGMENT"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_content_fragment"
+        android:paddingLeft="@dimen/padding_content_fragment"
+        android:paddingRight="@dimen/padding_content_fragment" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:background="@drawable/bg_header_info"
+            android:baselineAligned="true"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding" >
+
+            <Button
+                android:id="@+id/btSave"
+                style="@style/VNMButton"
+                android:layout_width="100dp"
+                android:layout_height="@dimen/height_of_button"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical|right"
+                android:layout_margin="@dimen/margin"
+                android:singleLine="true"
+                android:text="@string/TEXT_BUTTON_SAVE"
+                android:textColor="@color/BLACK" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/btSave"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:text="@string/TEXT_LABLE_NPP"
+                    android:textColor="@color/BLACK" />
+
+                <TextView
+                    android:id="@+id/tvNPPCodeName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_bottom"
+                    android:layout_marginRight="20dip"
+                    android:layout_weight="5"
+                    android:textColor="@color/BLACK"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:text="@string/TEXT_LABLE_GSNPP"
+                    android:textColor="@color/BLACK" />
+
+                <TextView
+                    android:id="@+id/tvGSNPPCodeName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:layout_weight="5"
+                    android:textColor="@color/BLACK"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:text="@string/TEXT_CODE_NVBH"
+                    android:textColor="@color/BLACK" />
+
+                <TextView
+                    android:id="@+id/tvNVBHName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:layout_weight="5"
+                    android:textColor="@color/BLACK"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:layout_weight="5.5"
+                    android:text="@string/TEXT_LABLE_REMIND"
+                    android:textColor="@color/BLACK" />
+
+                <com.viettel.dms.view.control.VNMEditTextClearable
+                    android:id="@+id/etInputDoneDate"
+                    style="@style/VNMEditText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="5"
+                    android:inputType="textCapWords"
+                    android:maxLength="60"
+                    android:paddingBottom="@dimen/padding_bottom"
+                    android:paddingTop="@dimen/padding_top"
+                    android:singleLine="true" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:layout_marginTop="@dimen/margin_top"
+            android:background="@drawable/bg_white_rounded"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:gravity="left|center_vertical"
+                android:padding="@dimen/padding"
+                android:text="@string/TEXT_LABLE_TBHV_REVIEWS_GENERAL"
+                android:textColor="@color/BLACK"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etInputReviewsGeneral"
+                style="@style/VNMEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:hint="@string/TEXT_LABLE_TBHV_HINT_REVIEWS_GENERAL"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLength="2000"
+                android:maxLines="25"
+                android:minHeight="100dp"
+                android:padding="@dimen/padding"
+                android:singleLine="false" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:gravity="left|center_vertical"
+                android:padding="@dimen/padding"
+                android:text="@string/TEXT_LABLE_TBHV_REVIEWS_DISTRIBUTION_DISPLAY"
+                android:textColor="@color/BLACK"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etInputReviewsDistributionDisplay"
+                style="@style/VNMEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:hint="@string/TEXT_LABLE_TBHV_HINT_REVIEWS_DISTRIBUTION_DISPLAY"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLength="2000"
+                android:maxLines="25"
+                android:minHeight="100dp"
+                android:padding="@dimen/padding"
+                android:singleLine="false" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:gravity="left|center_vertical"
+                android:padding="@dimen/padding"
+                android:text="@string/TEXT_LABLE_TBHV_REVIEWS_SERVICES_CUSTOMER"
+                android:textColor="@color/BLACK"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etInputReviewsServicesCustomer"
+                style="@style/VNMEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:hint="@string/TEXT_LABLE_TBHV_HINT_REVIEWS_SERVICES_CUSTOMER"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLength="2000"
+                android:maxLines="25"
+                android:minHeight="100dp"
+                android:padding="@dimen/padding"
+                android:singleLine="false" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:gravity="left|center_vertical"
+                android:padding="@dimen/padding"
+                android:text="@string/TEXT_LABLE_TBHV_REVIEWS_RELATIONSHIP_CUSTOMER"
+                android:textColor="@color/BLACK"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etInputReviewsRelationshipCustomer"
+                style="@style/VNMEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:hint="@string/TEXT_LABLE_TBHV_HINT_REVIEWS_RELATIONSHIP_CUSTOMER"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLength="2000"
+                android:maxLines="25"
+                android:minHeight="100dp"
+                android:padding="@dimen/padding"
+                android:singleLine="false" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:gravity="left|center_vertical"
+                android:padding="@dimen/padding"
+                android:text="@string/TEXT_LABLE_TBHV_REVIEWS_SKILL_NVBH"
+                android:textColor="@color/BLACK"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etInputReviewsSkillNVBH"
+                style="@style/VNMEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:hint="@string/TEXT_LABLE_TBHV_HINT_REVIEWS_SKILL_NVBH"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLength="2000"
+                android:maxLines="25"
+                android:minHeight="100dp"
+                android:padding="@dimen/padding"
+                android:singleLine="false" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:gravity="left|center_vertical"
+                android:padding="@dimen/padding"
+                android:text="@string/TEXT_LABLE_TBHV_REVIEWS_SKILL_GSNPP"
+                android:textColor="@color/BLACK"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etInputReviewsSkillGSNPP"
+                style="@style/VNMEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:hint="@string/TEXT_LABLE_TBHV_HINT_REVIEWS_SKILL_GSNPP"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLength="2000"
+                android:maxLines="25"
+                android:minHeight="100dp"
+                android:padding="@dimen/padding"
+                android:singleLine="false" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:gravity="left|center_vertical"
+                android:padding="@dimen/padding"
+                android:text="@string/TEXT_LABLE_TBHV_REVIEWS_OTHER_PROBLEMS"
+                android:textColor="@color/BLACK"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etInputReviewsOtherProblems"
+                style="@style/VNMEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:hint="@string/TEXT_LABLE_TBHV_HINT_REVIEWS_OTHER_PROBLEMS"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLength="2000"
+                android:maxLines="25"
+                android:minHeight="100dp"
+                android:padding="@dimen/padding"
+                android:singleLine="false" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

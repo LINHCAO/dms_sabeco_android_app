@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG" >
+
+    <TextView
+        android:id="@+id/tvCusName"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="170dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="5dp"
+        android:text="Khách hàng" />
+
+    <TextView
+        android:id="@+id/tvCusStreet"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="220dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:minHeight="40dip"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text="Địa chỉ" />
+
+    <TextView
+        android:id="@+id/tvStartTime"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="110dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:minHeight="40dip"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text="Bat dau" />
+
+    <TextView
+        android:id="@+id/tvEndTime"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="110dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:minHeight="40dip"
+        android:padding="5dp"
+        android:text="ket thuc" />
+
+    <TextView
+        android:id="@+id/tvRevenue"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="110dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical|right"
+        android:minHeight="40dip"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text="Doanh số (1000VNĐ)" />
+
+</TableRow>

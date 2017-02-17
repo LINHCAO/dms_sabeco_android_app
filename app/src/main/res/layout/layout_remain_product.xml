@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/BG_FRAGMENT"
+        android:baselineAligned="false"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btSave"
+            style="@style/VNMButton"
+            android:layout_width="150dip"
+            android:layout_height="40dip"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/TEXT_BUTTON_SAVE"
+            android:textColor="@color/BLACK" >
+        </Button>
+
+        <com.viettel.dms.view.control.DMSTableView
+            android:id="@+id/tbOrder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip" >
+        </com.viettel.dms.view.control.DMSTableView>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/tvSTT"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:tag="@string/TEXT_STT"
+        android:text="@string/TEXT_STT" />
+
+    <TextView
+        android:id="@+id/tvProductCode"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.3"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:tag="@string/TEXT_MA_SP"
+        android:text="@string/TEXT_MA_SP"
+        android:textColor="@color/COLOR_USER_NAME" />
+
+    <TextView
+        android:id="@+id/tvProductName"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:tag="@string/TEXT_NAME_PRODUCT"
+        android:text="@string/TEXT_NAME_PRODUCT" />
+
+    <TextView
+        android:id="@+id/tvUOM"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:tag="@string/TEXT_LABLE_PRODUCT_UOM"
+        android:text="@string/TEXT_LABLE_PRODUCT_UOM" />
+
+    <TextView
+        android:id="@+id/tvQuantity"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:tag="@string/TEXT_COLUM_INVENTORY"
+        android:text="@string/TEXT_COLUM_INVENTORY" />
+
+</LinearLayout>

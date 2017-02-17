@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- revision 30250 co filter ngay -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/BG_FRAGMENT"
+        android:layout_marginTop="5dip"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/bg_header_info"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+			 <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:text="Mã NPP:"
+                android:textColor="@color/BLACK" />
+
+            <TextView
+                android:id="@+id/tvMaTenNPP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dip"
+                android:text="26"
+                android:textColor="@color/BLACK"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <com.viettel.dms.view.control.VinamilkTableView
+            android:id="@+id/tbEquipment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip" >
+        </com.viettel.dms.view.control.VinamilkTableView>        
+        
+    </LinearLayout>
+
+</ScrollView>

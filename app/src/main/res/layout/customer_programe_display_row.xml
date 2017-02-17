@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/tvCode"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.3"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:tag="@string/TEXT_LABLE_PROGRAM_CODE"
+        android:text="@string/TEXT_LABLE_PROGRAM_CODE"
+        android:textColor="@color/COLOR_USER_NAME" />
+
+    <TextView
+        android:id="@+id/tvName"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:tag="@string/TEXT_NAME_PROGRAM"
+        android:text="@string/TEXT_NAME_PROGRAM" />
+
+    <TextView
+        android:id="@+id/tvDepart"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:tag="@string/TEXT_CTTB_DEPART"
+        android:text="@string/TEXT_CTTB_DEPART" />
+
+    <TextView
+        android:id="@+id/tvLevel"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.3"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:tag="@string/TEXT_HEADER_LIMIT"
+        android:text="@string/TEXT_HEADER_LIMIT" />
+
+    <TextView
+        android:id="@+id/tvQuota"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:tag="@string/QUOTA"
+        android:text="@string/QUOTA"/>
+
+    <TextView
+        android:id="@+id/tvRemain"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:tag="@string/TEXT_TB_CUSTOMER_SALES_REMAIN"
+        android:text="@string/TEXT_TB_CUSTOMER_SALES_REMAIN"/>
+
+</LinearLayout>

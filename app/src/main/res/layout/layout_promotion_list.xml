@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <!-- revision 29961 de load lai layout co ho tro chuc nang tim kiem -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/BG_FRAGMENT"
+        android:orientation="vertical" >
+
+        <com.viettel.dms.view.control.DMSTableView
+            android:id="@+id/tbPromotionList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip" >
+        </com.viettel.dms.view.control.DMSTableView>
+    </LinearLayout>
+
+</ScrollView>

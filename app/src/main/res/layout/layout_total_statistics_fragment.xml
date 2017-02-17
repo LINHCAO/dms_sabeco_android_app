@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/BG_FRAGMENT"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/bg_header_info"
+            android:padding="20dp" >
+
+            <TableRow>
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:text="Mã hàng:"
+                    android:textColor="@color/BLACK" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/etProductCode"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dip"
+                    android:hint="Nhập mã hàng"
+                    android:inputType="text"
+                    android:paddingLeft="5dip"
+                    style="@style/VNMEditText"
+                    android:singleLine="true"
+                    android:width="200dip" >
+                </EditText>
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50dip"
+                    android:gravity="left"
+                    android:text="Ngành hàng:"
+                    android:textColor="@color/BLACK" >
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/spProductType"
+                    android:layout_width="200dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dip"
+                    android:background="@drawable/spinner_selector"
+                    android:drawSelectorOnTop="true"
+                    android:spinnerMode="dropdown" />
+
+                <ImageButton
+                    android:contentDescription="@string/TEXT_IMAGE_INFO"
+                    android:id="@+id/btSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dip"
+                    android:background="@drawable/vnm_button_selector"
+                    android:padding="10dip"
+                    android:src="@drawable/icon_search" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="@dimen/spacing_between_rows" >
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:text="Tên hàng:"
+                    android:textColor="@color/BLACK" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/etProductName"
+                    android:layout_width="200dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dip"
+                    android:hint="Nhập tên hàng"
+                    android:inputType="text"
+                    android:paddingLeft="5dip"
+                    android:singleLine="true"
+                    style="@style/VNMEditText" >
+                </EditText>
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50dip"
+                    android:gravity="left"
+                    android:text="Ngành hàng con:"
+                    android:textColor="@color/BLACK" >
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/spProductSubType"
+                    android:layout_width="200dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dip"
+                    android:background="@drawable/spinner_selector"
+                    android:drawSelectorOnTop="true"
+                    android:spinnerMode="dropdown" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:text="Đơn tổng trong ngày"
+            android:textColor="@color/BLACK"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.viettel.dms.view.control.VinamilkTableView
+            android:id="@+id/tbStatisticsList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip" >
+        </com.viettel.dms.view.control.VinamilkTableView>
+    </LinearLayout>
+
+</ScrollView>

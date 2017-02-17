@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rowCompetitor"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG" >
+
+    <TextView
+        android:id="@+id/tvSTT"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="45dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:tag="@string/TEXT_STT"
+        android:text="@string/TEXT_STT"
+        android:textColor="@color/BLACK"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvProductCode"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="130dp"
+        android:layout_height="fill_parent"
+        android:gravity="left|center_vertical"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingBottom="@dimen/padding_bottom"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="2dp"
+        android:paddingTop="@dimen/padding_top"
+        android:tag="@string/TEXT_COLUM_ORDER_CODE"
+        android:text="@string/TEXT_COLUM_ORDER_CODE"
+        android:textColor="@color/BLACK"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvProductName"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="330dp"
+        android:layout_height="fill_parent"
+        android:gravity="left|center_vertical"
+        android:maxLines="2"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="@dimen/padding_left"
+        android:tag="@string/TEXT_COLUM_ORDER_NAME"
+        android:text="@string/TEXT_COLUM_ORDER_NAME"
+        android:textColor="@color/BLACK"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvOrderFromNPP"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="150dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:maxLines="2"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="@dimen/padding_left"
+        android:tag="@string/TEXT_COLUM_ORDER_NAME"
+        android:textColor="@color/BLACK"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/llEditQuantity"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="150dp"
+        android:layout_height="fill_parent"
+        android:minHeight="@dimen/min_height_of_row"
+        android:orientation="vertical"
+        android:tag="@string/TEXT_AMOUNT_SALES" >
+
+        <EditText
+            android:id="@+id/etQuantity"
+            style="@style/VNMEditText"
+            android:layout_width="120dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="2dp"
+            android:gravity="right|center_vertical"
+            android:inputType="number"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:textSize="15sp" >
+        </EditText>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvQuantity"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="150dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:maxLines="2"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="@dimen/padding_left"
+        android:tag="@string/TEXT_COLUM_ORDER_NAME"
+        android:textColor="@color/BLACK"
+        android:textSize="15sp" />
+
+</TableRow>

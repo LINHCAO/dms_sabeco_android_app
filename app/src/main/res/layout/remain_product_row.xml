@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/tvSTT"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        android:tag="@string/TEXT_STT"
+        android:text="@string/TEXT_STT" />
+
+    <TextView
+        android:id="@+id/tvMMH"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.3"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        android:tag="@string/TEXT_COLUM_ORDER_SHORT_CODE"
+        android:text="@string/TEXT_COLUM_ORDER_SHORT_CODE" />
+
+    <TextView
+        android:id="@+id/tvTMH"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4.5"
+        android:gravity="center_vertical|left"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        android:tag="@string/TEXT_COLUM_ORDER_NAME"
+        android:text="@string/TEXT_COLUM_ORDER_NAME" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.1"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        android:tag="@string/TEXT_COLUM_PRICE"
+        android:text="@string/TEXT_COLUM_PRICE" />
+
+    <LinearLayout
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:minHeight="@dimen/min_height_of_row" >
+
+        <EditText
+            android:id="@+id/edRemainQuanlity"
+            style="@style/VNMEditText"
+            android:layout_width="fill_parent"
+            android:layout_margin="5dip"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSelect"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        android:minHeight="@dimen/min_height_of_row" >
+
+        <CheckBox
+            android:id="@+id/cbCheck"
+            style="@style/VNMCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/BLACK" />
+    </LinearLayout>
+
+</LinearLayout>

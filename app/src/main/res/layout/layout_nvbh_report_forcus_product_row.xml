@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG" >
+
+    <TextView
+        android:id="@+id/tvSTT"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="45dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="@dimen/padding"
+        android:text="@string/TEXT_STT"
+        android:textColor="@color/BLACK" />
+
+    <TextView
+        android:id="@+id/tvProductCode"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="100dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:maxLines="2"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="@dimen/padding"
+        android:text="@string/TEXT_HEADER_PRODUCT_CODE"
+        android:textColor="@color/BLACK" />
+
+    <TextView
+        android:id="@+id/tvProductName"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="230dip"
+        android:layout_height="fill_parent"
+        android:gravity="center|left"
+        android:maxLines="2"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="@dimen/padding"
+        android:text="@string/TEXT_COLUM_ORDER_NAME"
+        android:textColor="@color/BLACK" />
+
+    <TextView
+        android:id="@+id/tvProductIndustry"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="50dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:maxLines="2"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="@dimen/padding"
+        android:text="@string/TEXT_HEADER_PRODUCT_INDUSTRY"
+        android:textColor="@color/BLACK" />
+
+    <TextView
+        android:id="@+id/tvTypeForcusProduct"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="90dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:maxLines="2"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="@dimen/padding"
+        android:text="@string/TEXT_HEADER_TYPE_FORCUS_PRODUCT"
+        android:textColor="@color/BLACK" />
+
+    <TextView
+        android:id="@+id/tvPlanAmount"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="109dip"
+        android:layout_height="fill_parent"
+        android:gravity="right|center_vertical"
+        android:maxLines="2"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="@dimen/padding"
+        android:text="@string/TEXT_HEADER_TABLE_PLAN"
+        android:textColor="@color/BLACK" />
+
+    <TextView
+        android:id="@+id/tvDoneAmount"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="109dip"
+        android:layout_height="fill_parent"
+        android:gravity="right|center_vertical"
+        android:maxLines="2"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="@dimen/padding"
+        android:text="@string/TEXT_HEADER_TABLE_DONE"
+        android:textColor="@color/BLACK" />
+
+    <TextView
+        android:id="@+id/tvRemainAmount"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="105dp"
+        android:layout_height="fill_parent"
+        android:gravity="right|center_vertical"
+        android:maxLines="2"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="@dimen/padding"
+        android:text="@string/TEXT_HEADER_TABLE_REMAIN"
+        android:textColor="@color/BLACK" />
+
+    <TextView
+        android:id="@+id/tvProgress"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="95dp"
+        android:layout_height="fill_parent"
+        android:gravity="right|center_vertical"
+        android:maxLines="2"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="@dimen/padding"
+        android:text="@string/TEXT_HEADER_TABLE_PROGRESS"
+        android:textColor="@color/BLACK" />
+
+    <TextView
+        android:id="@+id/tvNotifyNull"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="950dp"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="@dimen/padding"
+        android:textColor="@color/BLACK"
+        android:visibility="gone" />
+
+</TableRow>

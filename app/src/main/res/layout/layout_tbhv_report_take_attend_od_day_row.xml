@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/tvNPP"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.1"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        android:tag="@string/TEXT_HEADER_TABLE_NPP"
+        android:text="@string/TEXT_HEADER_TABLE_NPP"
+        android:textColor="@color/COLOR_LINK" />
+
+    <TextView
+        android:id="@+id/tvGSNPP"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        android:tag="@string/TEXT_HEADER_TABLE_GSNPP"
+        android:text="@string/TEXT_HEADER_TABLE_GSNPP"
+        android:textColor="@color/COLOR_LINK" />
+
+    <TextView
+        android:id="@+id/tvTotalNV"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.8"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        android:tag="@string/TEXT_HEADER_TABLE_TOTAL_NV"
+        android:text="@string/TEXT_HEADER_TABLE_TOTAL_NV" />
+
+    <TextView
+        android:id="@+id/tvMiddleInfo"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.8"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        android:tag="@string/TEXT_NOT_COME_NPP"
+        android:text="@string/TEXT_NOT_COME_NPP" />
+
+    <TextView
+        android:id="@+id/tvAfterMiddleInfo"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.8"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        android:tag="@string/TEXT_OUT_TIME"
+        android:text="@string/TEXT_OUT_TIME"/>
+
+</LinearLayout>

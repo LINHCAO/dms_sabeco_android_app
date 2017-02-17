@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG" >
+
+    <TextView
+        android:id="@+id/tvSTT"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="40dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="5dp"
+        android:text="STT" />
+
+    <TextView
+        android:id="@+id/tvOrderNum"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="140dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="5dp"
+        android:text="Số đơn hàng" />
+
+    <TextView
+        android:id="@+id/tvCusCode"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="60dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/tvTenKH"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="170dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical|left"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/tvTotal"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="160dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical|right"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tvDescription"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="150dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical|left"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="5dp"/>
+
+</TableRow>

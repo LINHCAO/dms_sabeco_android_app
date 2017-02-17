@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llRoot"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dip"
+        android:padding="10dp"
+        android:background="@drawable/popup_1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvName"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/RED"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dip"
+                android:layout_weight="1.0"
+                android:paddingLeft="2dip"
+                android:paddingRight="2dip"
+                android:text="Cua hang thoi trang" />
+
+            <ImageView
+                android:contentDescription="@string/TEXT_BUTTON_DELETE"
+                android:id="@+id/ivDelete"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/icon_close" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llContent2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tvPage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    android:text="3/30"
+                    android:textColor="@color/RED"
+                    android:textSize="17sp" >
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tvAddress"
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dip"
+                        android:layout_marginTop="5dp"
+                        android:text="Địa chỉ 490/20 Lý Thái Tổ P10, Q10, TPHCM Thái Tổ P10, Q10, TPHCM"
+                        android:textColor="@color/BLACK" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tvCellPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginBottom="5dip"
+                        android:layout_marginTop="5dp"
+                        android:text="Di động : 0980878272"
+                        android:textColor="@color/BLACK" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tvStablePhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginBottom="5dip"
+                        android:layout_marginTop="5dp"
+                        android:text="Cố định : 0980878272"
+                        android:textColor="@color/BLACK" >
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tvInfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="1.0"
+                    android:drawableLeft="@drawable/icon_detail"
+                    android:drawablePadding="2dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="2dip"
+                    android:paddingRight="2dip"
+                    android:text="@string/TEXT_INFO"
+                    android:textColor="@color/BLUE" >
+                </TextView>
+                
+                <TextView
+                    android:id="@+id/tvOrder"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="1.0"
+                    android:drawableLeft="@drawable/icon_change_promotion"
+                    android:drawablePadding="2dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="2dip"
+                    android:paddingRight="2dip"
+                    android:text="@string/TEXT_VISIT"
+                    android:textColor="@color/BLUE" >
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:contentDescription="@string/ATTAIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llContent"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-10dip"
+        android:paddingBottom="5dp"
+        android:src="@drawable/popup_2" >
+    </ImageView>
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- danh cho nhung man hinh chua chua danh sach thumbnail hinh anh -->
+    <dimen name="num_column_size">290dip</dimen>
+    <dimen name="padding">5dip</dimen>
+    <dimen name="padding_content_fragment">10dip</dimen>
+    <dimen name="padding_left">5dip</dimen>
+    <dimen name="padding_right">5dip</dimen>
+    <dimen name="padding_top">5dip</dimen>
+    <dimen name="padding_bottom">5dip</dimen>
+    <dimen name="margin">5dip</dimen>
+    <dimen name="margin_left">5dip</dimen>
+    <dimen name="margin_right">5dip</dimen>
+    <dimen name="margin_top">5dip</dimen>
+    <dimen name="margin_bottom">5dip</dimen>
+    <dimen name="spacing_between_rows">10dip</dimen>
+    <dimen name="margin_grid_album">15dip</dimen>
+    <dimen name="width_image_thumb">280dp</dimen>
+    <dimen name="height_image_thumb">186dp</dimen>
+    <dimen name="min_height_of_row">40dp</dimen>
+    <dimen name="height_of_button">40dp</dimen>
+    <dimen name="width_of_input_textbox">200dp</dimen>
+    
+    <!-- danh cho layout popup chi tiet van de -->
+    <dimen name="width_of_textview_chitietvande_left">100dp</dimen>
+    <dimen name="width_of_textview_chitietvande_right">120dp</dimen>
+
+    <!-- Toast dimensions -->
+    <dimen name="toast_hover">32dp</dimen>
+    <dimen name="buttontoast_hover">24dp</dimen>
+    <dimen name="buttontoast_x_padding">10dp</dimen>
+    <dimen name="cardtoast_margin">4dp</dimen>
+    <dimen name="padding_checkbox">35dp</dimen>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG" >
+
+    <TextView
+        android:id="@+id/tvCustomerCode"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="100dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:padding="@dimen/padding"
+        android:textColor="@color/COLOR_USER_NAME" />
+
+    <TextView
+        android:id="@+id/tvCustomerName"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="280dip"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="10dip"
+        android:padding="@dimen/padding"/>
+    <TextView
+        android:id="@+id/tvCustomerAddress"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="220dip"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical|left"
+        android:paddingRight="10dip"
+        android:padding="@dimen/padding"/>
+    <TextView
+        android:id="@+id/tvCustomerLevel"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="53dip"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical|left"
+        android:paddingRight="10dip"
+        android:padding="@dimen/padding"/>
+    <TextView
+        android:id="@+id/tvCustomerAmountPlan"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="145dip"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical|right"
+        android:paddingRight="10dip"
+        android:padding="@dimen/padding"/>
+        
+    <TextView
+        android:id="@+id/tvRemainSale"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="145dip"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical|right"
+        android:paddingRight="10dip" 
+        android:padding="@dimen/padding" />
+</TableRow>

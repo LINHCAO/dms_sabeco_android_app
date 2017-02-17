@@ -1,0 +1,137 @@
+Applications Memory Usage (kB):
+Uptime: 73208412 Realtime: 82469417
+
+Total PSS by process:
+    67868 kB: system (pid 360)
+    48109 kB: com.sec.android.app.launcher (pid 632)
+    44055 kB: com.android.systemui (pid 525)
+    34259 kB: com.android.mms (pid 17319)
+    22134 kB: com.google.android.gms (pid 1167)
+    16847 kB: com.sec.android.inputmethod (pid 573)
+    16198 kB: com.google.android.gms.persistent (pid 879)
+    15463 kB: com.google.process.gapps (pid 693)
+    13169 kB: com.google.android.apps.plus (pid 18701)
+    13047 kB: com.google.android.talk (pid 14995)
+    12867 kB: com.google.android.googlequicksearchbox:search (pid 19973)
+    11077 kB: com.android.phone (pid 591)
+     9209 kB: com.android.vending (pid 15454)
+     8670 kB: android.process.acore (pid 812)
+     8241 kB: com.sec.chaton (pid 20007)
+     7683 kB: com.android.contacts (pid 1209)
+     7547 kB: com.sec.pcw (pid 18136)
+     7546 kB: android.process.media (pid 16202)
+     6691 kB: com.viettel.sabeco (pid 15637)
+     6633 kB: com.estrongs.android.pop (pid 19887)
+     6224 kB: vn.adflex.process (pid 3543)
+     6086 kB: com.viettel.sabeco:LocationServiceVNM (pid 18118)
+     5663 kB: com.sec.android.gallery3d (pid 19955)
+     5294 kB: com.viettel.dms.lite (pid 15622)
+     5164 kB: com.sec.factory (pid 16572)
+     5063 kB: com.wssyncmldm (pid 20092)
+     5011 kB: com.viettel.dms.lite:LocationServiceDMS (pid 19920)
+     4833 kB: com.android.settings (pid 19903)
+     4783 kB: com.android.MtpApplication (pid 19807)
+     4298 kB: com.sec.android.app.videoplayer (pid 19832)
+     4174 kB: com.sec.android.app.sysscope (pid 20076)
+     4055 kB: com.google.android.gsf.login (pid 15583)
+     3905 kB: com.nna88.voz.main (pid 19940)
+     3904 kB: com.sec.spp.push:RemoteDlcProcess (pid 20030)
+     3720 kB: com.android.providers.calendar (pid 19439)
+     3683 kB: com.google.android.apps.uploader (pid 19787)
+     3357 kB: com.sec.android.provider.logsprovider (pid 603)
+     3294 kB: com.sec.android.app.music (pid 19819)
+     3164 kB: com.crazyapps.mobilelocationtracker (pid 20058)
+     2986 kB: com.sec.android.daemonapp.ap.yahoostock.stockclock (pid 18102)
+     2970 kB: com.sec.android.widgetapp.at.hero.accuweather.widget:remote (pid 854)
+     2944 kB: com.android.exchange (pid 18361)
+     2919 kB: com.sec.android.provider.badge (pid 15570)
+     2845 kB: com.sec.android.app.twdvfs (pid 617)
+     2524 kB: com.sec.phone (pid 16609)
+     2357 kB: com.sec.android.sCloudBackupApp (pid 19848)
+     2345 kB: com.google.android.partnersetup (pid 19988)
+     2176 kB: com.aeon.ussdtonotification (pid 20046)
+     2172 kB: com.iba.ussdcheckerresources (pid 826)
+     2108 kB: com.android.server.vpn.enterprise:remote (pid 916)
+     2032 kB: com.android.smspush (pid 784)
+     1998 kB: com.android.server.device.enterprise:remote (pid 929)
+
+Total PSS by OOM adjustment:
+    67868 kB: System
+               67868 kB: system (pid 360)
+    61334 kB: Persistent
+               44055 kB: com.android.systemui (pid 525)
+               11077 kB: com.android.phone (pid 591)
+                3357 kB: com.sec.android.provider.logsprovider (pid 603)
+                2845 kB: com.sec.android.app.twdvfs (pid 617)
+    42929 kB: Foreground
+               34259 kB: com.android.mms (pid 17319)
+                8670 kB: android.process.acore (pid 812)
+     8310 kB: Visible
+                2172 kB: com.iba.ussdcheckerresources (pid 826)
+                2108 kB: com.android.server.vpn.enterprise:remote (pid 916)
+                2032 kB: com.android.smspush (pid 784)
+                1998 kB: com.android.server.device.enterprise:remote (pid 929)
+    35542 kB: Perceptible
+               16847 kB: com.sec.android.inputmethod (pid 573)
+                6224 kB: vn.adflex.process (pid 3543)
+                5164 kB: com.sec.factory (pid 16572)
+                4783 kB: com.android.MtpApplication (pid 19807)
+                2524 kB: com.sec.phone (pid 16609)
+    36672 kB: A Services
+               16198 kB: com.google.android.gms.persistent (pid 879)
+               15463 kB: com.google.process.gapps (pid 693)
+                5011 kB: com.viettel.dms.lite:LocationServiceDMS (pid 19920)
+    51079 kB: Home
+               48109 kB: com.sec.android.app.launcher (pid 632)
+                2970 kB: com.sec.android.widgetapp.at.hero.accuweather.widget:remote (pid 854)
+    22123 kB: B Services
+                7546 kB: android.process.media (pid 16202)
+                5063 kB: com.wssyncmldm (pid 20092)
+                4174 kB: com.sec.android.app.sysscope (pid 20076)
+                3164 kB: com.crazyapps.mobilelocationtracker (pid 20058)
+                2176 kB: com.aeon.ussdtonotification (pid 20046)
+   169507 kB: Background
+               22134 kB: com.google.android.gms (pid 1167)
+               13169 kB: com.google.android.apps.plus (pid 18701)
+               13047 kB: com.google.android.talk (pid 14995)
+               12867 kB: com.google.android.googlequicksearchbox:search (pid 19973)
+                9209 kB: com.android.vending (pid 15454)
+                8241 kB: com.sec.chaton (pid 20007)
+                7683 kB: com.android.contacts (pid 1209)
+                7547 kB: com.sec.pcw (pid 18136)
+                6691 kB: com.viettel.sabeco (pid 15637)
+                6633 kB: com.estrongs.android.pop (pid 19887)
+                6086 kB: com.viettel.sabeco:LocationServiceVNM (pid 18118)
+                5663 kB: com.sec.android.gallery3d (pid 19955)
+                5294 kB: com.viettel.dms.lite (pid 15622)
+                4833 kB: com.android.settings (pid 19903)
+                4298 kB: com.sec.android.app.videoplayer (pid 19832)
+                4055 kB: com.google.android.gsf.login (pid 15583)
+                3905 kB: com.nna88.voz.main (pid 19940)
+                3904 kB: com.sec.spp.push:RemoteDlcProcess (pid 20030)
+                3720 kB: com.android.providers.calendar (pid 19439)
+                3683 kB: com.google.android.apps.uploader (pid 19787)
+                3294 kB: com.sec.android.app.music (pid 19819)
+                2986 kB: com.sec.android.daemonapp.ap.yahoostock.stockclock (pid 18102)
+                2944 kB: com.android.exchange (pid 18361)
+                2919 kB: com.sec.android.provider.badge (pid 15570)
+                2357 kB: com.sec.android.sCloudBackupApp (pid 19848)
+                2345 kB: com.google.android.partnersetup (pid 19988)
+
+Total PSS by category:
+   212525 kB: Dalvik
+    81620 kB: Other dev
+    77763 kB: Unknown
+    43738 kB: .so mmap
+    33580 kB: .dex mmap
+    28154 kB: Other mmap
+    17586 kB: .apk mmap
+      182 kB: Ashmem
+      126 kB: .ttf mmap
+       58 kB: .jar mmap
+       32 kB: Cursor
+        0 kB: Native
+
+Total PSS: 495364 kB
+      KSM: 0 kB saved from shared 0 kB
+           0 kB unshared; 0 kB volatile

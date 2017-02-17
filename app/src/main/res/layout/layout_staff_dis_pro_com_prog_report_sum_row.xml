@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG" >
+
+    <TextView
+        android:id="@+id/tvMaNVBH"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="150dip"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical|left"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="5dip"
+        android:text=""
+        android:textColor="@color/COLOR_USER_NAME" />
+
+    <TextView
+        android:id="@+id/tvTenNVBH"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|left"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="5dip"
+        android:paddingLeft="10dip"
+        android:text="Tổng cộng"
+        android:textStyle="bold" />
+    
+    <LinearLayout android:duplicateParentState="true"
+        android:id="@+id/layoutLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:minHeight="35dip"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTotal"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="90dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingRight="10dip"
+        android:text="3/10"
+        android:textStyle="bold" />
+
+</TableRow>

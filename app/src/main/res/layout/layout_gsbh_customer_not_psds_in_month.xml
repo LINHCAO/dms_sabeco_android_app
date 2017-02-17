@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- revision 30250 co filter ngay -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mScrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/BG_FRAGMENT"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_content_fragment" 
+        android:paddingRight="@dimen/padding_content_fragment" 
+        android:paddingBottom="@dimen/padding_content_fragment" 
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/bg_header_info"
+            android:gravity="right"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:id="@+id/tvNVBH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="right"
+                android:paddingLeft="50dip"
+                android:paddingRight="@dimen/padding_right"
+                android:text="@string/TEXT_TITLE_NVBH"
+                android:textColor="@color/BLACK"
+                android:visibility="visible" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spNVBH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/spinner_selector"
+                android:drawSelectorOnTop="true"
+                android:prompt="@string/TEXT_NVBH"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="right"
+                android:paddingLeft="10dip"
+                android:paddingRight="@dimen/padding_right"
+                android:text="@string/LINE"
+                android:textColor="@color/BLACK" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spTuyen"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:background="@drawable/spinner_selector"
+                android:drawSelectorOnTop="true"
+                android:prompt="@string/LINE1" />
+        </LinearLayout>
+
+        <com.viettel.dms.view.control.VinamilkTableView
+            android:id="@+id/tbCustomer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top" >
+        </com.viettel.dms.view.control.VinamilkTableView>
+
+        <TextView
+            android:id="@+id/tvCacLanGheTham"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="@dimen/margin_top"
+            android:gravity="left"
+            android:text="@string/TEXT_OF_VISITS_"
+            android:textColor="@color/BLACK"
+            android:textStyle="bold"
+         	android:textSize="16sp"
+           >
+        </TextView>
+
+        <com.viettel.dms.view.control.VinamilkTableView
+            android:id="@+id/tbCacLanGheTham"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top" >
+        </com.viettel.dms.view.control.VinamilkTableView>
+
+        <TextView
+            android:id="@+id/tvMessageCacLanGheTham"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="@dimen/margin_top"
+            android:gravity="left"
+            android:paddingBottom="10dip"
+            android:text="@string/TEXT_CUSTOMER_NOT_VISITS_IN_MONTH"
+            android:textColor="@color/BLACK" >
+        </TextView>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_header_info"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/cbGsnpp"
+            style="@style/VNMCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="@dimen/margin_right" />
+
+        <com.viettel.dms.view.control.SpinerRoute
+            android:id="@+id/spinnerStaffCode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:drawSelectorOnTop="true"
+            android:prompt="@string/LINE" >
+        </com.viettel.dms.view.control.SpinerRoute>
+
+        <ImageView
+            android:contentDescription="@string/TEXT_IMAGE_INFO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/margin_right"
+            android:src="@drawable/icon_map_position_pink" />
+
+        <CheckBox
+            android:id="@+id/cbTttt"
+            style="@style/VNMCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="50dip" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_left"
+            android:paddingRight="@dimen/padding_right"
+            android:text="@string/TEXT_HEADER_TNPG_REPORT"
+            android:textColor="@color/BLACK"
+            android:textStyle="bold"
+            android:drawableRight="@drawable/icon_map_position_blue" >
+        </TextView>
+
+        <!-- <ImageView
+            android:contentDescription="@string/TEXT_IMAGE_INFO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:src="@drawable/icon_map_position_blue" /> -->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="50dip"
+            android:paddingLeft="@dimen/padding_left"
+            android:layout_weight="0.5"
+            android:paddingRight="@dimen/padding_right"
+            android:text="@string/TEXT_LABEL_NVBH"
+            android:textColor="@color/BLACK"
+            android:textStyle="bold"
+            android:drawableRight="@drawable/icon_map_position_yellow" >
+        </TextView>
+
+        <!-- <ImageView
+            android:contentDescription="@string/TEXT_IMAGE_INFO"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:src="@drawable/icon_map_position_yellow" /> -->
+    </LinearLayout>
+
+</ScrollView>

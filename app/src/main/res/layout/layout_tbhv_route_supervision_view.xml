@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/BG_FRAGMENT"
+        android:orientation="vertical" >
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/BG_FRAGMENT"
+                android:orientation="vertical"
+                android:padding="10dip" >
+
+                <LinearLayout
+                    android:id="@+id/llHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/TABLE_BG"
+                    android:padding="2dip"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:id="@+id/MaNVBH"
+                        android:layout_width="120dip"
+                        android:layout_height="fill_parent"
+                        android:background="@color/TABLE_HEADER_BG"
+                        android:gravity="center"
+                        android:padding="5dip"
+                        android:text="@string/TEXT_HEADER_TABLE_NAME_NPP"
+                        android:textColor="@color/BLACK"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/NVBH"
+                        android:layout_width="150dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="2dip"
+                        android:background="@color/TABLE_HEADER_BG"
+                        android:gravity="center"
+                        android:padding="5dip"
+                        android:text="@string/TEXT_HEADER_TABLE_NAME_GSNPP"
+                        android:textColor="@color/BLACK"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/TenNVBH"
+                        android:layout_width="150dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="2dip"
+                        android:background="@color/TABLE_HEADER_BG"
+                        android:gravity="center"
+                        android:padding="5dip"
+                        android:text="@string/TEXT_NVBH"
+                        android:textColor="@color/BLACK"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/Diemban"
+                            android:layout_width="269dip"
+                            android:layout_height="wrap_content"
+                            android:background="@color/TABLE_HEADER_BG"
+                            android:gravity="center"
+                            android:padding="5dip"
+                            android:text="@string/TEXT_STORE"
+                            android:textColor="@color/BLACK"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/Sodiemban"
+                                android:layout_width="95dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dip"
+                                android:background="@color/TABLE_HEADER_BG"
+                                android:gravity="center"
+                                android:padding="5dip"
+                                android:text="@string/TEXT_STORE_NUM"
+                                android:textColor="@color/BLACK"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/Dungtuyen"
+                                android:layout_width="85dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dip"
+                                android:layout_marginTop="2dip"
+                                android:background="@color/TABLE_HEADER_BG"
+                                android:gravity="center"
+                                android:padding="5dip"
+                                android:text="@string/TEXT_RIGHT_PLAN"
+                                android:textColor="@color/BLACK"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/Saituyen4"
+                                android:layout_width="85dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dip"
+                                android:layout_marginTop="2dip"
+                                android:background="@color/TABLE_HEADER_BG"
+                                android:gravity="center"
+                                android:padding="5dip"
+                                android:text="@string/TEXT_WRONG_PLAN"
+                                android:textColor="@color/BLACK"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="175dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="2dip"
+                        android:background="@color/TABLE_HEADER_BG"
+                        android:gravity="center"
+                        android:padding="5dip"
+                        android:text="@string/TEXT_TRAINING_PLACE"
+                        android:textColor="@color/BLACK"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="78dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="2dip"
+                        android:background="@color/TABLE_HEADER_BG" >
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.viettel.dms.view.control.VinamilkTableView
+                    android:id="@+id/tbCusList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-3dip" >
+                </com.viettel.dms.view.control.VinamilkTableView>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip" >
+
+                    <Button
+                        android:id="@+id/btViewAll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/vnm_button_selector"
+                        android:paddingLeft="5dip"
+                        android:paddingRight="5dip"
+                        android:text="@string/TEXT_VIEW_ALL_"
+                        android:textColor="@color/BLACK"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+</ScrollView>

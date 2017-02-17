@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/TRANSPARENT" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/TRANSPARENT"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_content_fragment"
+        android:paddingLeft="@dimen/padding_content_fragment"
+        android:paddingRight="@dimen/padding_content_fragment" >
+
+        <LinearLayout
+            android:id="@+id/llHeaderProgressInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_header_info"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding"
+                android:text="@string/TEXT_LABLE_DAY_SALE_PLAN"
+                android:textColor="@color/BLACK" />
+
+            <TextView
+                android:id="@+id/tvNumDaySalePlan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:padding="@dimen/padding"
+                android:text="@string/TEXT_ZERO"
+                android:textColor="@color/BLACK"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:padding="@dimen/padding"
+                android:text="@string/TEXT_LABLE_DAY_SOLD"
+                android:textColor="@color/BLACK" />
+
+            <TextView
+                android:id="@+id/tvNumDaySold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:padding="@dimen/padding"
+                android:text="@string/TEXT_ZERO"
+                android:textColor="@color/BLACK"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:padding="@dimen/padding"
+                android:text="@string/TEXT_LABLE_PROGRESS"
+                android:textColor="@color/BLACK" />
+
+            <TextView
+                android:id="@+id/tvSoldPercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="10dip"
+                android:minWidth="20dip"
+                android:padding="@dimen/padding"
+                android:text="@string/TEXT_ZERO"
+                android:textColor="@color/BLACK"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:padding="@dimen/padding"
+            android:text="@string/TEXT_HEADER_INFO_GSBH_REPORT"
+            android:textColor="@color/BLACK"
+            android:textStyle="bold" />
+
+        <com.viettel.dms.view.control.DMSTableView
+            android:id="@+id/tbGsbhStatistics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top" >
+        </com.viettel.dms.view.control.DMSTableView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:padding="@dimen/padding"
+            android:text="@string/TEXT_HEADER_INFO_TNPG_REPORT"
+            android:textColor="@color/BLACK"
+            android:textStyle="bold" />
+
+        <com.viettel.dms.view.control.DMSTableView
+            android:id="@+id/tbTnPGStatistics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top" >
+        </com.viettel.dms.view.control.DMSTableView>
+        
+    </LinearLayout>
+
+</ScrollView>

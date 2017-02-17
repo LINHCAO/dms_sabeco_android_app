@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/tvSTT"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:tag="@string/TEXT_STT"
+        android:text="@string/TEXT_STT" />
+
+    <TextView
+        android:id="@+id/tvContent"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:tag="@string/CONTENT"
+        android:text="@string/CONTENT" />
+
+    <TextView
+        android:id="@+id/tvType"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.3"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:tag="@string/FEEDBACK_TYPE"
+        android:text="@string/FEEDBACK_TYPE" />
+
+    <TextView
+        android:id="@+id/tvRemindDate"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.3"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:tag="@string/TEXT_LABLE_DATE_NOTIFY"
+        android:text="@string/TEXT_LABLE_DATE_NOTIFY" />
+
+    <TextView
+        android:id="@+id/tvOpDate"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.3"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:tag="@string/TEXT_DONE_DATE_2"
+        android:text="@string/TEXT_DONE_DATE_2" />
+
+    <LinearLayout
+        android:id="@+id/llNote"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@color/WHITE"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row" >
+
+        <CheckBox
+            android:id="@+id/cbCheckNote"
+            style="@style/VNMCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:tag=""
+            android:gravity="center" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivDelete"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="1dp"
+        android:layout_weight="1"
+        android:background="@drawable/style_row_default"
+        android:contentDescription="@string/TEXT_CONFIRM_DELETE_PROBLEM_DONE"
+        android:duplicateParentState="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="5dp"
+        android:scaleType="center"
+        android:src="@drawable/icon_delete" />
+
+</LinearLayout>

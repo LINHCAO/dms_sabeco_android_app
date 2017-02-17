@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/LIGHT_GRAY_BG"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/bg_header_info"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/TEXT_TB_CUSTOMER"
+            android:textColor="@color/BLACK"
+            android:textStyle="bold" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/edCuscodeCusName"
+            style="@style/VNMEditText"
+            android:layout_width="405dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_right"
+            android:layout_toRightOf="@+id/textView1"
+            android:hint="@string/TEXT_SELECT_CUSTOMER"
+            android:textSize="14sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btSaveOpSale"
+            style="@style/VNMButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:text="@string/TEXT_BUTTON_SAVE" />
+
+        <TextView
+            android:id="@+id/tvMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+id/edCuscodeCusName"
+            android:text="@string/TEXT_TITLE_MONTH"
+            android:textColor="@color/BLACK"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spMonth"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+id/tvMonth"
+            android:background="@drawable/spinner_selector"
+            android:drawSelectorOnTop="true"
+            android:prompt="@string/STATE"
+            android:spinnerMode="dropdown" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/BG_FRAGMENT" >
+
+        <LinearLayout
+            android:id="@+id/llOpponent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

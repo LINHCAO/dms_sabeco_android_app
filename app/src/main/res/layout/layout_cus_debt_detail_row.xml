@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG" >
+
+    <TextView
+        android:id="@+id/tvSTT"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="50dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="5dp"
+        android:text="@string/TEXT_STT" />
+
+    <TextView
+        android:id="@+id/orderCode"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="140dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/orderDate"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="100dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="5dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/totalDebt"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="110dp"
+        android:layout_height="fill_parent"
+        android:gravity="center|right"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="5dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/paidAmount"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="110dp"
+        android:layout_height="fill_parent"
+        android:gravity="center|right"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="5dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/remainingAmount"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="110dp"
+        android:layout_height="fill_parent"
+        android:background="@color/LIGHT_GRAY_BG"
+        android:gravity="center|right"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="5dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/receipt"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="140dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="5dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/paidDate"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="100dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:padding="5dp"
+        android:text="" />
+
+    <RelativeLayout
+        android:id="@+id/llNote"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="60dp"
+        android:layout_height="fill_parent"
+        android:layout_margin="1dip"
+        android:minHeight="@dimen/min_height_of_row" >
+
+        <CheckBox
+            android:id="@+id/cbNote"
+            style="@style/VNMCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvTextNull"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="952dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:padding="@dimen/padding"
+        android:visibility="gone" />
+
+</TableRow>

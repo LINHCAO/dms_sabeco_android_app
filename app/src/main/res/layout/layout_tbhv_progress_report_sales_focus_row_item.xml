@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:duplicateParentState="true"
+    android:layout_height="fill_parent"    
+    android:minHeight="@dimen/min_height_of_row"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tvPlanMoney"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="90dip"
+        android:layout_height="fill_parent"
+        android:gravity="right|center_vertical"
+        android:paddingRight="10dip"
+        android:textColor="@color/BLACK"
+        android:minHeight="@dimen/min_height_of_row"
+        android:text="@string/TEXT_HEADER_TABLE_PLAN" />
+
+    <TextView
+        android:id="@+id/tvSoldMoney"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="90dip"
+        android:layout_height="fill_parent"
+        android:gravity="right|center_vertical"
+        android:paddingRight="10dip"
+        android:textColor="@color/BLACK"
+        android:minHeight="@dimen/min_height_of_row"
+        android:text="@string/TEXT_HEADER_TABLE_DONE" />
+
+    <TextView
+        android:id="@+id/tvSoldPercent"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="70dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:textColor="@color/BLACK"
+        android:minHeight="@dimen/min_height_of_row"
+        android:text="@string/TEXT_HEADER_TABLE_PROGRESS" />
+
+    <TextView
+        android:id="@+id/tvLeftMoney"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="90dip"
+        android:layout_height="fill_parent"
+        android:gravity="right|center_vertical"
+        android:background="#d9d9ff"
+        android:paddingRight="10dip"
+        android:textColor="@color/BLACK"
+        android:minHeight="@dimen/min_height_of_row"
+        android:text="@string/TEXT_HEADER_TABLE_REMAIN" />
+
+</LinearLayout>

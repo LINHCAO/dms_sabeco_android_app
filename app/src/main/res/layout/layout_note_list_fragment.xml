@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/LIGHT_GRAY_BG"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/bg_header_info"
+            android:gravity="left"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:text="@string/TEXT_TYPE_PROBLEM_COLON"
+                android:textColor="@color/BLACK"
+                android:textStyle="bold" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spTypeProblem"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/spinner_selector"
+                android:drawSelectorOnTop="true"
+                android:paddingRight="@dimen/padding_right"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:text="@string/TEXT_STATUS"
+                android:textColor="@color/BLACK"
+                android:textStyle="bold" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spStatus"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/spinner_selector"
+                android:drawSelectorOnTop="true"
+                android:prompt="@string/STATE"
+                android:spinnerMode="dropdown" />
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0" >
+                </LinearLayout>
+            <Button
+                android:id="@+id/btAddNote"
+                style="@style/VNMButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:text="@string/TEXT_ADD_NOTE"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textNull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text="Danh sách rỗng"
+            android:textColor="@color/BLACK"
+            android:visibility="gone" />
+
+        <com.viettel.dms.view.control.DMSTableView
+            android:id="@+id/tbNoteList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip" >
+        </com.viettel.dms.view.control.DMSTableView>
+    </LinearLayout>
+
+</ScrollView>

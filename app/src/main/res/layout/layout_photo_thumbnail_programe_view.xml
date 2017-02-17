@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/llButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_header_info"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+                android:id="@+id/tvPrograme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/margin"
+                android:text="@string/TEXT_PHOTO_DETAIL_PROGRAME"
+                android:textColor="@color/BLACK" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvProgrameCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/margin"
+                android:layout_toRightOf="@+id/tvPrograme"
+                android:text=""
+                android:textColor="@color/BLACK"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/margin"
+                android:layout_toRightOf="@+id/tvProgrameCode"
+                android:text="@string/TEXT_PHOTO_TAKEPHOTO_DATE"
+                android:textColor="@color/BLACK" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvFromDateToDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/margin"
+                android:layout_toRightOf="@+id/tvDate"
+                android:text=""
+                android:textColor="@color/BLACK"
+                android:textStyle="bold" >
+            </TextView>
+            
+            <TextView
+                android:id="@+id/tvKH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/margin"
+                android:layout_toRightOf="@+id/tvFromDateToDate"
+                android:text="@string/TEXT_PHOTO_DETAIL_CUSTOMER"
+                android:textColor="@color/BLACK" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvMaTenKH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/margin"
+                android:layout_toRightOf="@+id/tvKH"
+                android:text=""
+                android:textColor="@color/BLACK"
+                android:textStyle="bold" >
+            </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/margin_grid_album"
+        android:layout_marginRight="@dimen/margin_grid_album"
+        android:layout_marginTop="10dp"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        <GridView
+            android:id="@+id/gvImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_rounded"
+            android:columnWidth="@dimen/num_column_size"
+            android:horizontalSpacing="5dip"
+            android:numColumns="auto_fit"
+            android:padding="15dip"
+            android:stretchMode="spacingWidth" >
+        </GridView>
+        <!-- android:layout_above="@+id/btTakePhoto" -->
+
+    </RelativeLayout>
+
+</LinearLayout>

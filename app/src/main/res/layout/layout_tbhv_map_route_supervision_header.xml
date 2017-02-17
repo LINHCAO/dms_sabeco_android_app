@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout	xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/bg_header_info"
+        android:orientation="horizontal"
+        android:paddingBottom="5dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="5dip" >
+
+            <TextView
+                android:id="@+id/lbShopCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                android:text="@string/TEXT_CODE_NPP"
+                android:textColor="@color/BLACK" />
+
+            <TextView
+                android:id="@+id/tvMaNPP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:text="@string/TEXT_HEADER_TABLE_NPP_CODE"
+                android:textColor="@color/BLACK"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lbStaffCodeGS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dip"
+                android:layout_weight="0"
+                android:text="@string/TEXT_LABLE_GSNPP"
+                android:textColor="@color/BLACK" />
+
+            <TextView
+                android:id="@+id/tvGSNPP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:text="000001908 -  Nguyen Tuan Viet"
+                android:textColor="@color/BLACK"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lbStaffCodeNVBH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                android:text="@string/TEXT_TITLE_NVBH"
+                android:textColor="@color/BLACK" />
+
+            <TextView
+                android:id="@+id/tvNVBH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:text="000003453e3 - Con ga que"
+                android:textColor="@color/BLACK"
+                android:textStyle="bold" />
+        </LinearLayout>

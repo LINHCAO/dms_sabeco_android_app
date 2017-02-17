@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG" >
+
+    <LinearLayout
+        android:layout_width="182dp"
+        android:layout_height="fill_parent"
+        android:layout_margin="1dip"
+        android:background="@color/WHITE" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvProductName"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="360dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:padding="5dip"
+        android:text="Tổng"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvProducPrice1"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="120dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:padding="5dip"
+        android:text="1.000.000" />
+
+    <TextView
+        android:id="@+id/tvProducPrice2"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="120dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:padding="5dip"
+        android:text="100" />
+
+    <LinearLayout
+        android:layout_width="262dp"
+        android:layout_height="fill_parent"
+        android:layout_margin="1dip"
+        android:background="@color/WHITE" >
+    </LinearLayout>
+
+</TableRow>

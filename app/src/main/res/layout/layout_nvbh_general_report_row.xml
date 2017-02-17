@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/tvSTT"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        android:tag="@string/TEXT_STT"
+        android:text="@string/TEXT_STT" />
+
+    <TextView
+        android:id="@+id/tvProductCode"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.3"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        android:tag="@string/TEXT_MA_SP"
+        android:text="@string/TEXT_MA_SP" />
+
+    <TextView
+        android:id="@+id/tvProductName"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:gravity="center_vertical|left"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        android:tag="@string/TEXT_TEN_SP"
+        android:text="@string/TEXT_TEN_SP" />
+
+    <TextView
+        android:id="@+id/tvDVT"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical|left"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        android:tag="@string/TEXT_COLUM_DON_VI_TINH"
+        android:text="@string/TEXT_COLUM_DON_VI_TINH" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2.5"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/TextViewVinamilkTable"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:padding="@dimen/padding"
+                android:tag="@string/TEXT_COLUM_GENERAL_REPORT_DATE"
+                android:text="@string/TEXT_COLUM_GENERAL_REPORT_DATE"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvKeHoach"
+                style="@style/TextViewVinamilkTable"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical|right"
+                android:padding="@dimen/padding"
+                android:text="@string/TEXT_HEADER_TABLE_PLAN" />
+
+            <TextView
+                android:id="@+id/tvThucHien"
+                style="@style/TextViewVinamilkTable"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical|right"
+                android:padding="@dimen/padding"
+                android:text="@string/TEXT_HEADER_TABLE_DONE" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/TextViewVinamilkTable"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:padding="@dimen/padding"
+                android:tag="@string/TEXT_COLUM_GENERAL_REPORT_MONTH"
+                android:text="@string/TEXT_COLUM_GENERAL_REPORT_MONTH"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvKeHoachThang"
+                style="@style/TextViewVinamilkTable"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical|right"
+                android:padding="@dimen/padding"
+                android:text="@string/TEXT_HEADER_TABLE_PLAN" />
+
+            <TextView
+                android:id="@+id/tvThucHienThang"
+                style="@style/TextViewVinamilkTable"
+                android:layout_width="0dip"
+                android:layout_weight="3"
+                android:gravity="center_vertical|right"
+                android:padding="@dimen/padding"
+                android:text="@string/TEXT_HEADER_TABLE_DONE" />
+
+            <TextView
+                android:id="@+id/tvConLaiThang"
+                style="@style/TextViewVinamilkTable"
+                android:layout_width="0dip"
+                android:layout_weight="2.5"
+                android:gravity="center_vertical|right"
+                android:minHeight="35dip"
+                android:padding="@dimen/padding"
+                android:text="@string/TEXT_HEADER_TABLE_REMAIN" />
+
+            <TextView
+                android:id="@+id/tvTienDoThang"
+                style="@style/TextViewVinamilkTable"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical|right"
+                android:padding="@dimen/padding"
+                android:text="@string/TEXT_HEADER_TABLE_PROGRESS" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

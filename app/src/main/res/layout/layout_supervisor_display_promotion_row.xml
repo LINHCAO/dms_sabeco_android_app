@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row" android:minHeight="35dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG" >
+
+    <TextView
+        android:id="@+id/tvDisplayPromotionSTT"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="50dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:padding="@dimen/padding"
+        android:text="@string/TEXT_STT" />
+
+    <TextView
+        android:id="@+id/tvDisplayPromotionCode"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="150dp"
+        android:layout_height="fill_parent"
+        android:gravity="left|center_vertical"
+        android:padding="@dimen/padding"
+        android:text="@string/TEXT_PROMOTION_CODE"
+        android:textColor="@color/COLOR_LINK" />
+
+    <TextView
+        android:id="@+id/tvDisplayPromotionName"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="365dp"
+        android:layout_height="fill_parent"
+        android:gravity="left|center_vertical"
+        android:padding="@dimen/padding"
+        android:text="@string/TEXT_PROMOTION_NAME" />
+
+    <TextView
+        android:id="@+id/tvDisplayPromotionDateStart"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="125dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:padding="@dimen/padding"
+        android:text="@string/TEXT_CTTB_START" />
+
+    <TextView
+        android:id="@+id/tvDisplayPromotionDateEnd"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="125dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:padding="@dimen/padding"
+        android:text="@string/TEXT_CTTB_END" />
+
+    <TextView
+        android:id="@+id/tvDisplayPromotionDepart"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="125dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:padding="@dimen/padding"
+        android:text="@string/TEXT_CTTB_DEPART" />
+<TextView
+        android:id="@+id/tvNoResultInfo"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="950dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:padding="@dimen/padding"
+        android:visibility="gone"
+         />
+</TableRow>

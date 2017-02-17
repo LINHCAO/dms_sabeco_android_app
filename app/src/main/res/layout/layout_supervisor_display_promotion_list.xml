@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/BG_FRAGMENT"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip" >
+            
+
+            <TextView
+                android:id="@+id/tvSalePath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/spinnerSalePath"
+                android:text="@string/TEXT_PRODUCT_INDUSTRY"
+                android:textColor="@color/BLACK" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinnerSalePath"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/spinner_selector"
+                android:drawSelectorOnTop="true"
+                android:prompt="@string/LINE"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </TextView>
+        </RelativeLayout>
+
+        <com.viettel.dms.view.control.VinamilkTableView
+            android:id="@+id/tbPromotionList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" >
+        </com.viettel.dms.view.control.VinamilkTableView>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="324dp"
+    android:layout_height="match_parent"
+    android:background="@color/TABLE_BG" >
+
+    <ImageView
+        android:id="@+id/imgAppIcon"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/padding"
+        android:src="@drawable/icon_app" />
+
+    <LinearLayout
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:lines="1"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:text="Tên ứng dụng"
+            android:textColor="@color/BLACK"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvPackageName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lines="1"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:textColor="@color/BLACK"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</TableRow>

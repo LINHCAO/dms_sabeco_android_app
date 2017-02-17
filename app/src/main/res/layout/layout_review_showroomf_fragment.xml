@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/BG_FRAGMENT"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="@drawable/bg_white_rounded"
+            android:orientation="vertical"
+            android:padding="20dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="150dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Mã chương trình:"
+                    android:textColor="@color/BLACK" />
+
+                <TextView
+                    android:id="@+id/tvProgCode"
+                    android:layout_width="500dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30dip"
+                    android:text="MNVIPSHOP1"
+                    android:textColor="@color/BLACK"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="150dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50dip"
+                    android:text="Từ ngày:"
+                    android:textColor="@color/BLACK" />
+
+                <TextView
+                    android:id="@+id/tvFromDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30dip"
+                    android:text="02/05/2012"
+                    android:textColor="@color/BLACK" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="150dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Tên chương trình:"
+                    android:textColor="@color/BLACK" />
+
+                <TextView
+                    android:id="@+id/tvProgName"
+                    android:layout_width="500dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30dip"
+                    android:text="VIPSHOP tích lũy doanh số mức 1"
+                    android:textColor="@color/BLACK"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="150dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50dip"
+                    android:text="Đến ngày:"
+                    android:textColor="@color/BLACK" />
+
+                <TextView
+                    android:id="@+id/tvToDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30dip"
+                    android:text="31/05/2012"
+                    android:textColor="@color/BLACK" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="150dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Mã khách hàng:"
+                    android:textColor="@color/BLACK" />
+
+                <TextView
+                    android:id="@+id/tvCusCode"
+                    android:layout_width="500dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30dip"
+                    android:text="ABC01"
+                    android:textColor="@color/BLACK"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="150dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50dip"
+                    android:text="Mức tham gia:"
+                    android:textColor="@color/BLACK" />
+
+                <TextView
+                    android:id="@+id/tvLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30dip"
+                    android:text="1"
+                    android:textColor="@color/BLACK" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="150dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Tên khách hàng:"
+                    android:textColor="@color/BLACK" />
+
+                <TextView
+                    android:id="@+id/tvCusName"
+                    android:layout_width="500dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30dip"
+                    android:text="Đặng Văn Luân"
+                    android:textColor="@color/BLACK"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:text="Công cụ trưng bày"
+            android:textColor="@color/BLACK"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.viettel.dms.view.control.VinamilkTableView
+            android:id="@+id/tbToolToShow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip" >
+        </com.viettel.dms.view.control.VinamilkTableView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:text="Ngành hàng"
+            android:textColor="@color/BLACK"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.viettel.dms.view.control.VinamilkTableView
+            android:id="@+id/tbGoodsToShow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip" >
+        </com.viettel.dms.view.control.VinamilkTableView>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:layout_marginBottom="20dip"
+            android:layout_marginRight="10dip" >
+
+            <Button
+                android:id="@+id/btSave"
+                style="@style/VNMButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:layout_toLeftOf="@+id/btClose"
+                android:padding="5dip"
+                android:text="Lưu" />
+
+            <Button
+                android:id="@+id/btClose"
+                style="@style/VNMButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="5dip"
+                android:text="Đóng" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

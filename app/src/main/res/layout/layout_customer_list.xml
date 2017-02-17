@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/TRANSPARENT" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/BG_FRAGMENT"
+        android:orientation="vertical" >
+
+        <!--
+          <com.viettel.vinamilk.view.control.CustomerPromotionHeader
+            android:id="@+id/tbHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </com.viettel.vinamilk.view.control.CustomerPromotionHeader>
+        -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_header_info"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:layout_marginTop="@dimen/margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="5.5"
+                    android:text="@string/TEXT_CTKM_ID"
+                    android:textColor="@color/BLACK" />
+
+                <TextView
+                    android:id="@+id/tvProgrameId"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:layout_weight="4.5"
+                    android:textColor="@color/BLACK"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:layout_weight="6"
+                    android:text="@string/TEXT_CTKM_DETAIL_START"
+                    android:textColor="@color/BLACK" />
+
+                <TextView
+                    android:id="@+id/tvProgrameStartDate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:layout_weight="5"
+                    android:textColor="@color/BLACK" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:layout_marginTop="@dimen/margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="5.5"
+                    android:text="@string/TEXT_CTKM_NAME"
+                    android:textColor="@color/BLACK" />
+
+                <TextView
+                    android:id="@+id/tvProgrameName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:layout_weight="4.5"
+                    android:textColor="@color/BLACK"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:layout_weight="6"
+                    android:text="@string/TEXT_CTKM_DETAIL_END"
+                    android:textColor="@color/BLACK" />
+
+                <TextView
+                    android:id="@+id/tvProgrameEndDate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:layout_weight="5"
+                    android:textColor="@color/BLACK" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:layout_marginTop="@dimen/margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="16.5"
+                    android:text="@string/TEXT_CTKM_TYPE"
+                    android:textColor="@color/BLACK" />
+
+                <TextView
+                    android:id="@+id/tvProgrameType"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:layout_weight="4.5"
+                    android:textColor="@color/BLACK"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="@dimen/margin_top"
+            android:background="@drawable/bg_white_rounded"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/TEXT_CUSTOMER_ID"
+                android:textColor="@color/BLACK" />
+
+            <com.viettel.dms.view.control.VNMEditTextClearable
+                android:id="@+id/etInputCustomerCode"
+                style="@style/VNMEditText"
+                android:layout_width="140dp"
+                android:layout_marginLeft="@dimen/margin_right"
+                android:hint="@string/TEXT_HINT_INPUT_CUSTOMER_ID"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="@string/TEXT_LABLE_CUSTOMER_INFO"
+                android:textColor="@color/BLACK" />
+
+            <com.viettel.dms.view.control.VNMEditTextClearable
+                android:id="@+id/etInputCustomerName"
+                style="@style/VNMEditText"
+                android:hint="@string/TEXT_HINT_INPUT_CUSTOMER"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btFind"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:minWidth="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/vnm_button_selector"
+                android:text="@string/TEXT_BUTTON_FIND"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:filterTouchesWhenObscured="true"
+                android:textColor="@color/BLACK" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvCustomerAttentTotal"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="17dp"
+            android:text="@string/TEXT_CUSTOMER_TAKE_PART"
+            android:textColor="@color/BLACK"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="@dimen/margin_top"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <com.viettel.dms.view.control.VinamilkTableView
+                android:id="@+id/tbCustomerList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin" >
+            </com.viettel.dms.view.control.VinamilkTableView>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

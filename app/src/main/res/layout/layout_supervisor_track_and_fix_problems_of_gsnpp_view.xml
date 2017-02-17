@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/TRANSPARENT" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/TRANSPARENT"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_header_info"
+            android:baselineAligned="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_right"
+                android:paddingBottom="@dimen/padding_bottom"
+                android:paddingTop="@dimen/padding_top"
+                android:text="@string/TEXT_STATUS"
+                android:textColor="@color/BLACK" />
+
+            <Spinner
+                android:id="@+id/spStatusCode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dip"
+                android:layout_weight="5"
+                android:background="@drawable/spinner_selector"
+                android:drawSelectorOnTop="true"
+                android:padding="@dimen/padding"
+                android:prompt="@string/TEXT_HINT_PRODUCT_INDUSTRY" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_right"
+                android:paddingBottom="@dimen/padding_bottom"
+                android:paddingTop="@dimen/padding_top"
+                android:text="@string/TEXT_TEXTBOX_REMIND_DATE"
+                android:textColor="@color/BLACK" />
+
+            <com.viettel.dms.view.control.VNMEditTextClearable
+                android:id="@+id/etInputFromDate"
+                style="@style/VNMEditText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="5.5"
+                android:hint="@string/TEXT_CTTB_START"
+                android:inputType="textCapWords"
+                android:maxLength="60"
+                android:paddingBottom="@dimen/padding_bottom"
+                android:paddingTop="@dimen/padding_top"
+                android:singleLine="true"
+                android:textSize="14sp" />            
+
+            <com.viettel.dms.view.control.VNMEditTextClearable
+                android:id="@+id/etInputEndDate"
+                style="@style/VNMEditText"
+                android:layout_marginRight="10dip"
+                android:layout_weight="5.5"
+                android:hint="@string/TEXT_CTTB_END"
+                android:inputType="textCapWords"
+                android:maxLength="60"
+                android:paddingBottom="@dimen/padding_bottom"
+                android:paddingTop="@dimen/padding_top"
+                android:singleLine="true" 
+                android:textSize="14sp"/>
+
+            <Button
+                android:id="@+id/btSearch"
+                style="@style/VNMButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_margin="@dimen/margin"  
+                android:text="@string/TEXT_BUTTON_FIND"
+                android:textColor="@color/BLACK" />
+        </LinearLayout>
+
+        <com.viettel.dms.view.control.DMSTableView
+            android:id="@+id/tbListProblems"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip" >
+        </com.viettel.dms.view.control.DMSTableView>
+    </LinearLayout>
+
+</ScrollView>

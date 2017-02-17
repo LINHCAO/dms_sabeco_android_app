@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/tvMonth"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2.1"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:tag=""
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvTotalCus"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:tag="@string/TEXT_TOTAL_KH"
+        android:text="@string/TEXT_TOTAL_KH" />
+
+    <TextView
+        android:id="@+id/tvNoPSDS"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:tag="@string/TEXT_NOT_PSDS"
+        android:text="@string/TEXT_NOT_PSDS" />
+
+    <TextView
+        android:id="@+id/tvSaleProg"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3.3"
+        android:gravity="center_vertical|right"
+        android:minHeight="@dimen/min_height_of_row"
+        android:tag="@string/TEXT_TITLE_QUANTITY_SALE"
+        android:text="@string/TEXT_TITLE_QUANTITY_SALE" />
+
+</LinearLayout>

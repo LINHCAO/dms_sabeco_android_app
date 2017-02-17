@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG" >
+
+    <TextView
+        android:id="@+id/tvSTT"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="45dip"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="10dip"
+        android:text="STT" />
+    <TextView
+        android:id="@+id/tvMaKh"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="90dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:padding="5dip"
+        android:text="Mã KH"
+        android:textColor="@color/COLOR_USER_NAME" />
+
+    <TextView
+        android:id="@+id/tvTenKh"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="200dip"
+        android:padding="@dimen/padding"
+        android:layout_height="fill_parent"
+        android:gravity="left|center_vertical"        
+        android:text="300.000" />
+
+    <TextView
+        android:id="@+id/tvDiaChi"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="200dip"
+        android:padding="@dimen/padding"
+        android:layout_height="fill_parent"
+        android:gravity="left|center_vertical"        
+        android:text="40.000" />
+
+    <TextView
+        android:id="@+id/tvKeHoach"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="109dip"
+        android:layout_height="fill_parent"
+        android:gravity="right|center_vertical"
+        android:paddingRight="10dip"
+        android:text="13%" />
+
+    <TextView
+        android:id="@+id/tvThucHien"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="109dip"
+        android:layout_height="fill_parent"
+        android:gravity="right|center_vertical"
+        android:paddingRight="10dip"
+        android:text="260.000" />
+
+    <TextView
+        android:id="@+id/tvConLai"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="105dip"
+        android:layout_height="fill_parent"
+        android:gravity="right|center_vertical"
+        android:paddingRight="10dip"
+        android:background="#d9d9ff"
+        android:text="11" />
+
+    <TextView
+        android:id="@+id/tvDanhGia"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="80dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="14" />
+
+</TableRow>

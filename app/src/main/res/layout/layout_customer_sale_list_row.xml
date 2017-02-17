@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/tvSTT"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        android:tag="@string/TEXT_STT"
+        android:text="@string/TEXT_STT" />
+
+    <TextView
+        android:id="@+id/tvNVBH"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.3"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        android:tag="@string/TEXT_HEADER_TABLE_NVBH"
+        android:text="@string/TEXT_HEADER_TABLE_NVBH" />
+
+    <TextView
+        android:id="@+id/tvCustomer"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.7"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        android:tag="@string/TEXT_CUSTOMER"
+        android:text="@string/TEXT_CUSTOMER"
+        android:textColor="@color/COLOR_LINK" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2.5"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        android:tag="@string/TEXT_ADDRESS"
+        android:text="@string/TEXT_ADDRESS" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2.5"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/TextViewVinamilkTable"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:padding="@dimen/padding"
+                android:tag="@string/TEXT_UPDATE_LOCATION"
+                android:text="@string/TEXT_UPDATE_LOCATION"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvDateUpdate"
+                style="@style/TextViewVinamilkTable"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="@dimen/padding"
+                android:tag="@string/TEXT_UPDATE_DATE"
+                android:text="@string/TEXT_UPDATE_DATE" />
+
+            <TextView
+                android:id="@+id/tvNumUpdate"
+                style="@style/TextViewVinamilkTable"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/padding"
+                android:tag="@string/TEXT_SLCN"
+                android:text="@string/TEXT_SLCN" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/style_row_default"
+                android:duplicateParentState="true"
+                android:minHeight="@dimen/min_height_of_row"
+                android:tag="" >
+
+                <ImageView
+                    android:id="@+id/ivMap"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/style_row_default"
+                    android:contentDescription="@string/TEXT_CUSTOMER_MAP"
+                    android:duplicateParentState="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:minHeight="@dimen/min_height_of_row"
+                    android:padding="5dp"
+                    android:scaleType="center"
+                    android:tag="" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
+        android:layout_weight="1"
+        android:background="@drawable/style_row_default"
+        android:duplicateParentState="true"
+        android:minHeight="@dimen/min_height_of_row"
+        android:tag="@string/TEXT_ALLOW_ORDER" >
+
+        <ImageView
+            android:id="@+id/ivAllowOrder"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/style_row_default"
+            android:contentDescription="@string/TEXT_CONFIRM_DHTX_0"
+            android:duplicateParentState="true"
+            android:gravity="center_horizontal|center_vertical"
+            android:minHeight="@dimen/min_height_of_row"
+            android:padding="10dp"
+            android:scaleType="center"
+            android:tag="@string/TEXT_ALLOW_ORDER" />
+    </LinearLayout>
+
+</LinearLayout>

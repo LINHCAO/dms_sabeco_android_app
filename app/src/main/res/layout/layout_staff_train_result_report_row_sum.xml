@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/TABLE_BG" >
+
+    <TextView
+        android:id="@+id/tvSum"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="476dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:text="Tổng"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPlanAmount"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="96dip"
+        android:layout_height="fill_parent"
+        android:gravity="right|center_vertical"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingRight="10dip"
+        android:text="300.000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvAmount"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="96dip"
+        android:layout_height="fill_parent"
+        android:gravity="right|center_vertical"
+        android:minHeight="@dimen/min_height_of_row"
+        android:paddingRight="10dip"
+        android:text="40.000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPoint"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="70dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:text="25"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvMoi"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="50dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:text="25"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvON"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="50dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:text="25"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvNT"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="50dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:text="25"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvCheck"
+        style="@style/TextViewVinamilkTable"
+        android:layout_width="50dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_of_row"
+        android:text=""
+        android:textStyle="bold" />
+
+</TableRow>

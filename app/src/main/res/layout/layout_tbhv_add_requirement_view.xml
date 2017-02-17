@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- revision 30250 co filter ngay -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/BG_FRAGMENT"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/bg_header_info"
+            android:padding="10dp" >
+
+            <TableRow android:layout_marginRight="20dp" >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="right"
+                    android:paddingLeft="@dimen/padding_left"
+                    android:paddingRight="@dimen/padding_right"
+                    android:text="@string/TEXT_TITLE_TABLE_GSNPP"
+                    android:textColor="@color/BLACK" >
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/spinnerStaffCode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/spinner_selector"
+                    android:drawSelectorOnTop="true"
+                    android:prompt="@string/LINE" />
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="right"
+                    android:paddingLeft="@dimen/padding_left"
+                    android:paddingRight="@dimen/padding_right"
+                    android:text="@string/TEXT_TB_CUSTOMER"
+                    android:textColor="@color/BLACK" >
+                </TextView>
+                <com.viettel.dms.view.control.VNMEditTextClearable
+                    android:id="@+id/edTN"
+                    style="@style/VNMEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:layout_weight="1.0"
+                    android:hint="@string/TEXT_SELECT_CUSTOMER"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+
+                <Button
+                    style="@style/VNMButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="@string/TEXT_SAVE"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="@dimen/spacing_between_rows" >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="right"
+                    android:paddingLeft="@dimen/padding_left"
+                    android:paddingRight="@dimen/padding_right"
+                    android:text="@string/TEXT_TYPE_PROBLEM_COLON"
+                    android:textColor="@color/BLACK" >
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/spinnerStatus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/spinner_selector"
+                    android:drawSelectorOnTop="true"
+                    android:prompt="@string/LINE" />
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="right"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="@dimen/padding_right"
+                    android:text="@string/TEXT_TEXTBOX_REMIND_DATE"
+                    android:textColor="@color/BLACK" >
+                </TextView>
+
+                <com.viettel.dms.view.control.VNMEditTextClearable
+                    android:id="@+id/edDN"
+                    style="@style/VNMEditText"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:hint="@string/TEXT_HINT_CHOOSE_DAY"
+                    android:textSize="14sp" >
+                </com.viettel.dms.view.control.VNMEditTextClearable>
+
+                <Button
+                    android:id="@+id/btSave"
+                    style="@style/VNMButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="50dp"
+                    android:text="@string/TEXT_SAVE"/>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:gravity="left"
+            android:paddingLeft="10dip"
+            android:paddingRight="@dimen/padding_right"
+            android:text="@string/TEXT_CONTENT_REQUEST"
+            android:textColor="@color/BLACK"
+            android:textSize="18sp" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/edContent"
+            style="@style/VNMEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dip"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:hint="@string/TEXT_LABLE_TBHV_HINT_ADD_REQUIREMENT"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxHeight="450dip"
+            android:maxLength="2000"
+            android:maxLines="25"
+            android:minHeight="300dip"
+            android:padding="@dimen/padding"
+            android:singleLine="false" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+</ScrollView>

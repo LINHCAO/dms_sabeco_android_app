@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/TRANSPARENT"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/tbContent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/TRANSPARENT"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:id="@+id/row"
+            android:background="@color/TRANSPARENT"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tvSTT"
+                style="@style/TextViewVinamilkTable"
+                android:layout_width="45dp"
+                android:layout_height="fill_parent"
+                android:textColor="@color/BLACK"
+                android:padding="@dimen/padding"
+                android:gravity="center"
+                android:text="@string/TEXT_STT" />
+
+            <TextView
+                android:id="@+id/tvCustomerCode"
+                style="@style/TextViewVinamilkTable"
+                android:layout_width="150dp"
+                android:layout_height="fill_parent"
+                android:textColor="@color/COLOR_LINK"
+                android:padding="@dimen/padding"
+                android:gravity="center"
+                android:text="@string/TEXT_CUSTOMER_CODE" />
+            <TextView
+                android:id="@+id/tvCustomerName"
+                style="@style/TextViewVinamilkTable"
+                android:layout_width="300dp"
+                android:layout_height="fill_parent"
+                android:textColor="@color/BLACK"
+                android:padding="@dimen/padding"
+                android:gravity="center"
+                android:text="@string/TEXT_HINT_INPUT_CUSTOMER_NAME" />
+
+            <TextView
+                android:id="@+id/tvBalance"
+                style="@style/TextViewVinamilkTable"
+                android:layout_width="200dp"
+                android:layout_height="fill_parent"
+                android:textColor="@color/BLACK"
+                android:padding="@dimen/padding"
+                android:gravity="center"
+                android:text="@string/TEXT_BALANCE" />
+
+            <TextView
+                android:id="@+id/tvStatus"
+                style="@style/TextViewVinamilkTable"
+                android:layout_width="150dp"
+                android:textColor="@color/BLACK"
+                android:padding="@dimen/padding"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="@string/STATE" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                style="@style/TextViewVinamilkTable"
+                android:textColor="@color/BLACK"
+                android:padding="@dimen/padding"
+                android:layout_width="150dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="@string/TEXT_TIME" />
+
+            <LinearLayout
+                android:layout_width="50dp"
+                style="@style/TextViewVinamilkTable"
+                android:layout_height="fill_parent"
+                android:paddingTop="@dimen/padding_top"
+                android:background="@color/WHITE"
+                android:paddingBottom="@dimen/padding_bottom"
+                android:paddingLeft="@dimen/padding_left"
+                android:paddingRight="@dimen/padding_right"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/imbtDetail"
+                    android:layout_height="wrap_content"
+                    android:background="@color/TRANSPARENT"
+                    android:contentDescription="@string/TEXT_IMAGE_INFO"
+                    android:src="@drawable/icon_gift" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

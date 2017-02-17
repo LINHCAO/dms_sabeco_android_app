@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- Thong tin khach hang -->
+
+        <com.viettel.dms.view.sale.order.HeaderOrderInfo
+            android:id="@+id/headerOrderInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+        </com.viettel.dms.view.sale.order.HeaderOrderInfo>
+
+        <!-- Mat hang ban -->
+
+        <RelativeLayout
+            android:id="@+id/llProduct"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp" >
+
+            <Button
+                android:id="@+id/btAddBill"
+                style="@style/VNMButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_toLeftOf="@+id/btnCalPromotion"
+                android:text="@string/ADD_ORDER" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnCalPromotion"
+                style="@style/VNMButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/margin_top"
+                android:filterTouchesWhenObscured="true"
+                android:text="@string/TEXT_CAL_PROMOTION" >
+            </Button>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvTextTitleListProduct"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingRight="@dimen/padding_right"
+            android:text="@string/TEXT_SALE_PRODUCT"
+            android:textColor="@color/BLACK"
+            android:textStyle="bold"
+            android:visibility="invisible" >
+        </TextView>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <LinearLayout
+                android:id="@+id/llProducts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical" >
+
+                <com.viettel.dms.view.control.VinamilkHeaderTable
+                    android:id="@+id/headerProducts"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+                </com.viettel.dms.view.control.VinamilkHeaderTable>
+
+                <TableLayout
+                    android:id="@+id/tbProducts"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/TABLE_BG"
+                    android:paddingBottom="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:stretchColumns="*" >
+                </TableLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- Mat hang khuyen mai -->
+
+        <TextView
+            android:id="@+id/tvTextPromotionProduct"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingRight="@dimen/padding_right"
+            android:text="@string/TEXT_PROMOTION_PRODUCT"
+            android:textColor="@color/BLACK"
+            android:textStyle="bold"
+            android:visibility="invisible" >
+        </TextView>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <LinearLayout
+                android:id="@+id/llPromotionProducts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical" >
+
+                <com.viettel.dms.view.control.VinamilkHeaderTable
+                    android:id="@+id/headerPromotionProducts"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+                </com.viettel.dms.view.control.VinamilkHeaderTable>
+
+                <TableLayout
+                    android:id="@+id/tbPromotionProducts"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/TABLE_BG"
+                    android:paddingBottom="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:stretchColumns="*" >
+                </TableLayout>
+
+                <LinearLayout
+                    android:id="@+id/llPromotionForOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dip"
+                    android:background="@color/TABLE_BG"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tvSTTPromotionForOrder"
+                        android:layout_width="40dip"
+                        android:minHeight="@dimen/min_height_of_row"
+                        android:layout_marginLeft="2dip"
+                        android:layout_marginTop="2dip"
+                        android:textColor="@color/BLACK"
+                        android:background="@color/WHITE"
+                        android:layout_marginBottom="2dip"
+                        android:gravity="center"
+                        android:layout_height="match_parent" />
+
+                    <TableLayout
+                        android:id="@+id/tbListPromotionForOrder"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/TABLE_BG"
+                        android:padding="1dp"                      
+                        android:stretchColumns="*" >
+                    </TableLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- thong tin dat hang cho vansale -->
+
+        <RelativeLayout
+            android:id="@+id/rlOrderVansale"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <CheckBox
+                android:id="@+id/cbOrder"
+                style="@style/VNMCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/TEXT_BOOK_ORDER"
+                android:textColor="@color/BLACK" />
+
+            <TextView
+                android:id="@+id/tvTotalAmountVansales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/btPayment"
+                android:padding="@dimen/padding"
+                android:textColor="@color/BLACK"
+                android:textStyle="bold" >
+            </TextView>
+
+            <Button
+                android:id="@+id/btPayment"
+                style="@style/VNMButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/margin_top"
+                android:filterTouchesWhenObscured="true"
+                android:text="@string/TEXT_PAYMENT" >
+            </Button>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llOrderPresale"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- thong tin muc do khan -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" >
+
+                <TextView
+                    android:id="@+id/tvTpriority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingRight="@dimen/padding_right"
+                    android:text="@string/TEXT_PRIORITY"
+                    android:textColor="@color/BLACK"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/spinnerPriority"
+                    android:layout_width="180dip"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:layout_toRightOf="@+id/tvTpriority"
+                    android:background="@drawable/spinner_selector"
+                    android:drawSelectorOnTop="true"
+                    android:prompt="@string/LINE"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:id="@+id/tvTextTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toLeftOf="@+id/tvDeliveryDate"
+                    android:gravity="right"
+                    android:paddingLeft="@dimen/padding_left"
+                    android:text="@string/TEXT_EXPECTED_ORDER_TIME"
+                    android:textColor="@color/BLACK"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvDeliveryDate"
+                    android:layout_width="120dip"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/tvDeliveryTime"
+                    android:background="@drawable/bg_white_rounded"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dip" />
+
+                <TextView
+                    android:id="@+id/tvDeliveryTime"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bg_white_rounded"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dip" />
+            </RelativeLayout>
+
+            <!-- Tong tien -->
+
+            <TextView
+                android:id="@+id/tvTotalAmount"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:padding="@dimen/padding"
+                android:textColor="@color/BLACK"
+                android:textStyle="bold" >
+            </TextView>
+
+            <!-- button -->
+
+            <LinearLayout
+                android:id="@+id/llButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btSaveAndSend"
+                    style="@style/VNMButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:filterTouchesWhenObscured="true"
+                    android:text="@string/TEXT_SAVE_SEND" >
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- import code -->
+        <!-- <TextView -->
+        <!-- android:id="@+id/tvImportCode" -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_gravity="center_vertical" -->
+        <!-- android:layout_marginRight="10dp" -->
+        <!-- android:gravity="left" -->
+        <!-- android:padding="@dimen/padding" -->
+        <!-- android:textColor="@color/BLACK" -->
+        <!-- android:textStyle="normal" -->
+        <!-- android:visibility="gone" > -->
+        <!-- </TextView> -->
+
+    </LinearLayout>
+
+</ScrollView>
