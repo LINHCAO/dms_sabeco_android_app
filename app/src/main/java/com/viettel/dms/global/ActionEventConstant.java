@@ -412,4 +412,5 @@ public class ActionEventConstant {
 	public static final int GET_TRAINING_LIST_NVBH = 381;
 	public static final int GO_TO_REPORT_CUSTOMER_C2 = 382;
 	public static final int ACTION_DELETE_WORK_LOG = 383;
+	public static final int GO_TO_REPORT_VIEW = 384;
 }

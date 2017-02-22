@@ -42,7 +42,8 @@ public class UserDTO implements Serializable {
 	public static final int TYPE_TNPG  = 11;//tn tiep thi
 	public static final int TYPE_PG  = 12;//NV tiep thi
 	public static final int TYPE_GSTINH  = 13;//gaim sat tinh
-	
+	public static final int TYPE_ADMIN  = 14;//Giam doc
+
 	//la so cua viettel
 	public boolean isVT = false;
 	

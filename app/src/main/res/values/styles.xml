@@ -163,6 +163,14 @@
         <item name="android:duplicateParentState">true</item>
     </style>
 
+    <!-- Using for all view remain-->
+    <style name="ViewSearchControlVNM" parent="@android:style/TextAppearance.Small">
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/margin_search_info</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
     <style name="ImageViewVinamilkTable">
         <item name="android:gravity">center_horizontal|center_vertical</item>
         <item name="android:layout_margin">1dp</item>

@@ -975,4 +975,13 @@
     <string name="TITLE_GSNPP">Nhân viên:</string>
     <string name="TEXT_INPUT_NEW">Nhập mới</string>
     <string name="TYPE">Loại</string>
+
+    <!-- Admin -->
+    <string name="TEXT_REPORT">Báo cáo</string>
+    <string name="TEXT_MANAGE">Giám sát</string>
+    <string name="TEXT_NOTIFY">Thông báo</string>
+    <string name="TEXT_VIEW_DETAIL">Xem chi tiết</string>
+    <string name="TEXT_VIEW_CHART">Xem biểu đồ</string>
+    <string name="TEXT_REGION">Khu vực</string>
+    <string name="TEXT_BRANCH">Chi nhánh</string>
 </resources>

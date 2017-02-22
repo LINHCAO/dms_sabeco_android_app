@@ -298,7 +298,7 @@ public class GlobalBaseActivity extends Activity implements
 	public File takenPhoto;
 	private AlertDialog alertRemindDialog;
 	private TextView tvTitle;
-	private ImageView ivLogo;
+	protected ImageView ivLogo;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -2130,22 +2130,22 @@ public class GlobalBaseActivity extends Activity implements
 
 		// check datetime auto update
 		// check datetime auto update
-		if(GlobalInfo.getInstance().getStateConnectionMode() == Constants.CONNECTION_ONLINE){
-			//no_log begin
-			if (!GlobalUtil.isRightSettingTime()) {
-				GlobalUtil.showDialogSettingTimeAutomatic();
-			} else {
-				// ngoai tru login view ko check time.
-				if (!(this instanceof LoginView)) {
-					int wrongTime = DateUtils.checkTabletRightTimeWorking();
-					if (wrongTime != DateUtils.RIGHT_TIME) {
-						// neu chua tung online trong ngay
-						GlobalUtil.showDialogCheckWrongTime(wrongTime);
-					}
-				}
-			}
-			//no_log end
-		}
+//		if(GlobalInfo.getInstance().getStateConnectionMode() == Constants.CONNECTION_ONLINE){
+//			//no_log begin
+//			if (!GlobalUtil.isRightSettingTime()) {
+//				GlobalUtil.showDialogSettingTimeAutomatic();
+//			} else {
+//				// ngoai tru login view ko check time.
+//				if (!(this instanceof LoginView)) {
+//					int wrongTime = DateUtils.checkTabletRightTimeWorking();
+//					if (wrongTime != DateUtils.RIGHT_TIME) {
+//						// neu chua tung online trong ngay
+//						GlobalUtil.showDialogCheckWrongTime(wrongTime);
+//					}
+//				}
+//			}
+//			//no_log end
+//		}
 		// kiem tra thoi gian cham cong & luong dinh vi(Neu khong trong thoi
 		// gian cham cong
 		// va dinh ki = 2 phut thi set lai la 5 phut

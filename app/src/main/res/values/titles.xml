@@ -187,4 +187,7 @@
    	<string name="TEXT_INFORMATION">Thông tin</string>
    	<string name="TEXT_ATTEND">Tham gia</string>
     <string name="TITLE_TRAINING">Danh sách khách hàng</string>
+
+    <!-- Admin-->
+    <string name="TITLE_VIEW_REPORT_PROGRESS_REGION">Tình hình thực hiện kế hoạch năm</string>
 </resources>

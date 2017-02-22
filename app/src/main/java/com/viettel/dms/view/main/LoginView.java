@@ -238,8 +238,8 @@ public class LoginView extends GlobalBaseActivity implements OnClickListener {
 		GlobalUtil.setEditTextMaxLength(edUserName, 10);
 		GlobalUtil.setEditTextMaxLength(edPassword, 30);
 
-		edUserName.setText("");// 0000011717
-		edPassword.setText("");// 123456
+		edUserName.setText("0000011717");// 0000011717
+		edPassword.setText("123456");// 123456
 
 		// set text menu & icon left gone
 		TextView tvTitleMenu = (TextView) findViewById(R.id.tvTitleMenu);

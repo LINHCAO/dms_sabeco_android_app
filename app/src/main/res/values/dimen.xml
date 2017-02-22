@@ -32,4 +32,7 @@
     <dimen name="buttontoast_x_padding">10dp</dimen>
     <dimen name="cardtoast_margin">4dp</dimen>
     <dimen name="padding_checkbox">35dp</dimen>
+
+    <dimen name="margin_search_info">10dp</dimen>
+    <dimen name="width_spinner_normal">100dp</dimen>
 </resources>

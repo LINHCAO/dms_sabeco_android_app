@@ -193,7 +193,7 @@ public class CustomerListView extends BaseFragment implements OnEventControlList
 			e.sender = this;
 			SaleController.getInstance().handleViewEvent(e);
 		} else {
-			ServerLogger.sendLog("CustomerListView", "getCustomerList lan 2", TabletActionLogDTO.LOG_CLIENT);
+			ServerLogger.sendLog("ReportView", "getCustomerList lan 2", TabletActionLogDTO.LOG_CLIENT);
 		}
 	}
 
