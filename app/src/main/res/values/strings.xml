@@ -984,4 +984,5 @@
     <string name="TEXT_VIEW_CHART">Xem biểu đồ</string>
     <string name="TEXT_REGION">Khu vực</string>
     <string name="TEXT_BRANCH">Chi nhánh</string>
+    <string name="TEXT_HEADER_PROGRESS_DATE">Tiến độ ngày</string>
 </resources>

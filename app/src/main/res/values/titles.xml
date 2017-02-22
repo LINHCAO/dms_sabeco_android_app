@@ -190,4 +190,5 @@
 
     <!-- Admin-->
     <string name="TITLE_VIEW_REPORT_PROGRESS_REGION">Tình hình thực hiện kế hoạch năm</string>
+    <string name="TITLE_ADMIN_DATE_SALE_PRO_REPORT">Tiến độ bán hàng của NVBH</string>
 </resources>
