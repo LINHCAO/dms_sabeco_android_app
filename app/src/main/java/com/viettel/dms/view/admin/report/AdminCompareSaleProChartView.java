@@ -17,27 +17,28 @@ import com.viettel.dms.global.ActionEventConstant;
 import com.viettel.dms.global.GlobalInfo;
 import com.viettel.dms.global.ModelEvent;
 import com.viettel.dms.util.StringUtil;
-import com.viettel.dms.view.control.DMSTableView;
+import com.viettel.dms.view.control.MenuItem;
+import com.viettel.dms.view.listener.OnEventControlListener;
 import com.viettel.dms.view.listener.VinamilkTableListener;
 import com.viettel.dms.view.main.BaseFragment;
 import com.viettel.dms.view.main.GlobalBaseActivity;
-import com.viettel.dms.view.sale.customer.CustomerListRow;
 import com.viettel.sabeco.R;
 
 /**
- * Report region for admin
- *
+ * Compare chart sale
+ * 
  * @author : tuanlt1989
  */
-public class RegionProgReportView extends BaseFragment implements VinamilkTableListener {
+public class AdminCompareSaleProChartView extends BaseFragment implements
+		OnEventControlListener, VinamilkTableListener {
 
-	public static final String TAG = RegionProgReportView.class.getName();
+	public static final String TAG = AdminCompareSaleProChartView.class.getName();
+	private static final int ACTION_NPP = 1; //Action report date
+	private static final int ACTION_NVBH = 2; //Action report accumulate
 	private GlobalBaseActivity parent;
 
-	private DMSTableView tbReport;// tbCusList
-
-	public static RegionProgReportView getInstance() {
-		RegionProgReportView f = new RegionProgReportView();
+	public static AdminCompareSaleProChartView getInstance() {
+		AdminCompareSaleProChartView f = new AdminCompareSaleProChartView();
 		// Supply index input as an argument.
 		Bundle args = new Bundle();
 		f.setArguments(args);
@@ -54,25 +55,36 @@ public class RegionProgReportView extends BaseFragment implements VinamilkTableL
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		ViewGroup view = (ViewGroup) inflater.inflate(
-				R.layout.layout_region_progress_report_view, container, false);
+				R.layout.layout_admin_compare_shop_pro_chart_view, container, false);
 		View v = super.onCreateView(inflater, view, savedInstanceState);
+		setTitleHeaderView(StringUtil
+				.getString(R.string.TITLE_ADMIN_COMPARE_SHOP_PRO_CHART));
+		// enable menu bar
+		initMenuHeader();
 		// init view for screen
 		initView(v);
 		return v;
 	}
 
 	/**
-	 * Init view
-	 * @param view
+	 * Init menu header
+	 */
+	public void initMenuHeader() {
+        enableMenuBar(this);
+        addMenuItem(StringUtil.getString(R.string.TEXT_LABLE_NPP),
+                R.drawable.icon_accumulated, ACTION_NVBH);
+        addMenuItem(
+                StringUtil.getString(R.string.TEXT_HEADER_TABLE_NVBH),
+                R.drawable.icon_calendar, ACTION_NPP);
+        setMenuItemFocus(1);
+    }
+
+    /**
+     * Init view
+     * @param view
      */
 	public void initView(View view) {
-		// khoi tao header cho table
-		setTitleHeaderView(StringUtil.getString(R.string.TITLE_VIEW_REPORT_PROGRESS_REGION));
-		tbReport = (DMSTableView) view.findViewById(R.id.tbCusList);
-		tbReport.setListener(this);
-		initHeaderTable(tbReport, new CustomerListRow(parent, this));
 	}
-
 
 	/**
 	 * getCustomerList
@@ -83,6 +95,7 @@ public class RegionProgReportView extends BaseFragment implements VinamilkTableL
 	 */
 	private void getAccList() {
 		parent.showProgressDialog(StringUtil.getString(R.string.loading));
+
 		ActionEvent e = new ActionEvent();
 		Bundle b = new Bundle();
 		b.putString(
@@ -111,20 +124,44 @@ public class RegionProgReportView extends BaseFragment implements VinamilkTableL
 
 	@Override
 	public void handleErrorModelViewEvent(ModelEvent modelEvent) {
-		super.handleErrorModelViewEvent(modelEvent);
+		ActionEvent e = modelEvent.getActionEvent();
+		switch (e.action) {
+		case ActionEventConstant.ACC_SALE_PROG_REPORT:
+			parent.closeProgressDialog();
+			break;
+		default:
+			super.handleErrorModelViewEvent(modelEvent);
+			break;
+		}
+	}
+
+	/**
+	 * 
+	 * render layout
+	 * 
+	 * @return: void
+	 * @throws:
+	 * @author: HaiTC3
+	 * @date: Jan 10, 2013
+	 */
+	private void renderLayout() {
 	}
 
 	@Override
-	protected void receiveBroadcast(int action, Bundle extras) {
-		switch (action) {
-		case ActionEventConstant.NOTIFY_REFRESH_VIEW:
-			if (this.isVisible()) {
-				getAccList();
+	public void onEvent(int eventType, View control, Object data) {
+		if (control instanceof MenuItem) {
+			switch (eventType) {
+			case ACTION_NPP: {
+				ActionEvent e = new ActionEvent();
+				e.sender = this;
+				e.viewData = new Bundle();
+				e.action = ActionEventConstant.ACTION_REPORT_PROGRESS_DATE;
+				SuperviorController.getInstance().handleSwitchFragment(e);
+				break;
 			}
-			break;
-		default:
-			super.receiveBroadcast(action, extras);
-			break;
+			default:
+				break;
+			}
 		}
 	}
 
@@ -134,7 +171,21 @@ public class RegionProgReportView extends BaseFragment implements VinamilkTableL
 	}
 
 	@Override
-	public void handleVinamilkTableRowEvent(int action, View control, Object data) {
-
+	public void handleVinamilkTableRowEvent(int action, View control,
+			Object data) {
 	}
+
+	@Override
+	protected void receiveBroadcast(int action, Bundle extras) {
+		switch (action) {
+		case ActionEventConstant.NOTIFY_REFRESH_VIEW:
+			if (this.isVisible()) {
+			}
+			break;
+		default:
+			super.receiveBroadcast(action, extras);
+			break;
+		}
+	}
+
 }
