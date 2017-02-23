@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/BG_FRAGMENT"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_header_info"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvBranch"
+                style="@style/ViewSearchControlVNM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                android:text="@string/TEXT_BRANCH"
+                android:textColor="@color/BLACK">
+            </TextView>
+
+            <com.viettel.dms.view.control.VNMEditTextClearable
+                android:id="@+id/etMonth"
+                style="@style/VNMEditText"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/margin_search_info"
+                android:hint="@string/TEXT_TEXTBOX_FROM_DATE"
+                android:inputType="textCapWords"
+                android:maxLength="10"
+                android:paddingBottom="@dimen/padding_bottom"
+                android:paddingTop="@dimen/padding_top"/>
+
+            <TextView
+                style="@style/ViewSearchControlVNM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                android:text="@string/TEXT_BRANCH"
+                android:textColor="@color/BLACK">
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spBranch"
+                style="@style/ViewSearchControlVNM"
+                android:layout_width="@dimen/width_spinner_normal"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="0"
+                android:background="@drawable/spinner_selector"
+                android:drawSelectorOnTop="true"
+                android:prompt="@string/LINE"
+                android:spinnerMode="dropdown"/>
+        </LinearLayout>
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:background="@color/BG_FRAGMENT">
+            <com.viettel.dms.view.control.VinamilkTableView
+                android:id="@+id/tbReport"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-2dip">
+            </com.viettel.dms.view.control.VinamilkTableView>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+</ScrollView>
