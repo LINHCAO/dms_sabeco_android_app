@@ -35,4 +35,6 @@
 
     <dimen name="margin_search_info">10dp</dimen>
     <dimen name="width_spinner_normal">100dp</dimen>
+    <dimen name="min_height_notification">350dp</dimen>
+    <dimen name="size_text_edittext">14sp</dimen>
 </resources>
