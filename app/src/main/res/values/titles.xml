@@ -193,4 +193,5 @@
     <string name="TITLE_ADMIN_DATE_SALE_PRO_REPORT">Tiến độ bán hàng của NVBH</string>
     <string name="TITLE_ADMIN_COMPARE_SHOP_PRO_CHART">Biểu đồ so sánh sản lượng bán của NPP khu vực</string>
     <string name="TITLE_ADMIN_COMPARE_SALE_PRO_CHART">Biểu đồ so sánh sản lượng bán của NVBH khu vực</string>
+    <string name="TITLE_ADMIN_SUPERVISE_STAFF">Giám sát vị trí</string>
 </resources>

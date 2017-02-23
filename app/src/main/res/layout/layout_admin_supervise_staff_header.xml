@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="match_parent"
+              android:background="@color/TRANSPARENT"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_search_info"
+        android:background="@drawable/bg_header_info"
+        android:baselineAligned="false"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llRegion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/llSearch"
+            android:layout_below="@+id/etMonth"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/tvRegion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/TEXT_REGION"
+                android:textColor="@color/BLACK">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etMonth"
+            android:layout_toRightOf="@+id/llRegion"
+            >
+
+            <Spinner
+                android:id="@+id/spRegion"
+                style="@style/ViewSearchControlVNM"
+                android:layout_width="@dimen/width_spinner_normal"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                android:background="@drawable/spinner_selector"
+                android:drawSelectorOnTop="true"
+                android:prompt="@string/LINE"
+                android:spinnerMode="dropdown"/>
+
+            <TextView
+                android:id="@+id/tvBranch"
+                style="@style/ViewSearchControlVNM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                android:text="@string/TEXT_BRANCH"
+                android:textColor="@color/BLACK">
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spBranch"
+                style="@style/ViewSearchControlVNM"
+                android:layout_width="@dimen/width_spinner_normal"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="0"
+                android:background="@drawable/spinner_selector"
+                android:drawSelectorOnTop="true"
+                android:prompt="@string/LINE"
+                android:spinnerMode="dropdown"/>
+            <TextView
+                android:id="@+id/tvShop"
+                style="@style/ViewSearchControlVNM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                android:text="@string/TEXT_STAFF_TYPE_SHORT"
+                android:textColor="@color/BLACK">
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spStaffType"
+                style="@style/ViewSearchControlVNM"
+                android:layout_width="@dimen/width_spinner_normal"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="0"
+                android:background="@drawable/spinner_selector"
+                android:drawSelectorOnTop="true"
+                android:prompt="@string/LINE"
+                android:spinnerMode="dropdown"/>
+
+            <Spinner
+                android:id="@+id/spStaff"
+                style="@style/ViewSearchControlVNM"
+                android:layout_width="@dimen/width_spinner_normal"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="0"
+                android:background="@drawable/spinner_selector"
+                android:drawSelectorOnTop="true"
+                android:prompt="@string/LINE"
+                android:spinnerMode="dropdown"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
