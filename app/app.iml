@@ -119,6 +119,7 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 23 Platform (3)" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="butterknife-7.0.1" level="project" />
     <orderEntry type="library" exported="" name="gson-2.6.1" level="project" />
     <orderEntry type="library" exported="" name="metadata" level="project" />
     <orderEntry type="library" exported="" name="MPAndroidChart-v2.2.5" level="project" />
